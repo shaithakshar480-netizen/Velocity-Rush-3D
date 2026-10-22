@@ -1,0 +1,9 @@
+{
+  "turbo": {"label":"TURBO +2","charges":2,"race_limit":1},
+  "repair": {"label":"REPAIR KIT","health_fraction":0.40,"race_limit":1},
+  "shield": {"label":"SHIELD","minimum_damage":8.0,"race_limit":1},
+  "magnet": {"label":"COIN MAGNET","radius":3.2,"race_limit":1},
+  "double": {"label":"DOUBLE RACE COINS","race_limit":1},
+  "trial": {"label":"ONE-RACE CAR TRIAL","eligible":["falcon_s1","apex_rs","inferno_r"],"race_limit":1},
+  "revive": {"label":"REVIVE","health_fraction":0.45,"race_limit":1}
+}

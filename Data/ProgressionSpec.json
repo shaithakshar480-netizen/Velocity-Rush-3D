@@ -1,0 +1,52 @@
+{
+  "max_level": 50,
+  "xp_base": 350,
+  "xp_linear": 75,
+  "xp_quadratic": 12,
+  "race_xp": {
+    "completion": 220,
+    "score_divisor": 40,
+    "score_cap": 180,
+    "near_miss": 8,
+    "near_cap": 120,
+    "high_speed_divisor": 4,
+    "high_speed_cap": 80,
+    "turbo": 12,
+    "turbo_cap": 60
+  },
+  "level_rewards": [
+    {
+      "through": 5,
+      "coins": 250
+    },
+    {
+      "through": 10,
+      "coins": 500
+    },
+    {
+      "through": 20,
+      "coins": 750
+    },
+    {
+      "through": 30,
+      "coins": 1200
+    },
+    {
+      "through": 40,
+      "coins": 1800
+    },
+    {
+      "through": 50,
+      "coins": 2500
+    }
+  ],
+  "daily_rewards": [
+    300,
+    400,
+    500,
+    650,
+    800,
+    1000,
+    1500
+  ]
+}

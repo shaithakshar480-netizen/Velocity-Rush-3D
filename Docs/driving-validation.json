@@ -1,0 +1,833 @@
+{
+  "scope": "Offline asset/source checks and Python numerical reference models only. Godot NOT run.",
+  "checks": 194,
+  "failed": 0,
+  "reference_acceleration": [
+    {
+      "id": "vortex_s",
+      "reference_0_100_seconds_30_60_120Hz": [
+        3.2,
+        3.183333333333333,
+        3.183333333333333
+      ]
+    },
+    {
+      "id": "falcon_s1",
+      "reference_0_100_seconds_30_60_120Hz": [
+        2.533333333333333,
+        2.5166666666666666,
+        2.525
+      ]
+    },
+    {
+      "id": "apex_rs",
+      "reference_0_100_seconds_30_60_120Hz": [
+        2.5666666666666664,
+        2.55,
+        2.558333333333333
+      ]
+    },
+    {
+      "id": "inferno_r",
+      "reference_0_100_seconds_30_60_120Hz": [
+        2.4,
+        2.3833333333333333,
+        2.3916666666666666
+      ]
+    },
+    {
+      "id": "phantom_x",
+      "reference_0_100_seconds_30_60_120Hz": [
+        2.3666666666666667,
+        2.35,
+        2.35
+      ]
+    },
+    {
+      "id": "titan_v12",
+      "reference_0_100_seconds_30_60_120Hz": [
+        2.3666666666666667,
+        2.35,
+        2.35
+      ]
+    }
+  ],
+  "results": [
+    {
+      "check": "Preserved method Environment/Highway.gd::_build_continuous_collision",
+      "passed": true
+    },
+    {
+      "check": "Preserved method Environment/Highway.gd::update_chunks",
+      "passed": true
+    },
+    {
+      "check": "Preserved method Environment/Highway.gd::_physics_process",
+      "passed": true
+    },
+    {
+      "check": "Preserved method Save/SaveService.gd::buy_vehicle",
+      "passed": true
+    },
+    {
+      "check": "Preserved method Save/SaveService.gd::_commit_collection",
+      "passed": true
+    },
+    {
+      "check": "Preserved method Save/SaveService.gd::commit_reward",
+      "passed": true
+    },
+    {
+      "check": "Preserved method Gameplay/RunManager.gd::prepare",
+      "passed": true
+    },
+    {
+      "check": "Preserved method Gameplay/RunManager.gd::advance_countdown",
+      "passed": true
+    },
+    {
+      "check": "Preserved method Gameplay/RunManager.gd::_finish",
+      "passed": true
+    },
+    {
+      "check": "Preserved method Gameplay/RunManager.gd::checkpoint",
+      "passed": true
+    },
+    {
+      "check": "Preserved method Input/DriveInput.gd::clear",
+      "passed": true
+    },
+    {
+      "check": "Preserved method Input/DriveInput.gd::set_enabled",
+      "passed": true
+    },
+    {
+      "check": "Untouched existing system Progression/ProgressionData.gd",
+      "passed": true
+    },
+    {
+      "check": "Untouched existing system Progression/RewardService.gd",
+      "passed": true
+    },
+    {
+      "check": "Untouched existing system Data/ProgressionSpec.json",
+      "passed": true
+    },
+    {
+      "check": "Untouched existing system Data/MissionCatalog.json",
+      "passed": true
+    },
+    {
+      "check": "Untouched existing system Data/AchievementCatalog.json",
+      "passed": true
+    },
+    {
+      "check": "Untouched existing system Gameplay/RunManager.gd",
+      "passed": true
+    },
+    {
+      "check": "Untouched existing system Collectibles/CoinSystem.gd",
+      "passed": true
+    },
+    {
+      "check": "Untouched existing system Environment/RoadFrame.gd",
+      "passed": true
+    },
+    {
+      "check": "Untouched existing system project.godot",
+      "passed": true
+    },
+    {
+      "check": "Untouched existing system export_presets.cfg",
+      "passed": true
+    },
+    {
+      "check": "vortex_s six ordered gears",
+      "passed": true
+    },
+    {
+      "check": "vortex_s five finite anchors",
+      "passed": true
+    },
+    {
+      "check": "vortex_s all attachment names",
+      "passed": true
+    },
+    {
+      "check": "vortex_s reference 30Hz reaches sixth/top",
+      "passed": true
+    },
+    {
+      "check": "vortex_s reference 30Hz shift hold",
+      "passed": true
+    },
+    {
+      "check": "vortex_s reference 60Hz reaches sixth/top",
+      "passed": true
+    },
+    {
+      "check": "vortex_s reference 60Hz shift hold",
+      "passed": true
+    },
+    {
+      "check": "vortex_s reference 120Hz reaches sixth/top",
+      "passed": true
+    },
+    {
+      "check": "vortex_s reference 120Hz shift hold",
+      "passed": true
+    },
+    {
+      "check": "vortex_s reference launch builds progressively",
+      "passed": true
+    },
+    {
+      "check": "vortex_s minor impact survivable",
+      "passed": true
+    },
+    {
+      "check": "vortex_s frontal severity exceeds scrape",
+      "passed": true
+    },
+    {
+      "check": "vortex_s repeated major impacts destroy",
+      "passed": true
+    },
+    {
+      "check": "engine_vortex_s_0 mono PCM safe",
+      "passed": true
+    },
+    {
+      "check": "engine_vortex_s_0 loop endpoints",
+      "passed": true
+    },
+    {
+      "check": "engine_vortex_s_1 mono PCM safe",
+      "passed": true
+    },
+    {
+      "check": "engine_vortex_s_1 loop endpoints",
+      "passed": true
+    },
+    {
+      "check": "engine_vortex_s_2 mono PCM safe",
+      "passed": true
+    },
+    {
+      "check": "engine_vortex_s_2 loop endpoints",
+      "passed": true
+    },
+    {
+      "check": "engine_vortex_s_3 mono PCM safe",
+      "passed": true
+    },
+    {
+      "check": "engine_vortex_s_3 loop endpoints",
+      "passed": true
+    },
+    {
+      "check": "vortex_s four distinct synthesized layers",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 six ordered gears",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 five finite anchors",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 all attachment names",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 reference 30Hz reaches sixth/top",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 reference 30Hz shift hold",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 reference 60Hz reaches sixth/top",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 reference 60Hz shift hold",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 reference 120Hz reaches sixth/top",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 reference 120Hz shift hold",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 reference launch builds progressively",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 minor impact survivable",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 frontal severity exceeds scrape",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 repeated major impacts destroy",
+      "passed": true
+    },
+    {
+      "check": "engine_falcon_s1_0 mono PCM safe",
+      "passed": true
+    },
+    {
+      "check": "engine_falcon_s1_0 loop endpoints",
+      "passed": true
+    },
+    {
+      "check": "engine_falcon_s1_1 mono PCM safe",
+      "passed": true
+    },
+    {
+      "check": "engine_falcon_s1_1 loop endpoints",
+      "passed": true
+    },
+    {
+      "check": "engine_falcon_s1_2 mono PCM safe",
+      "passed": true
+    },
+    {
+      "check": "engine_falcon_s1_2 loop endpoints",
+      "passed": true
+    },
+    {
+      "check": "engine_falcon_s1_3 mono PCM safe",
+      "passed": true
+    },
+    {
+      "check": "engine_falcon_s1_3 loop endpoints",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 four distinct synthesized layers",
+      "passed": true
+    },
+    {
+      "check": "apex_rs six ordered gears",
+      "passed": true
+    },
+    {
+      "check": "apex_rs five finite anchors",
+      "passed": true
+    },
+    {
+      "check": "apex_rs all attachment names",
+      "passed": true
+    },
+    {
+      "check": "apex_rs reference 30Hz reaches sixth/top",
+      "passed": true
+    },
+    {
+      "check": "apex_rs reference 30Hz shift hold",
+      "passed": true
+    },
+    {
+      "check": "apex_rs reference 60Hz reaches sixth/top",
+      "passed": true
+    },
+    {
+      "check": "apex_rs reference 60Hz shift hold",
+      "passed": true
+    },
+    {
+      "check": "apex_rs reference 120Hz reaches sixth/top",
+      "passed": true
+    },
+    {
+      "check": "apex_rs reference 120Hz shift hold",
+      "passed": true
+    },
+    {
+      "check": "apex_rs reference launch builds progressively",
+      "passed": true
+    },
+    {
+      "check": "apex_rs minor impact survivable",
+      "passed": true
+    },
+    {
+      "check": "apex_rs frontal severity exceeds scrape",
+      "passed": true
+    },
+    {
+      "check": "apex_rs repeated major impacts destroy",
+      "passed": true
+    },
+    {
+      "check": "engine_apex_rs_0 mono PCM safe",
+      "passed": true
+    },
+    {
+      "check": "engine_apex_rs_0 loop endpoints",
+      "passed": true
+    },
+    {
+      "check": "engine_apex_rs_1 mono PCM safe",
+      "passed": true
+    },
+    {
+      "check": "engine_apex_rs_1 loop endpoints",
+      "passed": true
+    },
+    {
+      "check": "engine_apex_rs_2 mono PCM safe",
+      "passed": true
+    },
+    {
+      "check": "engine_apex_rs_2 loop endpoints",
+      "passed": true
+    },
+    {
+      "check": "engine_apex_rs_3 mono PCM safe",
+      "passed": true
+    },
+    {
+      "check": "engine_apex_rs_3 loop endpoints",
+      "passed": true
+    },
+    {
+      "check": "apex_rs four distinct synthesized layers",
+      "passed": true
+    },
+    {
+      "check": "inferno_r six ordered gears",
+      "passed": true
+    },
+    {
+      "check": "inferno_r five finite anchors",
+      "passed": true
+    },
+    {
+      "check": "inferno_r all attachment names",
+      "passed": true
+    },
+    {
+      "check": "inferno_r reference 30Hz reaches sixth/top",
+      "passed": true
+    },
+    {
+      "check": "inferno_r reference 30Hz shift hold",
+      "passed": true
+    },
+    {
+      "check": "inferno_r reference 60Hz reaches sixth/top",
+      "passed": true
+    },
+    {
+      "check": "inferno_r reference 60Hz shift hold",
+      "passed": true
+    },
+    {
+      "check": "inferno_r reference 120Hz reaches sixth/top",
+      "passed": true
+    },
+    {
+      "check": "inferno_r reference 120Hz shift hold",
+      "passed": true
+    },
+    {
+      "check": "inferno_r reference launch builds progressively",
+      "passed": true
+    },
+    {
+      "check": "inferno_r minor impact survivable",
+      "passed": true
+    },
+    {
+      "check": "inferno_r frontal severity exceeds scrape",
+      "passed": true
+    },
+    {
+      "check": "inferno_r repeated major impacts destroy",
+      "passed": true
+    },
+    {
+      "check": "engine_inferno_r_0 mono PCM safe",
+      "passed": true
+    },
+    {
+      "check": "engine_inferno_r_0 loop endpoints",
+      "passed": true
+    },
+    {
+      "check": "engine_inferno_r_1 mono PCM safe",
+      "passed": true
+    },
+    {
+      "check": "engine_inferno_r_1 loop endpoints",
+      "passed": true
+    },
+    {
+      "check": "engine_inferno_r_2 mono PCM safe",
+      "passed": true
+    },
+    {
+      "check": "engine_inferno_r_2 loop endpoints",
+      "passed": true
+    },
+    {
+      "check": "engine_inferno_r_3 mono PCM safe",
+      "passed": true
+    },
+    {
+      "check": "engine_inferno_r_3 loop endpoints",
+      "passed": true
+    },
+    {
+      "check": "inferno_r four distinct synthesized layers",
+      "passed": true
+    },
+    {
+      "check": "phantom_x six ordered gears",
+      "passed": true
+    },
+    {
+      "check": "phantom_x five finite anchors",
+      "passed": true
+    },
+    {
+      "check": "phantom_x all attachment names",
+      "passed": true
+    },
+    {
+      "check": "phantom_x reference 30Hz reaches sixth/top",
+      "passed": true
+    },
+    {
+      "check": "phantom_x reference 30Hz shift hold",
+      "passed": true
+    },
+    {
+      "check": "phantom_x reference 60Hz reaches sixth/top",
+      "passed": true
+    },
+    {
+      "check": "phantom_x reference 60Hz shift hold",
+      "passed": true
+    },
+    {
+      "check": "phantom_x reference 120Hz reaches sixth/top",
+      "passed": true
+    },
+    {
+      "check": "phantom_x reference 120Hz shift hold",
+      "passed": true
+    },
+    {
+      "check": "phantom_x reference launch builds progressively",
+      "passed": true
+    },
+    {
+      "check": "phantom_x minor impact survivable",
+      "passed": true
+    },
+    {
+      "check": "phantom_x frontal severity exceeds scrape",
+      "passed": true
+    },
+    {
+      "check": "phantom_x repeated major impacts destroy",
+      "passed": true
+    },
+    {
+      "check": "engine_phantom_x_0 mono PCM safe",
+      "passed": true
+    },
+    {
+      "check": "engine_phantom_x_0 loop endpoints",
+      "passed": true
+    },
+    {
+      "check": "engine_phantom_x_1 mono PCM safe",
+      "passed": true
+    },
+    {
+      "check": "engine_phantom_x_1 loop endpoints",
+      "passed": true
+    },
+    {
+      "check": "engine_phantom_x_2 mono PCM safe",
+      "passed": true
+    },
+    {
+      "check": "engine_phantom_x_2 loop endpoints",
+      "passed": true
+    },
+    {
+      "check": "engine_phantom_x_3 mono PCM safe",
+      "passed": true
+    },
+    {
+      "check": "engine_phantom_x_3 loop endpoints",
+      "passed": true
+    },
+    {
+      "check": "phantom_x four distinct synthesized layers",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 six ordered gears",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 five finite anchors",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 all attachment names",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 reference 30Hz reaches sixth/top",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 reference 30Hz shift hold",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 reference 60Hz reaches sixth/top",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 reference 60Hz shift hold",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 reference 120Hz reaches sixth/top",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 reference 120Hz shift hold",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 reference launch builds progressively",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 minor impact survivable",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 frontal severity exceeds scrape",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 repeated major impacts destroy",
+      "passed": true
+    },
+    {
+      "check": "engine_titan_v12_0 mono PCM safe",
+      "passed": true
+    },
+    {
+      "check": "engine_titan_v12_0 loop endpoints",
+      "passed": true
+    },
+    {
+      "check": "engine_titan_v12_1 mono PCM safe",
+      "passed": true
+    },
+    {
+      "check": "engine_titan_v12_1 loop endpoints",
+      "passed": true
+    },
+    {
+      "check": "engine_titan_v12_2 mono PCM safe",
+      "passed": true
+    },
+    {
+      "check": "engine_titan_v12_2 loop endpoints",
+      "passed": true
+    },
+    {
+      "check": "engine_titan_v12_3 mono PCM safe",
+      "passed": true
+    },
+    {
+      "check": "engine_titan_v12_3 loop endpoints",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 four distinct synthesized layers",
+      "passed": true
+    },
+    {
+      "check": "horn effect nonempty unclipped",
+      "passed": true
+    },
+    {
+      "check": "shift effect nonempty unclipped",
+      "passed": true
+    },
+    {
+      "check": "blowoff effect nonempty unclipped",
+      "passed": true
+    },
+    {
+      "check": "passby effect nonempty unclipped",
+      "passed": true
+    },
+    {
+      "check": "scrape effect nonempty unclipped",
+      "passed": true
+    },
+    {
+      "check": "heavy_impact effect nonempty unclipped",
+      "passed": true
+    },
+    {
+      "check": "explosion effect nonempty unclipped",
+      "passed": true
+    },
+    {
+      "check": "fire effect nonempty unclipped",
+      "passed": true
+    },
+    {
+      "check": "damage_warning effect nonempty unclipped",
+      "passed": true
+    },
+    {
+      "check": "road_noise effect nonempty unclipped",
+      "passed": true
+    },
+    {
+      "check": "morning original HDR 1K",
+      "passed": true
+    },
+    {
+      "check": "evening original HDR 1K",
+      "passed": true
+    },
+    {
+      "check": "dusk original HDR 1K",
+      "passed": true
+    },
+    {
+      "check": "night original HDR 1K",
+      "passed": true
+    },
+    {
+      "check": "luma_c.glb valid lightweight Medium",
+      "passed": true
+    },
+    {
+      "check": "summit_x.glb valid lightweight Medium",
+      "passed": true
+    },
+    {
+      "check": "meridian_s.glb valid lightweight Medium",
+      "passed": true
+    },
+    {
+      "check": "forge_u.glb valid lightweight Medium",
+      "passed": true
+    },
+    {
+      "check": "aero_f.glb valid lightweight Medium",
+      "passed": true
+    },
+    {
+      "check": "Angular wheel drag uses absolute finger position",
+      "passed": true
+    },
+    {
+      "check": "Tilt fallback uses buttons",
+      "passed": true
+    },
+    {
+      "check": "No invalid/suppressed API Environment.REFLECTED_SOURCE_SKY",
+      "passed": true
+    },
+    {
+      "check": "No invalid/suppressed API @warning_ignore",
+      "passed": true
+    },
+    {
+      "check": "No invalid/suppressed API warnings/treat_warnings_as_errors=false",
+      "passed": true
+    },
+    {
+      "check": "Schema 1\u20135 readable",
+      "passed": true
+    },
+    {
+      "check": "All data in one atomic envelope",
+      "passed": true
+    },
+    {
+      "check": "Inventory rollback retains coins and inventory",
+      "passed": true
+    },
+    {
+      "check": "Duplicate reward blocked before mutation",
+      "passed": true
+    },
+    {
+      "check": "No production fake provider",
+      "passed": true
+    },
+    {
+      "check": "Failed/skipped ad never grants",
+      "passed": true
+    },
+    {
+      "check": "Free uses reset independently",
+      "passed": true
+    },
+    {
+      "check": "Paid charge before ACTIVE",
+      "passed": true
+    },
+    {
+      "check": "Offers configured 2/4/10",
+      "passed": true
+    },
+    {
+      "check": "Four clearances and lane reservations",
+      "passed": true
+    },
+    {
+      "check": "Lane changes telegraphed/rechecked",
+      "passed": true
+    },
+    {
+      "check": "No AI spawning or teleport in physics",
+      "passed": true
+    },
+    {
+      "check": "Rebase includes racers",
+      "passed": true
+    },
+    {
+      "check": "Damage only during running lifecycle",
+      "passed": true
+    },
+    {
+      "check": "Crash cancels run before reward completion",
+      "passed": true
+    },
+    {
+      "check": "No pool allocation in active effects",
+      "passed": true
+    }
+  ]
+}

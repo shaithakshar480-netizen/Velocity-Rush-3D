@@ -1,0 +1,6 @@
+{
+  "repair_fraction": 0.4,
+  "magnet_seconds": 12.0,
+  "magnet_radius": 5.0,
+  "shield_seconds": 20.0
+}

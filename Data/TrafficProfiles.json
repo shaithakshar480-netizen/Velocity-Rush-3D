@@ -1,0 +1,7 @@
+[
+ {"id":"luma_c","name":"Luma C","style":"compact hatchback","length":3.96,"width":1.82,"height":1.43,"wheelbase":2.48,"wheel_radius":0.32,"hood_y":0.76,"windshield_z":-0.93,"roof_front_z":-0.38,"roof_rear_z":0.65,"rear_glass_z":1.36,"color":[0.22,0.57,0.63]},
+ {"id":"meridian_s","name":"Meridian S","style":"sedan","length":4.48,"width":1.86,"height":1.42,"wheelbase":2.72,"wheel_radius":0.34,"hood_y":0.79,"windshield_z":-0.92,"roof_front_z":-0.34,"roof_rear_z":0.66,"rear_glass_z":1.37,"color":[0.57,0.65,0.72]},
+ {"id":"aero_f","name":"Aero F","style":"sporty fastback","length":4.56,"width":1.91,"height":1.31,"wheelbase":2.76,"wheel_radius":0.34,"hood_y":0.73,"windshield_z":-1.04,"roof_front_z":-0.42,"roof_rear_z":0.38,"rear_glass_z":1.76,"color":[0.68,0.22,0.28]},
+ {"id":"summit_x","name":"Summit X","style":"SUV crossover","length":4.56,"width":1.94,"height":1.72,"wheelbase":2.74,"wheel_radius":0.37,"hood_y":0.91,"windshield_z":-0.97,"roof_front_z":-0.52,"roof_rear_z":0.83,"rear_glass_z":1.71,"color":[0.37,0.46,0.33]},
+ {"id":"forge_u","name":"Forge U","style":"utility pickup","length":5.02,"width":1.95,"height":1.68,"wheelbase":3.05,"wheel_radius":0.37,"hood_y":0.92,"windshield_z":-1.14,"roof_front_z":-0.63,"roof_rear_z":0.06,"rear_glass_z":0.39,"color":[0.73,0.60,0.40]}
+]

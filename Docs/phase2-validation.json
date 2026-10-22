@@ -1,0 +1,287 @@
+{
+  "scope": "Offline source contracts, arithmetic fixtures and byte comparison only; NOT GDScript/runtime tests.",
+  "checks": 56,
+  "failed": 0,
+  "results": [
+    {
+      "check": "Traffic no per-tick object creation/free: _physics_process",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Traffic no per-tick object creation/free: _try_spawn",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Traffic no per-tick object creation/free: evaluate_passes",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Traffic no per-tick object creation/free: reset_pool",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Coins no per-tick object creation/free: _physics_process",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Coins no per-tick object creation/free: _process",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Coins no per-tick object creation/free: _spawn_pattern",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Coins no per-tick object creation/free: evaluate_pickups",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Coins no per-tick object creation/free: reset_pool",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "World rebase includes run.rebase(shift)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "World rebase includes traffic.rebase(shift)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "World rebase includes coins.rebase(shift)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Wallet and settings share atomic schema 5 envelope",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Schema 1 still readable",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Claim validates issued and settled IDs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Claim rollback on failed write",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Failed reward blocks leaving results",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Near miss requires pass completion",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Near miss rejects collision",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Escape lane excluded at spawn",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Speed-sensitive reaction distance",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Coin spawn validates traffic",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Finite coin supply per run",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "No retrace distance score",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Reward fixture modest",
+      "passed": true,
+      "detail": "200 road + 300 completion + 110 performance = 610"
+    },
+    {
+      "check": "Reward fixture normal",
+      "passed": true,
+      "detail": "400 road + 300 completion + 180 performance = 880"
+    },
+    {
+      "check": "Reward fixture skilled",
+      "passed": true,
+      "detail": "600 road + 300 completion + 300 performance = 1200"
+    },
+    {
+      "check": "Distance supports 2\u20134 minutes at 120\u2013210 KM/H",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Road coin value",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Phase 1 unchanged: Data/VortexS.tres",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Phase 1 unchanged: Environment/Geometry.gd",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Preserved audio format: engine",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Preserved audio format: skid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Preserved audio format: collision",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Preserved audio format: ui",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Unused legacy ambience retained",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Vehicle property preserved: @export var vehicle_id",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Vehicle property preserved: @export var display_name",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Vehicle property preserved: @export var top_speed_kmh",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Vehicle property preserved: @export var acceleration",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Vehicle property preserved: @export var braking",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Vehicle property preserved: @export var reverse_speed_kmh",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Vehicle property preserved: @export var reverse_acceleration",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Vehicle property preserved: @export var steering_low_degrees",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Vehicle property preserved: @export var steering_high_degrees",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Vehicle property preserved: @export var steering_response",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Vehicle property preserved: @export var wheelbase",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Vehicle property preserved: @export var grip",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Vehicle property preserved: @export var weight_kg",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Vehicle property preserved: @export var rolling_drag",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Vehicle property preserved: @export var air_drag",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Vehicle property preserved: @export var gravity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Vehicle property preserved: @export var suspension_travel",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Vehicle property preserved: @export var wheel_radius",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Vehicle property preserved: @export var unlock_information",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Vehicle property preserved: @export var upgrade_information",
+      "passed": true,
+      "detail": ""
+    }
+  ]
+}

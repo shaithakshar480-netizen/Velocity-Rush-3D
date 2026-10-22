@@ -1,0 +1,3272 @@
+{
+  "cars": [
+	{
+	  "id": "vortex_s",
+	  "name": "Lotus Cortina Mk1",
+	  "class": "CLASSIC STARTER",
+	  "price": 0,
+	  "top_speed_kmh": 210,
+	  "acceleration": 11.5,
+	  "steering_response": 6.5,
+	  "braking": 24,
+	  "grip": 11,
+	  "weight_kg": 1280,
+	  "turbo_speed": 270,
+	  "turbo_acceleration": 2.7,
+	  "turbo_charge": 1,
+	  "length": 4.18,
+	  "width": 1.61684,
+	  "height": 1.35346,
+	  "wheelbase": 2.49,
+	  "wheel_radius": 0.29,
+	  "windshield_z": -0.96,
+	  "roof_front_z": -0.38,
+	  "roof_rear_z": 0.43,
+	  "rear_glass_z": 1.02,
+	  "default_paint": 5,
+	  "style": "sporty fastback",
+	  "hood_y": 0.72,
+	  "color": [
+		0.12,
+		0.42,
+		0.55
+	  ],
+	  "exhaust_points": [
+		[
+		  -0.43654637444625777,
+		  0.35,
+		  2.04
+		],
+		[
+		  0.43654637444625777,
+		  0.35,
+		  2.04
+		]
+	  ],
+	  "visual_scene_path": "res://Assets/Production/1965_ford_lotus_cortina_mk1.glb",
+	  "visual_lod_paths": [
+		"res://Assets/Production/1965_ford_lotus_cortina_mk1.glb",
+		"res://Assets/Production/1965_ford_lotus_cortina_mk1.glb",
+        "res://Assets/Production/1965_ford_lotus_cortina_mk1.glb"
+	  ],
+	  "camera_anchors": [
+		[
+		  0,
+		  3.2,
+		  7.09
+		],
+		[
+		  0,
+		  5.4,
+		  11.49
+		],
+		[
+		  0,
+		  0.9744928583585913,
+		  -1.045
+		],
+		[
+		  0,
+		  0.54,
+		  -2.32
+		],
+		[
+		  -0.2586941478200046,
+		  1.2181160729482392,
+		  -0.25079999999999997
+		]
+	  ],
+	  "rear_light_points": [
+		[
+		  -0.573,
+		  0.6499999999999999,
+		  2.09
+		],
+		[
+		  0.573,
+		  0.6499999999999999,
+		  2.09
+		]
+	  ],
+	  "attachment_markers": {
+		"camera_chase_anchor": [
+		  0,
+		  3.2,
+		  7.09
+		],
+		"camera_far_anchor": [
+		  0,
+		  5.4,
+		  11.49
+		],
+		"camera_hood_anchor": [
+		  0,
+		  0.9744928583585913,
+		  -1.045
+		],
+		"camera_bumper_anchor": [
+		  0,
+		  0.54,
+		  -2.32
+		],
+		"camera_cockpit_anchor": [
+		  -0.2586941478200046,
+		  1.2181160729482392,
+		  -0.25079999999999997
+		]
+	  },
+	  "interior": {
+		"style": 0,
+		"steering_style": 0,
+		"cluster_style": 0,
+		"horn_path": "res://Assets/Audio/horn_vortex_s.wav"
+	  },
+	  "light_anchors": {
+		"front_left_light_anchor": [
+		  -0.600268,
+		  0.664493,
+		  -2.032994
+		],
+		"front_right_light_anchor": [
+		  0.600268,
+		  0.664493,
+		  -2.032994
+		],
+		"rear_left_light_anchor": [
+		  -0.5173882956400092,
+		  0.6767311516379106,
+		  1.9227999999999998
+		],
+		"rear_right_light_anchor": [
+		  0.5173882956400092,
+		  0.6767311516379106,
+		  1.9227999999999998
+		],
+		"reverse_left_anchor": [
+		  -0.40420960596875716,
+		  0.6090580364741196,
+		  1.9227999999999998
+		],
+		"reverse_right_anchor": [
+		  0.40420960596875716,
+		  0.6090580364741196,
+		  1.9227999999999998
+		],
+		"high_brake_anchor": [
+		  0,
+		  0.9474236122930748,
+		  1.672
+		]
+	  },
+	  "durability_multiplier": 1,
+	  "production_visual": {
+		"scale": 99.7976262845703,
+		"offset": [
+		  0.0,
+		  0.17236554412450422,
+		  -0.19248076
+		],
+		"yaw": 3.141592653589793,
+		"hidden_meshes": [],
+		"wheels": [],
+		"roles": {
+		  "Cortina:lod2_Ted_glass_0": "Taillight",
+		  "Cortina:lod3_Ted_glass_0": "Taillight",
+		  "Cortina:lod3_glass_light_0": "Headlight",
+		  "Cortina:lod10_CaarPaint_0": "Paint"
+		},
+		"triangles": 33327,
+		"surfaces": 21,
+		"contact_correction": 0.0040000041245042105,
+		"wheel_roles": {
+		  "Cortina:lod11_rim_0": "Rim",
+		  "Cortina:lod0_tire_0": "Tyre"
+		},
+		"fallback_lamps": []
+	  }
+	},
+	{
+	  "id": "falcon_s1",
+	  "name": "Alfa Romeo GTV-6",
+	  "class": "SPORT COUPE",
+	  "price": 40000,
+	  "top_speed_kmh": 225,
+	  "acceleration": 13.0,
+	  "steering_response": 7.4,
+	  "braking": 25,
+	  "grip": 12,
+	  "weight_kg": 1210,
+	  "turbo_speed": 280,
+	  "turbo_acceleration": 2.5,
+	  "turbo_charge": 1.18,
+	  "length": 4.35,
+	  "width": 1.8043,
+	  "height": 1.30095,
+	  "wheelbase": 2.405,
+	  "wheel_radius": 0.31,
+	  "windshield_z": -1.0,
+	  "roof_front_z": -0.38,
+	  "roof_rear_z": 0.4,
+	  "rear_glass_z": 1.23,
+	  "default_paint": 1,
+	  "style": "sporty fastback",
+	  "hood_y": 0.79,
+	  "color": [
+		0.12,
+		0.42,
+		0.55
+	  ],
+	  "exhaust_points": [
+		[
+		  -0.31184,
+		  0.36373,
+		  2.05431
+		]
+	  ],
+	  "visual_scene_path": "res://Assets/Production/1986_alfa_romeo_gtv-6.glb",
+	  "visual_lod_paths": [
+		"res://Assets/Production/1986_alfa_romeo_gtv-6.glb",
+		"res://Assets/Production/1986_alfa_romeo_gtv-6.glb",
+        "res://Assets/Production/1986_alfa_romeo_gtv-6.glb"
+	  ],
+	  "camera_anchors": [
+		[
+		  0,
+		  3.2,
+		  7.175
+		],
+		[
+		  0,
+		  5.4,
+		  11.575
+		],
+		[
+		  0,
+		  0.936686012795097,
+		  -1.0875
+		],
+		[
+		  0,
+		  0.54,
+		  -2.405
+		],
+		[
+		  -0.2886873295550225,
+		  1.1708575159938712,
+		  -0.26099999999999995
+		]
+	  ],
+	  "rear_light_points": [
+		[
+		  -0.552,
+		  0.72,
+		  2.01
+		],
+		[
+		  0.552,
+		  0.72,
+		  2.01
+		]
+	  ],
+	  "attachment_markers": {
+		"camera_chase_anchor": [
+		  0,
+		  3.2,
+		  7.175
+		],
+		"camera_far_anchor": [
+		  0,
+		  5.4,
+		  11.575
+		],
+		"camera_hood_anchor": [
+		  0,
+		  0.936686012795097,
+		  -1.0875
+		],
+		"camera_bumper_anchor": [
+		  0,
+		  0.54,
+		  -2.405
+		],
+		"camera_cockpit_anchor": [
+		  -0.2886873295550225,
+		  1.1708575159938712,
+		  -0.26099999999999995
+		]
+	  },
+	  "interior": {
+		"style": 1,
+		"steering_style": 1,
+		"cluster_style": 1,
+		"horn_path": "res://Assets/Audio/horn_falcon_s1.wav"
+	  },
+	  "light_anchors": {
+		"front_left_light_anchor": [
+		  -0.497375,
+		  0.53528,
+		  -1.996214
+		],
+		"front_right_light_anchor": [
+		  0.496946,
+		  0.535231,
+		  -1.996283
+		],
+		"rear_left_light_anchor": [
+		  -0.577374659110045,
+		  0.6504763977743729,
+		  2.001
+		],
+		"rear_right_light_anchor": [
+		  0.577374659110045,
+		  0.6504763977743729,
+		  2.001
+		],
+		"reverse_left_anchor": [
+		  -0.45107395242972265,
+		  0.5854287579969356,
+		  2.001
+		],
+		"reverse_right_anchor": [
+		  0.45107395242972265,
+		  0.5854287579969356,
+		  2.001
+		],
+		"high_brake_anchor": [
+		  0,
+		  0.910666956884122,
+		  1.74
+		]
+	  },
+	  "durability_multiplier": 1.1,
+	  "production_visual": {
+		"scale": 1.0004636451965707,
+		"offset": [
+		  5e-08,
+		  0.16777287183184644,
+		  0.00295429
+		],
+		"yaw": 3.141592653589793,
+		"hidden_meshes": [],
+		"wheels": [],
+		"roles": {
+		  "alf_gtv6_86_cockpit_hooda_body__body_0": "Paint",
+		  "alf_gtv6_86_cockpit_mirrorL_body__body_0": "Paint",
+		  "alf_gtv6_86_cockpit_mirrorR_body__body_0": "Paint",
+		  "alf_gtv6_86_lod0_body_body__body_0": "Paint",
+		  "alf_gtv6_86_lod0_headlightL_head_light__head_light_0": "Headlight",
+		  "alf_gtv6_86_lod0_headlightR_head_light__head_light_0": "Headlight",
+		  "alf_gtv6_86_lod0_taillightL_reverse_light_lod0__reverse_light_lod0_0": "Reverse",
+		  "alf_gtv6_86_lod0_taillightL_tail_light_lod0__tail_light_lod0_0": "Taillight",
+		  "alf_gtv6_86_lod0_taillightR_reverse_light_lod0__reverse_light_lod0_0": "Reverse",
+		  "alf_gtv6_86_lod0_taillightR_tail_light_lod0__tail_light_lod0_0": "Taillight",
+		  "alf_gtv6_86_lod0_trunk_body__body_0": "Paint",
+		  "alf_gtv6_86_lod0_glassLHL_detail_glass_clear__detail_glass_clear_0": "Headlight",
+		  "alf_gtv6_86_lod0_glassLTL_lights_glass__Material #3_0": "Taillight",
+		  "alf_gtv6_86_lod0_glassRHL_detail_glass_clear__detail_glass_clear_0": "Headlight",
+		  "alf_gtv6_86_lod0_glassRTL_lights_glass__Material #3_0": "Taillight"
+		},
+		"triangles": 202013,
+		"surfaces": 136,
+		"contact_correction": 0.004000001831846452,
+		"wheel_roles": {
+		  "alf_gtv6_86_lod0_wheel_rim__Material #11_0": "Rim",
+		  "alf_gtv6_86_lod0_wheel_rim__Material #10_0": "Tyre",
+		  "alf_gtv6_86_lod0_wheel_rim__wheel_black_0": "Rim",
+		  "alf_gtv6_86_lod0_wheel_rim__outer_rim_0": "Rim",
+		  "alf_gtv6_86_lod0_wheel_rim_001_Material #11_0": "Rim",
+		  "alf_gtv6_86_lod0_wheel_rim_001_Material #10_0": "Tyre",
+		  "alf_gtv6_86_lod0_wheel_rim_001_wheel_black_0": "Rim",
+		  "alf_gtv6_86_lod0_wheel_rim_001_outer_rim_0": "Rim"
+		},
+		"fallback_lamps": []
+	  }
+	},
+	{
+	  "id": "apex_rs",
+	  "name": "Cadillac CTS Wagon",
+	  "class": "SPORT WAGON",
+	  "price": 90000,
+	  "top_speed_kmh": 240,
+	  "acceleration": 13.8,
+	  "steering_response": 7.0,
+	  "braking": 27,
+	  "grip": 12,
+	  "weight_kg": 1320,
+	  "turbo_speed": 300,
+	  "turbo_acceleration": 2.8,
+	  "turbo_charge": 1,
+	  "length": 4.87,
+	  "width": 1.88548,
+	  "height": 1.52196,
+	  "wheelbase": 2.91701,
+	  "wheel_radius": 0.35727,
+	  "windshield_z": -1.05,
+	  "roof_front_z": -0.44,
+	  "roof_rear_z": 0.3,
+	  "rear_glass_z": 1.16,
+	  "default_paint": 4,
+	  "style": "sporty fastback",
+	  "hood_y": 0.72,
+	  "color": [
+		0.12,
+		0.42,
+		0.55
+	  ],
+	  "exhaust_points": [
+		[
+		  -0.5090786569145149,
+		  0.35,
+		  2.3850000000000002
+		],
+		[
+		  0.5090786569145149,
+		  0.35,
+		  2.3850000000000002
+		]
+	  ],
+	  "visual_scene_path": "res://Assets/Production/2010_cadillac_cts_wagon.glb",
+	  "visual_lod_paths": [
+		"res://Assets/Production/2010_cadillac_cts_wagon.glb",
+		"res://Assets/Production/2010_cadillac_cts_wagon.glb",
+        "res://Assets/Production/2010_cadillac_cts_wagon.glb"
+	  ],
+	  "camera_anchors": [
+		[
+		  0,
+		  3.32195794489682,
+		  7.4350000000000005
+		],
+		[
+		  0,
+		  5.4,
+		  11.835
+		],
+		[
+		  0,
+		  1.0958097203257104,
+		  -1.2175
+		],
+		[
+		  0,
+		  0.54,
+		  -2.665
+		],
+		[
+		  -0.30167624113452735,
+		  1.3697621504071382,
+		  -0.2922
+		]
+	  ],
+	  "rear_light_points": [
+		[
+		  -0.588,
+		  0.6499999999999999,
+		  2.21
+		],
+		[
+		  0.588,
+		  0.6499999999999999,
+		  2.21
+		]
+	  ],
+	  "attachment_markers": {
+		"camera_chase_anchor": [
+		  0,
+		  3.32195794489682,
+		  7.4350000000000005
+		],
+		"camera_far_anchor": [
+		  0,
+		  5.4,
+		  11.835
+		],
+		"camera_hood_anchor": [
+		  0,
+		  1.0958097203257104,
+		  -1.2175
+		],
+		"camera_bumper_anchor": [
+		  0,
+		  0.54,
+		  -2.665
+		],
+		"camera_cockpit_anchor": [
+		  -0.30167624113452735,
+		  1.3697621504071382,
+		  -0.2922
+		]
+	  },
+	  "interior": {
+		"style": 2,
+		"steering_style": 2,
+		"cluster_style": 2,
+		"horn_path": "res://Assets/Audio/horn_apex_rs.wav"
+	  },
+	  "light_anchors": {
+		"front_left_light_anchor": [
+		  -0.593426,
+		  0.627538,
+		  -2.215886
+		],
+		"front_right_light_anchor": [
+		  0.593427,
+		  0.627538,
+		  -2.215886
+		],
+		"rear_left_light_anchor": [
+		  -0.6033524822690547,
+		  0.7609789724484101,
+		  2.2402
+		],
+		"rear_right_light_anchor": [
+		  0.6033524822690547,
+		  0.7609789724484101,
+		  2.2402
+		],
+		"reverse_left_anchor": [
+		  -0.471369126772699,
+		  0.6848810752035691,
+		  2.2402
+		],
+		"reverse_right_anchor": [
+		  0.471369126772699,
+		  0.6848810752035691,
+		  2.2402
+		],
+		"high_brake_anchor": [
+		  0,
+		  1.065370561427774,
+		  1.9480000000000002
+		]
+	  },
+	  "durability_multiplier": 1.18,
+	  "production_visual": {
+		"scale": 0.214486251538557,
+		"offset": [
+		  -1.3001838,
+		  0.004000076706260993,
+		  1.58030623
+		],
+		"yaw": 3.141592653589793,
+		"hidden_meshes": [],
+		"wheels": [
+		  {
+			"front": true,
+			"center": [
+			  -0.764318,
+			  0.3612698170574741,
+			  -1.5565813811551483
+			],
+			"radius": 0.35726981705747407,
+			"meshes": [
+			  "Object_271",
+			  "Object_273",
+              "Object_275"
+			]
+		  },
+		  {
+			"front": true,
+			"center": [
+			  0.737086,
+			  0.3612698170574741,
+			  -1.5565809720550896
+			],
+			"radius": 0.35726981705747407,
+			"meshes": [
+			  "Object_289",
+			  "Object_291",
+              "Object_293"
+			]
+		  },
+		  {
+			"front": false,
+			"center": [
+			  -0.764318,
+			  0.3612698170574741,
+			  1.3604317215892385
+			],
+			"radius": 0.35726981705747407,
+			"meshes": [
+			  "Object_280",
+			  "Object_282",
+              "Object_284"
+			]
+		  },
+		  {
+			"front": false,
+			"center": [
+			  0.737086,
+			  0.3612698170574741,
+			  1.360432130689297
+			],
+			"radius": 0.35726981705747407,
+			"meshes": [
+			  "Object_298",
+			  "Object_300",
+              "Object_302"
+			]
+		  }
+		],
+		"roles": {
+		  "Object_110": "Headlight",
+		  "Object_112": "Headlight",
+		  "Object_116": "Headlight",
+		  "Object_120": "Headlight",
+		  "Object_126": "Headlight",
+		  "Object_128": "Headlight",
+		  "Object_114": "Taillight",
+		  "Object_118": "Taillight",
+		  "Object_122": "Taillight",
+		  "Object_124": "Taillight",
+		  "Object_130": "Taillight",
+		  "Object_132": "Reverse",
+		  "Object_134": "Reverse"
+		},
+		"triangles": 216189,
+		"surfaces": 133,
+		"contact_correction": 0.003999996706260993,
+		"wheel_roles": {
+		  "Object_271": "Rim",
+		  "Object_273": "Rim",
+		  "Object_275": "Tyre",
+		  "Object_280": "Rim",
+		  "Object_282": "Rim",
+		  "Object_284": "Tyre",
+		  "Object_289": "Rim",
+		  "Object_291": "Rim",
+		  "Object_293": "Tyre",
+		  "Object_298": "Rim",
+		  "Object_300": "Rim",
+		  "Object_302": "Tyre"
+		},
+		"fallback_lamps": []
+	  }
+	},
+	{
+	  "id": "inferno_r",
+	  "name": "Nissan GT-R R35",
+	  "class": "PERFORMANCE",
+	  "price": 180000,
+	  "top_speed_kmh": 260,
+	  "acceleration": 15.3,
+	  "steering_response": 7.2,
+	  "braking": 28,
+	  "grip": 12.5,
+	  "weight_kg": 1380,
+	  "turbo_speed": 325,
+	  "turbo_acceleration": 3.0,
+	  "turbo_charge": 1,
+	  "length": 4.67,
+	  "width": 2.00143,
+	  "height": 1.38809,
+	  "wheelbase": 2.78781,
+	  "wheel_radius": 0.36133,
+	  "windshield_z": -1.1,
+	  "roof_front_z": -0.4,
+	  "roof_rear_z": 0.24,
+	  "rear_glass_z": 0.88,
+	  "default_paint": 0,
+	  "style": "sporty fastback",
+	  "hood_y": 0.72,
+	  "color": [
+		0.12,
+		0.42,
+		0.55
+	  ],
+	  "exhaust_points": [
+		[
+		  -0.5403856907737911,
+		  0.35,
+		  2.285
+		],
+		[
+		  0.5403856907737911,
+		  0.35,
+		  2.285
+		]
+	  ],
+	  "visual_scene_path": "res://Assets/Production/2011_nissan_gt-r_premium_edition_r35.glb",
+	  "visual_lod_paths": [
+		"res://Assets/Production/2011_nissan_gt-r_premium_edition_r35.glb",
+		"res://Assets/Production/2011_nissan_gt-r_premium_edition_r35.glb",
+        "res://Assets/Production/2011_nissan_gt-r_premium_edition_r35.glb"
+	  ],
+	  "camera_anchors": [
+		[
+		  0,
+		  3.2,
+		  7.335
+		],
+		[
+		  0,
+		  5.4,
+		  11.735
+		],
+		[
+		  0,
+		  0.9994218901488596,
+		  -1.1675
+		],
+		[
+		  0,
+		  0.54,
+		  -2.565
+		],
+		[
+		  -0.3202285574955798,
+		  1.2492773626860747,
+		  -0.2802
+		]
+	  ],
+	  "rear_light_points": [
+		[
+		  -0.6,
+		  0.6499999999999999,
+		  2.29
+		],
+		[
+		  0.6,
+		  0.6499999999999999,
+		  2.29
+		]
+	  ],
+	  "attachment_markers": {
+		"camera_chase_anchor": [
+		  0,
+		  3.2,
+		  7.335
+		],
+		"camera_far_anchor": [
+		  0,
+		  5.4,
+		  11.735
+		],
+		"camera_hood_anchor": [
+		  0,
+		  0.9994218901488596,
+		  -1.1675
+		],
+		"camera_bumper_anchor": [
+		  0,
+		  0.54,
+		  -2.565
+		],
+		"camera_cockpit_anchor": [
+		  -0.3202285574955798,
+		  1.2492773626860747,
+		  -0.2802
+		]
+	  },
+	  "interior": {
+		"style": 3,
+		"steering_style": 3,
+		"cluster_style": 3,
+		"horn_path": "res://Assets/Audio/horn_inferno_r.wav"
+	  },
+	  "light_anchors": {
+		"front_left_light_anchor": [
+		  -0.600429,
+		  0.64904,
+		  -2.065052
+		],
+		"front_right_light_anchor": [
+		  0.600429,
+		  0.64904,
+		  -2.065052
+		],
+		"rear_left_light_anchor": [
+		  -0.6404571149911596,
+		  0.6940429792700414,
+		  2.1482
+		],
+		"rear_right_light_anchor": [
+		  0.6404571149911596,
+		  0.6940429792700414,
+		  2.1482
+		],
+		"reverse_left_anchor": [
+		  -0.5003571210868435,
+		  0.6246386813430373,
+		  2.1482
+		],
+		"reverse_right_anchor": [
+		  0.5003571210868435,
+		  0.6246386813430373,
+		  2.1482
+		],
+		"high_brake_anchor": [
+		  0,
+		  0.9716601709780579,
+		  1.868
+		]
+	  },
+	  "durability_multiplier": 1.25,
+	  "production_visual": {
+		"scale": 0.9987168612972191,
+		"offset": [
+		  0.0,
+		  0.009318179358905386,
+		  -0.0327579
+		],
+		"yaw": 3.141592653589793,
+		"hidden_meshes": [],
+		"wheels": [
+		  {
+			"front": true,
+			"center": [
+			  -0.78717,
+			  0.3653257737064179,
+			  -1.4226521431487353
+			],
+			"radius": 0.3613257737064179,
+			"meshes": [
+			  "FL_Vehicle_Exterior_mm_wheel_0",
+              "FL_Vehicle_Exterior_mm_tyre_0"
+			]
+		  },
+		  {
+			"front": true,
+			"center": [
+			  0.78717,
+			  0.3653257737064179,
+			  -1.4226521240997232
+			],
+			"radius": 0.3613257737064179,
+			"meshes": [
+			  "FR_Vehicle_Exterior_mm_wheel_0",
+              "FR_Vehicle_Exterior_mm_tyre_0"
+			]
+		  },
+		  {
+			"front": false,
+			"center": [
+			  -0.801916,
+			  0.36532577370641856,
+			  1.3651561295818184
+			],
+			"radius": 0.3613257737064179,
+			"meshes": [
+			  "RL_Vehicle_Exterior_mm_tyre_0",
+              "RL_Vehicle_Exterior_mm_wheel_0"
+			]
+		  },
+		  {
+			"front": false,
+			"center": [
+			  0.801916,
+			  0.36532577370641856,
+			  1.3651561486308303
+			],
+			"radius": 0.3613257737064179,
+			"meshes": [
+			  "RR_Vehicle_Exterior_mm_tyre_0",
+              "RR_Vehicle_Exterior_mm_wheel_0"
+			]
+		  }
+		],
+		"roles": {},
+		"triangles": 24330,
+		"surfaces": 30,
+		"contact_correction": 0.003999999358905386,
+		"wheel_roles": {
+		  "FL_Vehicle_Exterior_mm_wheel_0": "Rim",
+		  "FL_Vehicle_Exterior_mm_tyre_0": "Tyre",
+		  "FR_Vehicle_Exterior_mm_wheel_0": "Rim",
+		  "FR_Vehicle_Exterior_mm_tyre_0": "Tyre",
+		  "RR_Vehicle_Exterior_mm_tyre_0": "Tyre",
+		  "RR_Vehicle_Exterior_mm_wheel_0": "Rim",
+		  "RL_Vehicle_Exterior_mm_tyre_0": "Tyre",
+		  "RL_Vehicle_Exterior_mm_wheel_0": "Rim"
+		},
+		"fallback_lamps": [
+		  {
+			"role": "Headlight",
+			"position": [
+			  -0.600429,
+			  0.64904,
+			  -2.065052
+			],
+			"size": [
+			  0.11,
+			  0.045
+			],
+			"front": true
+		  },
+		  {
+			"role": "Headlight",
+			"position": [
+			  0.600429,
+			  0.64904,
+			  -2.065052
+			],
+			"size": [
+			  0.11,
+			  0.045
+			],
+			"front": true
+		  },
+		  {
+			"role": "Taillight",
+			"position": [
+			  -0.455714,
+			  0.837998,
+			  2.179105
+			],
+			"size": [
+			  0.11,
+			  0.045
+			],
+			"front": false
+		  },
+		  {
+			"role": "Taillight",
+			"position": [
+			  0.455714,
+			  0.837998,
+			  2.179105
+			],
+			"size": [
+			  0.11,
+			  0.045
+			],
+			"front": false
+		  }
+		]
+	  }
+	},
+	{
+	  "id": "phantom_x",
+	  "name": "Cadillac CTS-V Race Car",
+	  "class": "TRACK SPECIAL",
+	  "price": 350000,
+	  "top_speed_kmh": 280,
+	  "acceleration": 15.8,
+	  "steering_response": 7.0,
+	  "braking": 30,
+	  "grip": 13,
+	  "weight_kg": 1420,
+	  "turbo_speed": 350,
+	  "turbo_acceleration": 2.9,
+	  "turbo_charge": 0.95,
+	  "length": 4.93,
+	  "width": 2.0648,
+	  "height": 1.32327,
+	  "wheelbase": 2.84244,
+	  "wheel_radius": 0.34245,
+	  "windshield_z": -1.14,
+	  "roof_front_z": -0.5,
+	  "roof_rear_z": 0.3,
+	  "rear_glass_z": 1.05,
+	  "default_paint": 3,
+	  "style": "sporty fastback",
+	  "hood_y": 0.72,
+	  "color": [
+		0.12,
+		0.42,
+		0.55
+	  ],
+	  "exhaust_points": [
+		[
+		  -0.5574970589639754,
+		  0.35,
+		  2.415
+		],
+		[
+		  0.5574970589639754,
+		  0.35,
+		  2.415
+		]
+	  ],
+	  "visual_scene_path": "res://Assets/Production/cadillac_cts-v_coupe_race_car.glb",
+	  "visual_lod_paths": [
+		"res://Assets/Production/cadillac_cts-v_coupe_race_car.glb",
+		"res://Assets/Production/cadillac_cts-v_coupe_race_car.glb",
+        "res://Assets/Production/cadillac_cts-v_coupe_race_car.glb"
+	  ],
+	  "camera_anchors": [
+		[
+		  0,
+		  3.2,
+		  7.465
+		],
+		[
+		  0,
+		  5.4,
+		  11.865
+		],
+		[
+		  0,
+		  0.9527558137250546,
+		  -1.2325
+		],
+		[
+		  0,
+		  0.54,
+		  -2.695
+		],
+		[
+		  -0.33036862753420765,
+		  1.1909447671563183,
+		  -0.29579999999999995
+		]
+	  ],
+	  "rear_light_points": [
+		[
+		  -0.612,
+		  0.6499999999999999,
+		  2.36
+		],
+		[
+		  0.612,
+		  0.6499999999999999,
+		  2.36
+		]
+	  ],
+	  "attachment_markers": {
+		"camera_chase_anchor": [
+		  0,
+		  3.2,
+		  7.465
+		],
+		"camera_far_anchor": [
+		  0,
+		  5.4,
+		  11.865
+		],
+		"camera_hood_anchor": [
+		  0,
+		  0.9527558137250546,
+		  -1.2325
+		],
+		"camera_bumper_anchor": [
+		  0,
+		  0.54,
+		  -2.695
+		],
+		"camera_cockpit_anchor": [
+		  -0.33036862753420765,
+		  1.1909447671563183,
+		  -0.29579999999999995
+		]
+	  },
+	  "interior": {
+		"style": 4,
+		"steering_style": 4,
+		"cluster_style": 4,
+		"horn_path": "res://Assets/Audio/horn_phantom_x.wav"
+	  },
+	  "light_anchors": {
+		"front_left_light_anchor": [
+		  -0.627886,
+		  0.592142,
+		  -2.141896
+		],
+		"front_right_light_anchor": [
+		  0.626484,
+		  0.592142,
+		  -2.141896
+		],
+		"rear_left_light_anchor": [
+		  -0.6607372550684153,
+		  0.6616359817535101,
+		  2.2678
+		],
+		"rear_right_light_anchor": [
+		  0.6607372550684153,
+		  0.6616359817535101,
+		  2.2678
+		],
+		"reverse_left_anchor": [
+		  -0.5162009805221994,
+		  0.5954723835781591,
+		  2.2678
+		],
+		"reverse_right_anchor": [
+		  0.5162009805221994,
+		  0.5954723835781591,
+		  2.2678
+		],
+		"high_brake_anchor": [
+		  0,
+		  0.9262903744549141,
+		  1.972
+		]
+	  },
+	  "durability_multiplier": 1.35,
+	  "production_visual": {
+		"scale": 0.9875838390742793,
+		"offset": [
+		  -0.00070109,
+		  0.004600499362921883,
+		  -0.12333444
+		],
+		"yaw": 3.141592653589793,
+		"hidden_meshes": [
+          "Object_127"
+		],
+		"wheels": [
+		  {
+			"front": true,
+			"center": [
+			  -0.795689,
+			  0.34391451023316255,
+			  -1.5496445102630378
+			],
+			"radius": 0.33991451023316255,
+			"meshes": [
+			  "Object_41",
+              "Object_44"
+			]
+		  },
+		  {
+			"front": true,
+			"center": [
+			  0.794207,
+			  0.3439155109310667,
+			  -1.549644510262875
+			],
+			"radius": 0.3399145102331625,
+			"meshes": [
+			  "Object_54",
+              "Object_57"
+			]
+		  },
+		  {
+			"front": false,
+			"center": [
+			  -0.795689,
+			  0.3439145408271524,
+			  1.2927964223231314
+			],
+			"radius": 0.3399145102331625,
+			"meshes": [
+			  "Object_15",
+              "Object_18"
+			]
+		  },
+		  {
+			"front": false,
+			"center": [
+			  0.794207,
+			  0.3439145408413076,
+			  1.2927095381992164
+			],
+			"radius": 0.3399145102331625,
+			"meshes": [
+			  "Object_28",
+              "Object_31"
+			]
+		  }
+		],
+		"roles": {
+		  "Object_67": "Paint",
+		  "Object_81": "Paint",
+		  "Object_89": "Paint",
+		  "Object_97": "Paint",
+		  "Object_105": "Paint",
+		  "Object_119": "Taillight",
+		  "Object_123": "Taillight",
+		  "Object_131": "Reverse"
+		},
+		"triangles": 27084,
+		"surfaces": 32,
+		"contact_correction": 0.003999999362921882,
+		"wheel_roles": {
+		  "Object_15": "Rim",
+		  "Object_18": "Tyre",
+		  "Object_28": "Rim",
+		  "Object_31": "Tyre",
+		  "Object_41": "Rim",
+		  "Object_44": "Tyre",
+		  "Object_54": "Rim",
+		  "Object_57": "Tyre"
+		},
+		"fallback_lamps": [
+		  {
+			"role": "Headlight",
+			"position": [
+			  -0.627886,
+			  0.592142,
+			  -2.141896
+			],
+			"size": [
+			  0.11,
+			  0.045
+			],
+			"front": true
+		  },
+		  {
+			"role": "Headlight",
+			"position": [
+			  0.626484,
+			  0.592142,
+			  -2.141896
+			],
+			"size": [
+			  0.11,
+			  0.045
+			],
+			"front": true
+		  }
+		]
+	  }
+	},
+	{
+	  "id": "titan_v12",
+	  "name": "Chrysler ME Four-Twelve",
+	  "class": "SUPERCAR",
+	  "price": 650000,
+	  "top_speed_kmh": 305,
+	  "acceleration": 16.5,
+	  "steering_response": 6.8,
+	  "braking": 32,
+	  "grip": 13.5,
+	  "weight_kg": 1510,
+	  "turbo_speed": 380,
+	  "turbo_acceleration": 2.8,
+	  "turbo_charge": 0.9,
+	  "length": 4.54,
+	  "width": 2.03486,
+	  "height": 1.20331,
+	  "wheelbase": 2.81432,
+	  "wheel_radius": 0.34867,
+	  "windshield_z": -1.18,
+	  "roof_front_z": -0.46,
+	  "roof_rear_z": 0.35,
+	  "rear_glass_z": 1.22,
+	  "default_paint": 2,
+	  "style": "sporty fastback",
+	  "hood_y": 0.72,
+	  "color": [
+		0.12,
+		0.42,
+		0.55
+	  ],
+	  "exhaust_points": [
+		[
+		  -0.5494126717630654,
+		  0.35,
+		  2.22
+		],
+		[
+		  0.5494126717630654,
+		  0.35,
+		  2.22
+		]
+	  ],
+	  "visual_scene_path": "res://Assets/Production/chrysler_me412.glb",
+	  "visual_lod_paths": [
+		"res://Assets/Production/chrysler_me412.glb",
+		"res://Assets/Production/chrysler_me412.glb",
+        "res://Assets/Production/chrysler_me412.glb"
+	  ],
+	  "camera_anchors": [
+		[
+		  0,
+		  3.2,
+		  7.27
+		],
+		[
+		  0,
+		  5.4,
+		  11.67
+		],
+		[
+		  0,
+		  0.8663856314495587,
+		  -1.135
+		],
+		[
+		  0,
+		  0.54,
+		  -2.5
+		],
+		[
+		  -0.325577879563298,
+		  1.0829820393119485,
+		  -0.2724
+		]
+	  ],
+	  "rear_light_points": [
+		[
+		  -0.624,
+		  0.6499999999999999,
+		  2.46
+		],
+		[
+		  0.624,
+		  0.6499999999999999,
+		  2.46
+		]
+	  ],
+	  "attachment_markers": {
+		"camera_chase_anchor": [
+		  0,
+		  3.2,
+		  7.27
+		],
+		"camera_far_anchor": [
+		  0,
+		  5.4,
+		  11.67
+		],
+		"camera_hood_anchor": [
+		  0,
+		  0.8663856314495587,
+		  -1.135
+		],
+		"camera_bumper_anchor": [
+		  0,
+		  0.54,
+		  -2.5
+		],
+		"camera_cockpit_anchor": [
+		  -0.325577879563298,
+		  1.0829820393119485,
+		  -0.2724
+		]
+	  },
+	  "interior": {
+		"style": 5,
+		"steering_style": 5,
+		"cluster_style": 5,
+		"horn_path": "res://Assets/Audio/horn_titan_v12.wav"
+	  },
+	  "light_anchors": {
+		"front_left_light_anchor": [
+		  -0.647488,
+		  0.679786,
+		  -1.840393
+		],
+		"front_right_light_anchor": [
+		  0.647488,
+		  0.679786,
+		  -1.840393
+		],
+		"rear_left_light_anchor": [
+		  -0.651155759126596,
+		  0.601656688506638,
+		  2.0884
+		],
+		"rear_right_light_anchor": [
+		  0.651155759126596,
+		  0.601656688506638,
+		  2.0884
+		],
+		"reverse_left_anchor": [
+		  -0.5087154368176531,
+		  0.5414910196559742,
+		  2.0884
+		],
+		"reverse_right_anchor": [
+		  0.5087154368176531,
+		  0.5414910196559742,
+		  2.0884
+		],
+		"high_brake_anchor": [
+		  0,
+		  0.8423193639092932,
+		  1.816
+		]
+	  },
+	  "durability_multiplier": 1.45,
+	  "production_visual": {
+		"scale": 1.0069500030646998,
+		"offset": [
+		  0.0,
+		  0.004180353392937447,
+		  0.11441365
+		],
+		"yaw": 3.141592653589793,
+		"hidden_meshes": [
+          "lights_position_front_and_back_pivot_glows_Material.005_0"
+		],
+		"wheels": [
+		  {
+			"front": true,
+			"center": [
+			  -0.8286,
+			  0.3439555905855831,
+			  -1.2919380267183982
+			],
+			"radius": 0.3340503418430081,
+			"meshes": [
+			  "WheelFL_pivot_rims_Material.002_0",
+              "WheelFL_pivot_tyres_Material.004_0"
+			]
+		  },
+		  {
+			"front": true,
+			"center": [
+			  0.822435,
+			  0.3411050321352263,
+			  -1.291938027182825
+			],
+			"radius": 0.3371050321352263,
+			"meshes": [
+			  "WheelFR_pivot_rims_Material.002_0",
+              "WheelFR_pivot_tyres_Material.004_0"
+			]
+		  },
+		  {
+			"front": false,
+			"center": [
+			  -0.813463,
+			  0.36426596733531397,
+			  1.5223812759613786
+			],
+			"radius": 0.35667404823645826,
+			"meshes": [
+			  "WheelBL_pivot_rims_Material.002_0",
+              "WheelBL_pivot_tyres_Material.004_0"
+			]
+		  },
+		  {
+			"front": false,
+			"center": [
+			  0.809488,
+			  0.3642659776599371,
+			  1.5223812759613786
+			],
+			"radius": 0.3566740585610814,
+			"meshes": [
+			  "WheelBR_pivot_rims_Material.002_0",
+              "WheelBR_pivot_tyres_Material.004_0"
+			]
+		  }
+		],
+		"roles": {
+		  "chassis_pivot_carpaint_Material.001_0": "Paint",
+		  "detach_door_L_50_pivot_carpaint_Material.001_0": "Paint",
+		  "detach_door_R_50_carpaint_Material.001_0": "Paint",
+		  "detach_hood_45_pivot_carpaint_Material.001_0": "Paint",
+		  "detach_trunk_75_pivot_carpaint_Material.001_0": "Paint",
+		  "lights_brakes_pivot_glows_Material.005_0": "Taillight",
+		  "lights_position_back_pivot_glows_Material.005_0": "Taillight",
+		  "lights_reverse_pivot_glows_Material.005_0": "Reverse"
+		},
+		"triangles": 30054,
+		"surfaces": 28,
+		"contact_correction": 0.004000003392937447,
+		"wheel_roles": {
+		  "WheelBL_pivot_rims_Material.002_0": "Rim",
+		  "WheelBL_pivot_tyres_Material.004_0": "Tyre",
+		  "WheelBR_pivot_rims_Material.002_0": "Rim",
+		  "WheelBR_pivot_tyres_Material.004_0": "Tyre",
+		  "WheelFL_pivot_rims_Material.002_0": "Rim",
+		  "WheelFL_pivot_tyres_Material.004_0": "Tyre",
+		  "WheelFR_pivot_rims_Material.002_0": "Rim",
+		  "WheelFR_pivot_tyres_Material.004_0": "Tyre"
+		},
+		"fallback_lamps": [
+		  {
+			"role": "Headlight",
+			"position": [
+			  -0.647488,
+			  0.679786,
+			  -1.840393
+			],
+			"size": [
+			  0.11,
+			  0.045
+			],
+			"front": true
+		  },
+		  {
+			"role": "Headlight",
+			"position": [
+			  0.647488,
+			  0.679786,
+			  -1.840393
+			],
+			"size": [
+			  0.11,
+			  0.045
+			],
+			"front": true
+		  }
+		]
+	  }
+	},
+	{
+	  "id": "tempest_gt",
+	  "name": "Lamborghini SC18 Alston",
+	  "class": "LIMITED SUPERCAR",
+	  "price": 900000,
+	  "top_speed_kmh": 265,
+	  "acceleration": 14.0,
+	  "steering_response": 6.5,
+	  "braking": 24,
+	  "grip": 11,
+	  "weight_kg": 1450,
+	  "turbo_speed": 325,
+	  "turbo_acceleration": 2.7,
+	  "turbo_charge": 1,
+	  "length": 4.94,
+	  "width": 2.26141,
+	  "height": 1.16071,
+	  "wheelbase": 2.68727,
+	  "wheel_radius": 0.34272,
+	  "windshield_z": -1.02,
+	  "roof_front_z": -0.18,
+	  "roof_rear_z": 0.75,
+	  "rear_glass_z": 1.48,
+	  "default_paint": 5,
+	  "style": "sporty fastback",
+	  "hood_y": 0.81,
+	  "color": [
+		0.12,
+		0.42,
+		0.55
+	  ],
+	  "exhaust_points": [
+		[
+		  -0.6105804319183669,
+		  0.35,
+		  2.4200000000000004
+		],
+		[
+		  0.6105804319183669,
+		  0.35,
+		  2.4200000000000004
+		]
+	  ],
+	  "visual_scene_path": "res://Assets/Production/2019_lamborghini_sc18_alston.glb",
+	  "visual_lod_paths": [
+		"res://Assets/Production/2019_lamborghini_sc18_alston.glb",
+		"res://Assets/Production/2019_lamborghini_sc18_alston.glb",
+        "res://Assets/Production/2019_lamborghini_sc18_alston.glb"
+	  ],
+	  "camera_anchors": [
+		[
+		  0,
+		  3.2,
+		  7.470000000000001
+		],
+		[
+		  0,
+		  5.4,
+		  11.870000000000001
+		],
+		[
+		  0,
+		  0.8357141352934688,
+		  -1.235
+		],
+		[
+		  0,
+		  0.54,
+		  -2.7
+		],
+		[
+		  -0.36182544113681,
+		  1.044642669116836,
+		  -0.2964
+		]
+	  ],
+	  "rear_light_points": [
+		[
+		  -0.6089999999999999,
+		  0.74,
+		  2.475
+		],
+		[
+		  0.6089999999999999,
+		  0.74,
+		  2.475
+		]
+	  ],
+	  "attachment_markers": {
+		"camera_chase_anchor": [
+		  0,
+		  3.2,
+		  7.470000000000001
+		],
+		"camera_far_anchor": [
+		  0,
+		  5.4,
+		  11.870000000000001
+		],
+		"camera_hood_anchor": [
+		  0,
+		  0.8357141352934688,
+		  -1.235
+		],
+		"camera_bumper_anchor": [
+		  0,
+		  0.54,
+		  -2.7
+		],
+		"camera_cockpit_anchor": [
+		  -0.36182544113681,
+		  1.044642669116836,
+		  -0.2964
+		]
+	  },
+	  "interior": {
+		"style": 0,
+		"steering_style": 2,
+		"cluster_style": 1,
+		"horn_path": "res://Assets/Audio/horn_tempest_gt.wav",
+		"accent": "d6a86c"
+	  },
+	  "engine_sound_id": "vortex_s",
+	  "light_anchors": {
+		"front_left_light_anchor": [
+		  -0.634941,
+		  0.509914,
+		  -2.048388
+		],
+		"front_right_light_anchor": [
+		  0.634941,
+		  0.509914,
+		  -2.048388
+		],
+		"rear_left_light_anchor": [
+		  -0.72365088227362,
+		  0.5803570383982423,
+		  2.2724
+		],
+		"rear_right_light_anchor": [
+		  0.72365088227362,
+		  0.5803570383982423,
+		  2.2724
+		],
+		"reverse_left_anchor": [
+		  -0.5653522517762656,
+		  0.522321334558418,
+		  2.2724
+		],
+		"reverse_right_anchor": [
+		  0.5653522517762656,
+		  0.522321334558418,
+		  2.2724
+		],
+		"high_brake_anchor": [
+		  0,
+		  0.8124998537575391,
+		  1.9760000000000002
+		]
+	  },
+	  "durability_multiplier": 1.5,
+	  "production_visual": {
+		"scale": 99.45137922475506,
+		"offset": [
+		  0.0,
+		  0.01226243882153272,
+		  -0.04113366
+		],
+		"yaw": 3.141592653589793,
+		"hidden_meshes": [],
+		"wheels": [
+		  {
+			"front": true,
+			"center": [
+			  -0.861556,
+			  0.33459404844537094,
+			  -1.2405162443400535
+			],
+			"radius": 0.33059403158923245,
+			"meshes": [
+              "polySurface1_Lambo:Lamborghini_SC18Alston_2019_Wheel1A_3D_3DWheel1A_Material1_0"
+			]
+		  },
+		  {
+			"front": true,
+			"center": [
+			  0.861556,
+			  0.3345940495617099,
+			  -1.2405182297716548
+			],
+			"radius": 0.3305940495617099,
+			"meshes": [
+              "polySurface178_Lambo:Lamborghini_SC18Alston_2019_Wheel1A_3D_3DWheel1A_Material1_0"
+			]
+		  },
+		  {
+			"front": false,
+			"center": [
+			  -0.85456,
+			  0.3606570986950145,
+			  1.446757347587607
+			],
+			"radius": 0.35483651234080105,
+			"meshes": [
+              "polySurface355_Lambo:Lamborghini_SC18Alston_2019_Wheel1A_3D_3DWheel1A_Material1_0"
+			]
+		  },
+		  {
+			"front": false,
+			"center": [
+			  0.85456,
+			  0.36065710042768295,
+			  1.4467593339618054
+			],
+			"radius": 0.3548365406634416,
+			"meshes": [
+              "polySurface534_Lambo:Lamborghini_SC18Alston_2019_Wheel1A_3D_3DWheel1A_Material1_0"
+			]
+		  }
+		],
+		"roles": {
+		  "Lambo:Window_Geo_lodA_Window_Geo_lodA_Lamborghini_SC18Alston_2019WindowA_Material_red_glass_0": "Taillight",
+		  "Lambo:Paint_Geo_lodA_Paint_Geo_lodA_Lamborghini_SC18Alston_2019PaintA_Material_Paint_0": "Paint",
+		  "Lambo:Paint_Geo_lodA_Paint_Geo_lodA_Lamborghini_SC18Alston_2019PaintA_Material_Lambo:Lamborghini_SC18Alston_2019PaintA_Material1_0": "Paint"
+		},
+		"triangles": 167515,
+		"surfaces": 40,
+		"contact_correction": 0.0039999988215327215,
+		"wheel_roles": {
+		  "polySurface1_Lambo:Lamborghini_SC18Alston_2019_Wheel1A_3D_3DWheel1A_Material1_0": "WheelComposite",
+		  "polySurface178_Lambo:Lamborghini_SC18Alston_2019_Wheel1A_3D_3DWheel1A_Material1_0": "WheelComposite",
+		  "polySurface355_Lambo:Lamborghini_SC18Alston_2019_Wheel1A_3D_3DWheel1A_Material1_0": "WheelComposite",
+		  "polySurface534_Lambo:Lamborghini_SC18Alston_2019_Wheel1A_3D_3DWheel1A_Material1_0": "WheelComposite"
+		},
+		"fallback_lamps": [
+		  {
+			"role": "Headlight",
+			"position": [
+			  -0.634941,
+			  0.509914,
+			  -2.048388
+			],
+			"size": [
+			  0.11,
+			  0.045
+			],
+			"front": true
+		  },
+		  {
+			"role": "Headlight",
+			"position": [
+			  0.634941,
+			  0.509914,
+			  -2.048388
+			],
+			"size": [
+			  0.11,
+			  0.045
+			],
+			"front": true
+		  }
+		]
+	  }
+	},
+	{
+	  "id": "nebula_r",
+	  "name": "Lamborghini Veneno",
+	  "class": "HYPERCAR",
+	  "price": 1400000,
+	  "top_speed_kmh": 277,
+	  "acceleration": 14.8,
+	  "steering_response": 7.0,
+	  "braking": 30,
+	  "grip": 13,
+	  "weight_kg": 1415,
+	  "turbo_speed": 337,
+	  "turbo_acceleration": 2.9,
+	  "turbo_charge": 0.95,
+	  "length": 4.78,
+	  "width": 2.01276,
+	  "height": 1.13993,
+	  "wheelbase": 2.70713,
+	  "wheel_radius": 0.32839,
+	  "windshield_z": -1.58,
+	  "roof_front_z": -0.86,
+	  "roof_rear_z": 0.54,
+	  "rear_glass_z": 1.71,
+	  "default_paint": 2,
+	  "style": "sporty fastback",
+	  "hood_y": 0.59,
+	  "color": [
+		0.12,
+		0.42,
+		0.55
+	  ],
+	  "exhaust_points": [
+		[
+		  -0.5434460614454272,
+		  0.35,
+		  2.3400000000000003
+		],
+		[
+		  0.5434460614454272,
+		  0.35,
+		  2.3400000000000003
+		]
+	  ],
+	  "visual_scene_path": "res://Assets/Production/lamborghini_veneno.glb",
+	  "visual_lod_paths": [
+		"res://Assets/Production/lamborghini_veneno.glb",
+		"res://Assets/Production/lamborghini_veneno.glb",
+        "res://Assets/Production/lamborghini_veneno.glb"
+	  ],
+	  "camera_anchors": [
+		[
+		  0,
+		  3.2,
+		  7.390000000000001
+		],
+		[
+		  0,
+		  5.4,
+		  11.790000000000001
+		],
+		[
+		  0,
+		  0.8207507680102926,
+		  -1.195
+		],
+		[
+		  0,
+		  0.54,
+		  -2.62
+		],
+		[
+		  -0.3220421104861791,
+		  1.0259384600128658,
+		  -0.2868
+		]
+	  ],
+	  "rear_light_points": [
+		[
+		  -0.66,
+		  0.52,
+		  2.58
+		],
+		[
+		  0.66,
+		  0.52,
+		  2.58
+		]
+	  ],
+	  "attachment_markers": {
+		"camera_chase_anchor": [
+		  0,
+		  3.2,
+		  7.390000000000001
+		],
+		"camera_far_anchor": [
+		  0,
+		  5.4,
+		  11.790000000000001
+		],
+		"camera_hood_anchor": [
+		  0,
+		  0.8207507680102926,
+		  -1.195
+		],
+		"camera_bumper_anchor": [
+		  0,
+		  0.54,
+		  -2.62
+		],
+		"camera_cockpit_anchor": [
+		  -0.3220421104861791,
+		  1.0259384600128658,
+		  -0.2868
+		]
+	  },
+	  "interior": {
+		"style": 5,
+		"steering_style": 1,
+		"cluster_style": 0,
+		"horn_path": "res://Assets/Audio/horn_aether_one.wav",
+		"accent": "e7eefb"
+	  },
+	  "engine_sound_id": "titan_v12",
+	  "light_anchors": {
+		"front_left_light_anchor": [
+		  -0.730928,
+		  0.317054,
+		  -2.119724
+		],
+		"front_right_light_anchor": [
+		  0.730928,
+		  0.317054,
+		  -2.119724
+		],
+		"rear_left_light_anchor": [
+		  -0.6440842209723582,
+		  0.5699658111182587,
+		  2.1988000000000003
+		],
+		"rear_right_light_anchor": [
+		  0.6440842209723582,
+		  0.5699658111182587,
+		  2.1988000000000003
+		],
+		"reverse_left_anchor": [
+		  -0.5031907976346548,
+		  0.5129692300064329,
+		  2.1988000000000003
+		],
+		"reverse_right_anchor": [
+		  0.5031907976346548,
+		  0.5129692300064329,
+		  2.1988000000000003
+		],
+		"high_brake_anchor": [
+		  0,
+		  0.7979521355655622,
+		  1.9120000000000001
+		]
+	  },
+	  "durability_multiplier": 1.6,
+	  "production_visual": {
+		"scale": 1.000276525107935,
+		"offset": [
+		  1e-08,
+		  0.006596972531377624,
+		  0.01006778
+		],
+		"yaw": 3.141592653589793,
+		"hidden_meshes": [],
+		"wheels": [
+		  {
+			"front": true,
+			"center": [
+			  -0.722776,
+			  0.3323928159094638,
+			  -1.3161674530621073
+			],
+			"radius": 0.3283928159094638,
+			"meshes": [
+			  "Rim_FL_hires-mesh.001_Material__48.001_0",
+              "Rim_FL_hires-mesh_2.001_Material__47.001_0"
+			]
+		  },
+		  {
+			"front": true,
+			"center": [
+			  0.721596,
+			  0.33239281590948183,
+			  -1.3161674758855555
+			],
+			"radius": 0.3283928149107435,
+			"meshes": [
+			  "Rim_FR_hires-mesh.001_Material__48.001_0",
+              "Rim_FR_hires-mesh_2.001_Material__47.001_0"
+			]
+		  },
+		  {
+			"front": false,
+			"center": [
+			  -0.740089,
+			  0.33506278225859437,
+			  1.390959171580286
+			],
+			"radius": 0.32839281590946384,
+			"meshes": [
+			  "Rim_BL_hires-mesh.001_Material__48.001_0",
+              "Rim_BL_hires-mesh_2.001_Material__47.001_0"
+			]
+		  },
+		  {
+			"front": false,
+			"center": [
+			  0.740262,
+			  0.33506278225859437,
+			  1.3909590522771547
+			],
+			"radius": 0.3283928149107435,
+			"meshes": [
+			  "Rim_BR_hires-mesh.001_Material__48.001_0",
+              "Rim_BR_hires-mesh_2.001_Material__47.001_0"
+			]
+		  }
+		],
+		"roles": {},
+		"triangles": 23048,
+		"surfaces": 24,
+		"contact_correction": 0.004000002531377623,
+		"wheel_roles": {
+		  "Rim_BL_hires-mesh.001_Material__48.001_0": "WheelComposite",
+		  "Rim_BL_hires-mesh_2.001_Material__47.001_0": "Rim",
+		  "Rim_BR_hires-mesh.001_Material__48.001_0": "WheelComposite",
+		  "Rim_BR_hires-mesh_2.001_Material__47.001_0": "Rim",
+		  "Rim_FL_hires-mesh.001_Material__48.001_0": "WheelComposite",
+		  "Rim_FL_hires-mesh_2.001_Material__47.001_0": "Rim",
+		  "Rim_FR_hires-mesh.001_Material__48.001_0": "WheelComposite",
+		  "Rim_FR_hires-mesh_2.001_Material__47.001_0": "Rim"
+		},
+		"fallback_lamps": [
+		  {
+			"role": "Headlight",
+			"position": [
+			  -0.730928,
+			  0.317054,
+			  -2.119724
+			],
+			"size": [
+			  0.11,
+			  0.045
+			],
+			"front": true
+		  },
+		  {
+			"role": "Headlight",
+			"position": [
+			  0.730928,
+			  0.317054,
+			  -2.119724
+			],
+			"size": [
+			  0.11,
+			  0.045
+			],
+			"front": true
+		  },
+		  {
+			"role": "Taillight",
+			"position": [
+			  -0.605,
+			  0.5227,
+			  2.362
+			],
+			"size": [
+			  0.1,
+			  0.035
+			],
+			"front": false
+		  },
+		  {
+			"role": "Taillight",
+			"position": [
+			  0.6054,
+			  0.5247,
+			  2.35
+			],
+			"size": [
+			  0.1,
+			  0.035
+			],
+			"front": false
+		  }
+		]
+	  },
+	  "alias_of": "aether_one"
+	},
+	{
+	  "id": "razor_x",
+	  "name": "Cadillac CTS-V Race Car",
+	  "class": "TRACK SPECIAL",
+	  "price": 350000,
+	  "top_speed_kmh": 289,
+	  "acceleration": 15.6,
+	  "steering_response": 7.2,
+	  "braking": 28,
+	  "grip": 12.5,
+	  "weight_kg": 1380,
+	  "turbo_speed": 349,
+	  "turbo_acceleration": 3.0,
+	  "turbo_charge": 1,
+	  "length": 4.93,
+	  "width": 2.0648,
+	  "height": 1.32327,
+	  "wheelbase": 2.84244,
+	  "wheel_radius": 0.34245,
+	  "windshield_z": -1.14,
+	  "roof_front_z": -0.5,
+	  "roof_rear_z": 0.3,
+	  "rear_glass_z": 1.05,
+	  "default_paint": 3,
+	  "style": "sporty fastback",
+	  "hood_y": 0.72,
+	  "color": [
+		0.12,
+		0.42,
+		0.55
+	  ],
+	  "exhaust_points": [
+		[
+		  -0.5574970589639754,
+		  0.35,
+		  2.415
+		],
+		[
+		  0.5574970589639754,
+		  0.35,
+		  2.415
+		]
+	  ],
+	  "visual_scene_path": "res://Assets/Production/cadillac_cts-v_coupe_race_car.glb",
+	  "visual_lod_paths": [
+		"res://Assets/Production/cadillac_cts-v_coupe_race_car.glb",
+		"res://Assets/Production/cadillac_cts-v_coupe_race_car.glb",
+        "res://Assets/Production/cadillac_cts-v_coupe_race_car.glb"
+	  ],
+	  "camera_anchors": [
+		[
+		  0,
+		  3.2,
+		  7.465
+		],
+		[
+		  0,
+		  5.4,
+		  11.865
+		],
+		[
+		  0,
+		  0.9527558137250546,
+		  -1.2325
+		],
+		[
+		  0,
+		  0.54,
+		  -2.695
+		],
+		[
+		  -0.33036862753420765,
+		  1.1909447671563183,
+		  -0.29579999999999995
+		]
+	  ],
+	  "rear_light_points": [
+		[
+		  -0.612,
+		  0.6499999999999999,
+		  2.36
+		],
+		[
+		  0.612,
+		  0.6499999999999999,
+		  2.36
+		]
+	  ],
+	  "attachment_markers": {
+		"camera_chase_anchor": [
+		  0,
+		  3.2,
+		  7.465
+		],
+		"camera_far_anchor": [
+		  0,
+		  5.4,
+		  11.865
+		],
+		"camera_hood_anchor": [
+		  0,
+		  0.9527558137250546,
+		  -1.2325
+		],
+		"camera_bumper_anchor": [
+		  0,
+		  0.54,
+		  -2.695
+		],
+		"camera_cockpit_anchor": [
+		  -0.33036862753420765,
+		  1.1909447671563183,
+		  -0.29579999999999995
+		]
+	  },
+	  "interior": {
+		"style": 4,
+		"steering_style": 4,
+		"cluster_style": 4,
+		"horn_path": "res://Assets/Audio/horn_phantom_x.wav"
+	  },
+	  "light_anchors": {
+		"front_left_light_anchor": [
+		  -0.627886,
+		  0.592142,
+		  -2.141896
+		],
+		"front_right_light_anchor": [
+		  0.626484,
+		  0.592142,
+		  -2.141896
+		],
+		"rear_left_light_anchor": [
+		  -0.6607372550684153,
+		  0.6616359817535101,
+		  2.2678
+		],
+		"rear_right_light_anchor": [
+		  0.6607372550684153,
+		  0.6616359817535101,
+		  2.2678
+		],
+		"reverse_left_anchor": [
+		  -0.5162009805221994,
+		  0.5954723835781591,
+		  2.2678
+		],
+		"reverse_right_anchor": [
+		  0.5162009805221994,
+		  0.5954723835781591,
+		  2.2678
+		],
+		"high_brake_anchor": [
+		  0,
+		  0.9262903744549141,
+		  1.972
+		]
+	  },
+	  "durability_multiplier": 1.55,
+	  "production_visual": {
+		"scale": 0.9875838390742793,
+		"offset": [
+		  -0.00070109,
+		  0.004600499362921883,
+		  -0.12333444
+		],
+		"yaw": 3.141592653589793,
+		"hidden_meshes": [
+          "Object_127"
+		],
+		"wheels": [
+		  {
+			"front": true,
+			"center": [
+			  -0.795689,
+			  0.34391451023316255,
+			  -1.5496445102630378
+			],
+			"radius": 0.33991451023316255,
+			"meshes": [
+			  "Object_41",
+              "Object_44"
+			]
+		  },
+		  {
+			"front": true,
+			"center": [
+			  0.794207,
+			  0.3439155109310667,
+			  -1.549644510262875
+			],
+			"radius": 0.3399145102331625,
+			"meshes": [
+			  "Object_54",
+              "Object_57"
+			]
+		  },
+		  {
+			"front": false,
+			"center": [
+			  -0.795689,
+			  0.3439145408271524,
+			  1.2927964223231314
+			],
+			"radius": 0.3399145102331625,
+			"meshes": [
+			  "Object_15",
+              "Object_18"
+			]
+		  },
+		  {
+			"front": false,
+			"center": [
+			  0.794207,
+			  0.3439145408413076,
+			  1.2927095381992164
+			],
+			"radius": 0.3399145102331625,
+			"meshes": [
+			  "Object_28",
+              "Object_31"
+			]
+		  }
+		],
+		"roles": {
+		  "Object_67": "Paint",
+		  "Object_81": "Paint",
+		  "Object_89": "Paint",
+		  "Object_97": "Paint",
+		  "Object_105": "Paint",
+		  "Object_119": "Taillight",
+		  "Object_123": "Taillight",
+		  "Object_131": "Reverse"
+		},
+		"triangles": 27084,
+		"surfaces": 32,
+		"contact_correction": 0.003999999362921882,
+		"wheel_roles": {
+		  "Object_15": "Rim",
+		  "Object_18": "Tyre",
+		  "Object_28": "Rim",
+		  "Object_31": "Tyre",
+		  "Object_41": "Rim",
+		  "Object_44": "Tyre",
+		  "Object_54": "Rim",
+		  "Object_57": "Tyre"
+		},
+		"fallback_lamps": [
+		  {
+			"role": "Headlight",
+			"position": [
+			  -0.627886,
+			  0.592142,
+			  -2.141896
+			],
+			"size": [
+			  0.11,
+			  0.045
+			],
+			"front": true
+		  },
+		  {
+			"role": "Headlight",
+			"position": [
+			  0.626484,
+			  0.592142,
+			  -2.141896
+			],
+			"size": [
+			  0.11,
+			  0.045
+			],
+			"front": true
+		  }
+		]
+	  },
+	  "alias_of": "phantom_x"
+	},
+	{
+	  "id": "solaris_v",
+	  "name": "Lamborghini SC18 Alston",
+	  "class": "LIMITED SUPERCAR",
+	  "price": 900000,
+	  "top_speed_kmh": 301,
+	  "acceleration": 16.4,
+	  "steering_response": 7.4,
+	  "braking": 25,
+	  "grip": 12,
+	  "weight_kg": 1345,
+	  "turbo_speed": 361,
+	  "turbo_acceleration": 2.5,
+	  "turbo_charge": 1.18,
+	  "length": 4.94,
+	  "width": 2.26141,
+	  "height": 1.16071,
+	  "wheelbase": 2.68727,
+	  "wheel_radius": 0.34272,
+	  "windshield_z": -1.02,
+	  "roof_front_z": -0.18,
+	  "roof_rear_z": 0.75,
+	  "rear_glass_z": 1.48,
+	  "default_paint": 5,
+	  "style": "sporty fastback",
+	  "hood_y": 0.81,
+	  "color": [
+		0.12,
+		0.42,
+		0.55
+	  ],
+	  "exhaust_points": [
+		[
+		  -0.6105804319183669,
+		  0.35,
+		  2.4200000000000004
+		],
+		[
+		  0.6105804319183669,
+		  0.35,
+		  2.4200000000000004
+		]
+	  ],
+	  "visual_scene_path": "res://Assets/Production/2019_lamborghini_sc18_alston.glb",
+	  "visual_lod_paths": [
+		"res://Assets/Production/2019_lamborghini_sc18_alston.glb",
+		"res://Assets/Production/2019_lamborghini_sc18_alston.glb",
+        "res://Assets/Production/2019_lamborghini_sc18_alston.glb"
+	  ],
+	  "camera_anchors": [
+		[
+		  0,
+		  3.2,
+		  7.470000000000001
+		],
+		[
+		  0,
+		  5.4,
+		  11.870000000000001
+		],
+		[
+		  0,
+		  0.8357141352934688,
+		  -1.235
+		],
+		[
+		  0,
+		  0.54,
+		  -2.7
+		],
+		[
+		  -0.36182544113681,
+		  1.044642669116836,
+		  -0.2964
+		]
+	  ],
+	  "rear_light_points": [
+		[
+		  -0.6089999999999999,
+		  0.74,
+		  2.475
+		],
+		[
+		  0.6089999999999999,
+		  0.74,
+		  2.475
+		]
+	  ],
+	  "attachment_markers": {
+		"camera_chase_anchor": [
+		  0,
+		  3.2,
+		  7.470000000000001
+		],
+		"camera_far_anchor": [
+		  0,
+		  5.4,
+		  11.870000000000001
+		],
+		"camera_hood_anchor": [
+		  0,
+		  0.8357141352934688,
+		  -1.235
+		],
+		"camera_bumper_anchor": [
+		  0,
+		  0.54,
+		  -2.7
+		],
+		"camera_cockpit_anchor": [
+		  -0.36182544113681,
+		  1.044642669116836,
+		  -0.2964
+		]
+	  },
+	  "interior": {
+		"style": 0,
+		"steering_style": 2,
+		"cluster_style": 1,
+		"horn_path": "res://Assets/Audio/horn_tempest_gt.wav",
+		"accent": "d6a86c"
+	  },
+	  "engine_sound_id": "vortex_s",
+	  "light_anchors": {
+		"front_left_light_anchor": [
+		  -0.634941,
+		  0.509914,
+		  -2.048388
+		],
+		"front_right_light_anchor": [
+		  0.634941,
+		  0.509914,
+		  -2.048388
+		],
+		"rear_left_light_anchor": [
+		  -0.72365088227362,
+		  0.5803570383982423,
+		  2.2724
+		],
+		"rear_right_light_anchor": [
+		  0.72365088227362,
+		  0.5803570383982423,
+		  2.2724
+		],
+		"reverse_left_anchor": [
+		  -0.5653522517762656,
+		  0.522321334558418,
+		  2.2724
+		],
+		"reverse_right_anchor": [
+		  0.5653522517762656,
+		  0.522321334558418,
+		  2.2724
+		],
+		"high_brake_anchor": [
+		  0,
+		  0.8124998537575391,
+		  1.9760000000000002
+		]
+	  },
+	  "durability_multiplier": 1.65,
+	  "production_visual": {
+		"scale": 99.45137922475506,
+		"offset": [
+		  0.0,
+		  0.01226243882153272,
+		  -0.04113366
+		],
+		"yaw": 3.141592653589793,
+		"hidden_meshes": [],
+		"wheels": [
+		  {
+			"front": true,
+			"center": [
+			  -0.861556,
+			  0.33459404844537094,
+			  -1.2405162443400535
+			],
+			"radius": 0.33059403158923245,
+			"meshes": [
+              "polySurface1_Lambo:Lamborghini_SC18Alston_2019_Wheel1A_3D_3DWheel1A_Material1_0"
+			]
+		  },
+		  {
+			"front": true,
+			"center": [
+			  0.861556,
+			  0.3345940495617099,
+			  -1.2405182297716548
+			],
+			"radius": 0.3305940495617099,
+			"meshes": [
+              "polySurface178_Lambo:Lamborghini_SC18Alston_2019_Wheel1A_3D_3DWheel1A_Material1_0"
+			]
+		  },
+		  {
+			"front": false,
+			"center": [
+			  -0.85456,
+			  0.3606570986950145,
+			  1.446757347587607
+			],
+			"radius": 0.35483651234080105,
+			"meshes": [
+              "polySurface355_Lambo:Lamborghini_SC18Alston_2019_Wheel1A_3D_3DWheel1A_Material1_0"
+			]
+		  },
+		  {
+			"front": false,
+			"center": [
+			  0.85456,
+			  0.36065710042768295,
+			  1.4467593339618054
+			],
+			"radius": 0.3548365406634416,
+			"meshes": [
+              "polySurface534_Lambo:Lamborghini_SC18Alston_2019_Wheel1A_3D_3DWheel1A_Material1_0"
+			]
+		  }
+		],
+		"roles": {
+		  "Lambo:Window_Geo_lodA_Window_Geo_lodA_Lamborghini_SC18Alston_2019WindowA_Material_red_glass_0": "Taillight",
+		  "Lambo:Paint_Geo_lodA_Paint_Geo_lodA_Lamborghini_SC18Alston_2019PaintA_Material_Paint_0": "Paint",
+		  "Lambo:Paint_Geo_lodA_Paint_Geo_lodA_Lamborghini_SC18Alston_2019PaintA_Material_Lambo:Lamborghini_SC18Alston_2019PaintA_Material1_0": "Paint"
+		},
+		"triangles": 167515,
+		"surfaces": 40,
+		"contact_correction": 0.0039999988215327215,
+		"wheel_roles": {
+		  "polySurface1_Lambo:Lamborghini_SC18Alston_2019_Wheel1A_3D_3DWheel1A_Material1_0": "WheelComposite",
+		  "polySurface178_Lambo:Lamborghini_SC18Alston_2019_Wheel1A_3D_3DWheel1A_Material1_0": "WheelComposite",
+		  "polySurface355_Lambo:Lamborghini_SC18Alston_2019_Wheel1A_3D_3DWheel1A_Material1_0": "WheelComposite",
+		  "polySurface534_Lambo:Lamborghini_SC18Alston_2019_Wheel1A_3D_3DWheel1A_Material1_0": "WheelComposite"
+		},
+		"fallback_lamps": [
+		  {
+			"role": "Headlight",
+			"position": [
+			  -0.634941,
+			  0.509914,
+			  -2.048388
+			],
+			"size": [
+			  0.11,
+			  0.045
+			],
+			"front": true
+		  },
+		  {
+			"role": "Headlight",
+			"position": [
+			  0.634941,
+			  0.509914,
+			  -2.048388
+			],
+			"size": [
+			  0.11,
+			  0.045
+			],
+			"front": true
+		  }
+		]
+	  },
+	  "alias_of": "tempest_gt"
+	},
+	{
+	  "id": "cyclone_rs",
+	  "name": "Lamborghini Veneno",
+	  "class": "HYPERCAR",
+	  "price": 1400000,
+	  "top_speed_kmh": 313,
+	  "acceleration": 17.2,
+	  "steering_response": 7.0,
+	  "braking": 27,
+	  "grip": 12,
+	  "weight_kg": 1310,
+	  "turbo_speed": 373,
+	  "turbo_acceleration": 2.8,
+	  "turbo_charge": 1,
+	  "length": 4.78,
+	  "width": 2.01276,
+	  "height": 1.13993,
+	  "wheelbase": 2.70713,
+	  "wheel_radius": 0.32839,
+	  "windshield_z": -1.58,
+	  "roof_front_z": -0.86,
+	  "roof_rear_z": 0.54,
+	  "rear_glass_z": 1.71,
+	  "default_paint": 2,
+	  "style": "sporty fastback",
+	  "hood_y": 0.59,
+	  "color": [
+		0.12,
+		0.42,
+		0.55
+	  ],
+	  "exhaust_points": [
+		[
+		  -0.5434460614454272,
+		  0.35,
+		  2.3400000000000003
+		],
+		[
+		  0.5434460614454272,
+		  0.35,
+		  2.3400000000000003
+		]
+	  ],
+	  "visual_scene_path": "res://Assets/Production/lamborghini_veneno.glb",
+	  "visual_lod_paths": [
+		"res://Assets/Production/lamborghini_veneno.glb",
+		"res://Assets/Production/lamborghini_veneno.glb",
+        "res://Assets/Production/lamborghini_veneno.glb"
+	  ],
+	  "camera_anchors": [
+		[
+		  0,
+		  3.2,
+		  7.390000000000001
+		],
+		[
+		  0,
+		  5.4,
+		  11.790000000000001
+		],
+		[
+		  0,
+		  0.8207507680102926,
+		  -1.195
+		],
+		[
+		  0,
+		  0.54,
+		  -2.62
+		],
+		[
+		  -0.3220421104861791,
+		  1.0259384600128658,
+		  -0.2868
+		]
+	  ],
+	  "rear_light_points": [
+		[
+		  -0.66,
+		  0.52,
+		  2.58
+		],
+		[
+		  0.66,
+		  0.52,
+		  2.58
+		]
+	  ],
+	  "attachment_markers": {
+		"camera_chase_anchor": [
+		  0,
+		  3.2,
+		  7.390000000000001
+		],
+		"camera_far_anchor": [
+		  0,
+		  5.4,
+		  11.790000000000001
+		],
+		"camera_hood_anchor": [
+		  0,
+		  0.8207507680102926,
+		  -1.195
+		],
+		"camera_bumper_anchor": [
+		  0,
+		  0.54,
+		  -2.62
+		],
+		"camera_cockpit_anchor": [
+		  -0.3220421104861791,
+		  1.0259384600128658,
+		  -0.2868
+		]
+	  },
+	  "interior": {
+		"style": 5,
+		"steering_style": 1,
+		"cluster_style": 0,
+		"horn_path": "res://Assets/Audio/horn_aether_one.wav",
+		"accent": "e7eefb"
+	  },
+	  "engine_sound_id": "titan_v12",
+	  "light_anchors": {
+		"front_left_light_anchor": [
+		  -0.730928,
+		  0.317054,
+		  -2.119724
+		],
+		"front_right_light_anchor": [
+		  0.730928,
+		  0.317054,
+		  -2.119724
+		],
+		"rear_left_light_anchor": [
+		  -0.6440842209723582,
+		  0.5699658111182587,
+		  2.1988000000000003
+		],
+		"rear_right_light_anchor": [
+		  0.6440842209723582,
+		  0.5699658111182587,
+		  2.1988000000000003
+		],
+		"reverse_left_anchor": [
+		  -0.5031907976346548,
+		  0.5129692300064329,
+		  2.1988000000000003
+		],
+		"reverse_right_anchor": [
+		  0.5031907976346548,
+		  0.5129692300064329,
+		  2.1988000000000003
+		],
+		"high_brake_anchor": [
+		  0,
+		  0.7979521355655622,
+		  1.9120000000000001
+		]
+	  },
+	  "durability_multiplier": 1.7,
+	  "production_visual": {
+		"scale": 1.000276525107935,
+		"offset": [
+		  1e-08,
+		  0.006596972531377624,
+		  0.01006778
+		],
+		"yaw": 3.141592653589793,
+		"hidden_meshes": [],
+		"wheels": [
+		  {
+			"front": true,
+			"center": [
+			  -0.722776,
+			  0.3323928159094638,
+			  -1.3161674530621073
+			],
+			"radius": 0.3283928159094638,
+			"meshes": [
+			  "Rim_FL_hires-mesh.001_Material__48.001_0",
+              "Rim_FL_hires-mesh_2.001_Material__47.001_0"
+			]
+		  },
+		  {
+			"front": true,
+			"center": [
+			  0.721596,
+			  0.33239281590948183,
+			  -1.3161674758855555
+			],
+			"radius": 0.3283928149107435,
+			"meshes": [
+			  "Rim_FR_hires-mesh.001_Material__48.001_0",
+              "Rim_FR_hires-mesh_2.001_Material__47.001_0"
+			]
+		  },
+		  {
+			"front": false,
+			"center": [
+			  -0.740089,
+			  0.33506278225859437,
+			  1.390959171580286
+			],
+			"radius": 0.32839281590946384,
+			"meshes": [
+			  "Rim_BL_hires-mesh.001_Material__48.001_0",
+              "Rim_BL_hires-mesh_2.001_Material__47.001_0"
+			]
+		  },
+		  {
+			"front": false,
+			"center": [
+			  0.740262,
+			  0.33506278225859437,
+			  1.3909590522771547
+			],
+			"radius": 0.3283928149107435,
+			"meshes": [
+			  "Rim_BR_hires-mesh.001_Material__48.001_0",
+              "Rim_BR_hires-mesh_2.001_Material__47.001_0"
+			]
+		  }
+		],
+		"roles": {},
+		"triangles": 23048,
+		"surfaces": 24,
+		"contact_correction": 0.004000002531377623,
+		"wheel_roles": {
+		  "Rim_BL_hires-mesh.001_Material__48.001_0": "WheelComposite",
+		  "Rim_BL_hires-mesh_2.001_Material__47.001_0": "Rim",
+		  "Rim_BR_hires-mesh.001_Material__48.001_0": "WheelComposite",
+		  "Rim_BR_hires-mesh_2.001_Material__47.001_0": "Rim",
+		  "Rim_FL_hires-mesh.001_Material__48.001_0": "WheelComposite",
+		  "Rim_FL_hires-mesh_2.001_Material__47.001_0": "Rim",
+		  "Rim_FR_hires-mesh.001_Material__48.001_0": "WheelComposite",
+		  "Rim_FR_hires-mesh_2.001_Material__47.001_0": "Rim"
+		},
+		"fallback_lamps": [
+		  {
+			"role": "Headlight",
+			"position": [
+			  -0.730928,
+			  0.317054,
+			  -2.119724
+			],
+			"size": [
+			  0.11,
+			  0.045
+			],
+			"front": true
+		  },
+		  {
+			"role": "Headlight",
+			"position": [
+			  0.730928,
+			  0.317054,
+			  -2.119724
+			],
+			"size": [
+			  0.11,
+			  0.045
+			],
+			"front": true
+		  },
+		  {
+			"role": "Taillight",
+			"position": [
+			  -0.605,
+			  0.5227,
+			  2.362
+			],
+			"size": [
+			  0.1,
+			  0.035
+			],
+			"front": false
+		  },
+		  {
+			"role": "Taillight",
+			"position": [
+			  0.6054,
+			  0.5247,
+			  2.35
+			],
+			"size": [
+			  0.1,
+			  0.035
+			],
+			"front": false
+		  }
+		]
+	  },
+	  "alias_of": "aether_one"
+	},
+	{
+	  "id": "aether_one",
+	  "name": "Lamborghini Veneno",
+	  "class": "HYPERCAR",
+	  "price": 1400000,
+	  "top_speed_kmh": 325,
+	  "acceleration": 18.0,
+	  "steering_response": 6.8,
+	  "braking": 32,
+	  "grip": 13.5,
+	  "weight_kg": 1275,
+	  "turbo_speed": 385,
+	  "turbo_acceleration": 2.8,
+	  "turbo_charge": 0.9,
+	  "length": 4.78,
+	  "width": 2.01276,
+	  "height": 1.13993,
+	  "wheelbase": 2.70713,
+	  "wheel_radius": 0.32839,
+	  "windshield_z": -1.58,
+	  "roof_front_z": -0.86,
+	  "roof_rear_z": 0.54,
+	  "rear_glass_z": 1.71,
+	  "default_paint": 2,
+	  "style": "sporty fastback",
+	  "hood_y": 0.59,
+	  "color": [
+		0.12,
+		0.42,
+		0.55
+	  ],
+	  "exhaust_points": [
+		[
+		  -0.5434460614454272,
+		  0.35,
+		  2.3400000000000003
+		],
+		[
+		  0.5434460614454272,
+		  0.35,
+		  2.3400000000000003
+		]
+	  ],
+	  "visual_scene_path": "res://Assets/Production/lamborghini_veneno.glb",
+	  "visual_lod_paths": [
+		"res://Assets/Production/lamborghini_veneno.glb",
+		"res://Assets/Production/lamborghini_veneno.glb",
+        "res://Assets/Production/lamborghini_veneno.glb"
+	  ],
+	  "camera_anchors": [
+		[
+		  0,
+		  3.2,
+		  7.390000000000001
+		],
+		[
+		  0,
+		  5.4,
+		  11.790000000000001
+		],
+		[
+		  0,
+		  0.8207507680102926,
+		  -1.195
+		],
+		[
+		  0,
+		  0.54,
+		  -2.62
+		],
+		[
+		  -0.3220421104861791,
+		  1.0259384600128658,
+		  -0.2868
+		]
+	  ],
+	  "rear_light_points": [
+		[
+		  -0.66,
+		  0.52,
+		  2.58
+		],
+		[
+		  0.66,
+		  0.52,
+		  2.58
+		]
+	  ],
+	  "attachment_markers": {
+		"camera_chase_anchor": [
+		  0,
+		  3.2,
+		  7.390000000000001
+		],
+		"camera_far_anchor": [
+		  0,
+		  5.4,
+		  11.790000000000001
+		],
+		"camera_hood_anchor": [
+		  0,
+		  0.8207507680102926,
+		  -1.195
+		],
+		"camera_bumper_anchor": [
+		  0,
+		  0.54,
+		  -2.62
+		],
+		"camera_cockpit_anchor": [
+		  -0.3220421104861791,
+		  1.0259384600128658,
+		  -0.2868
+		]
+	  },
+	  "interior": {
+		"style": 5,
+		"steering_style": 1,
+		"cluster_style": 0,
+		"horn_path": "res://Assets/Audio/horn_aether_one.wav",
+		"accent": "e7eefb"
+	  },
+	  "engine_sound_id": "titan_v12",
+	  "light_anchors": {
+		"front_left_light_anchor": [
+		  -0.730928,
+		  0.317054,
+		  -2.119724
+		],
+		"front_right_light_anchor": [
+		  0.730928,
+		  0.317054,
+		  -2.119724
+		],
+		"rear_left_light_anchor": [
+		  -0.6440842209723582,
+		  0.5699658111182587,
+		  2.1988000000000003
+		],
+		"rear_right_light_anchor": [
+		  0.6440842209723582,
+		  0.5699658111182587,
+		  2.1988000000000003
+		],
+		"reverse_left_anchor": [
+		  -0.5031907976346548,
+		  0.5129692300064329,
+		  2.1988000000000003
+		],
+		"reverse_right_anchor": [
+		  0.5031907976346548,
+		  0.5129692300064329,
+		  2.1988000000000003
+		],
+		"high_brake_anchor": [
+		  0,
+		  0.7979521355655622,
+		  1.9120000000000001
+		]
+	  },
+	  "durability_multiplier": 1.75,
+	  "production_visual": {
+		"scale": 1.000276525107935,
+		"offset": [
+		  1e-08,
+		  0.006596972531377624,
+		  0.01006778
+		],
+		"yaw": 3.141592653589793,
+		"hidden_meshes": [],
+		"wheels": [
+		  {
+			"front": true,
+			"center": [
+			  -0.722776,
+			  0.3323928159094638,
+			  -1.3161674530621073
+			],
+			"radius": 0.3283928159094638,
+			"meshes": [
+			  "Rim_FL_hires-mesh.001_Material__48.001_0",
+              "Rim_FL_hires-mesh_2.001_Material__47.001_0"
+			]
+		  },
+		  {
+			"front": true,
+			"center": [
+			  0.721596,
+			  0.33239281590948183,
+			  -1.3161674758855555
+			],
+			"radius": 0.3283928149107435,
+			"meshes": [
+			  "Rim_FR_hires-mesh.001_Material__48.001_0",
+              "Rim_FR_hires-mesh_2.001_Material__47.001_0"
+			]
+		  },
+		  {
+			"front": false,
+			"center": [
+			  -0.740089,
+			  0.33506278225859437,
+			  1.390959171580286
+			],
+			"radius": 0.32839281590946384,
+			"meshes": [
+			  "Rim_BL_hires-mesh.001_Material__48.001_0",
+              "Rim_BL_hires-mesh_2.001_Material__47.001_0"
+			]
+		  },
+		  {
+			"front": false,
+			"center": [
+			  0.740262,
+			  0.33506278225859437,
+			  1.3909590522771547
+			],
+			"radius": 0.3283928149107435,
+			"meshes": [
+			  "Rim_BR_hires-mesh.001_Material__48.001_0",
+              "Rim_BR_hires-mesh_2.001_Material__47.001_0"
+			]
+		  }
+		],
+		"roles": {},
+		"triangles": 23048,
+		"surfaces": 24,
+		"contact_correction": 0.004000002531377623,
+		"wheel_roles": {
+		  "Rim_BL_hires-mesh.001_Material__48.001_0": "WheelComposite",
+		  "Rim_BL_hires-mesh_2.001_Material__47.001_0": "Rim",
+		  "Rim_BR_hires-mesh.001_Material__48.001_0": "WheelComposite",
+		  "Rim_BR_hires-mesh_2.001_Material__47.001_0": "Rim",
+		  "Rim_FL_hires-mesh.001_Material__48.001_0": "WheelComposite",
+		  "Rim_FL_hires-mesh_2.001_Material__47.001_0": "Rim",
+		  "Rim_FR_hires-mesh.001_Material__48.001_0": "WheelComposite",
+		  "Rim_FR_hires-mesh_2.001_Material__47.001_0": "Rim"
+		},
+		"fallback_lamps": [
+		  {
+			"role": "Headlight",
+			"position": [
+			  -0.730928,
+			  0.317054,
+			  -2.119724
+			],
+			"size": [
+			  0.11,
+			  0.045
+			],
+			"front": true
+		  },
+		  {
+			"role": "Headlight",
+			"position": [
+			  0.730928,
+			  0.317054,
+			  -2.119724
+			],
+			"size": [
+			  0.11,
+			  0.045
+			],
+			"front": true
+		  },
+		  {
+			"role": "Taillight",
+			"position": [
+			  -0.605,
+			  0.5227,
+			  2.362
+			],
+			"size": [
+			  0.1,
+			  0.035
+			],
+			"front": false
+		  },
+		  {
+			"role": "Taillight",
+			"position": [
+			  0.6054,
+			  0.5247,
+			  2.35
+			],
+			"size": [
+			  0.1,
+			  0.035
+			],
+			"front": false
+		  }
+		]
+	  }
+	}
+  ],
+  "upgrade_costs": [
+	500,
+	800,
+	1200,
+	1800,
+	2600,
+	3700,
+	5000,
+	6500,
+	8000,
+	10000
+  ],
+  "upgrade_modifiers": {
+	"engine_acceleration": 0.035,
+	"engine_speed": 0.008,
+	"handling_response": 0.04,
+	"handling_grip": 0.015,
+	"brakes": 0.05,
+	"tires_grip": 0.03,
+	"transmission_acceleration": 0.02,
+	"transmission_speed": 0.006
+  },
+  "paints": [
+	{
+	  "name": "Racing Red",
+	  "hex": "b82335"
+	},
+	{
+	  "name": "Electric Blue",
+	  "hex": "185fae"
+	},
+	{
+	  "name": "Pearl White",
+	  "hex": "e4e5df"
+	},
+	{
+	  "name": "Midnight Black",
+	  "hex": "171d28"
+	},
+	{
+	  "name": "Titanium Silver",
+	  "hex": "86949f"
+	},
+	{
+	  "name": "Neon Cyan",
+	  "hex": "16bfc7"
+	},
+	{
+	  "name": "Obsidian Black",
+	  "hex": "121820"
+	},
+	{
+	  "name": "Gunmetal",
+	  "hex": "48535f"
+	},
+	{
+	  "name": "Silver",
+	  "hex": "aebbc5"
+	},
+	{
+	  "name": "Deep Blue",
+	  "hex": "174a9b"
+	},
+	{
+	  "name": "Emerald",
+	  "hex": "147c60"
+	},
+	{
+	  "name": "Sunset Orange",
+	  "hex": "ef722b"
+	},
+	{
+	  "name": "Violet",
+	  "hex": "784cc2"
+	}
+  ],
+  "upgrade_ad_requirements": [
+	1,
+	1,
+	1,
+	2,
+	2,
+	2,
+	3,
+	3,
+	4,
+	4
+  ]
+}

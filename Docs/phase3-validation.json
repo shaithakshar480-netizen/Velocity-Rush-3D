@@ -1,0 +1,294 @@
+{
+  "scope": "Offline structural contracts, source-derived reference arithmetic and audio data; NOT compilation/render/runtime",
+  "checks": 66,
+  "failed": 0,
+  "balance_fixtures": [
+    {
+      "label": "steady",
+      "seconds": 180,
+      "near_miss_interval": 20,
+      "combo": 1,
+      "activations": 2
+    },
+    {
+      "label": "skilled",
+      "seconds": 180,
+      "near_miss_interval": 14,
+      "combo": 2,
+      "activations": 3
+    },
+    {
+      "label": "long skilled",
+      "seconds": 240,
+      "near_miss_interval": 15,
+      "combo": 2,
+      "activations": 3
+    }
+  ],
+  "results": [
+    {
+      "check": "State EMPTY",
+      "passed": true
+    },
+    {
+      "check": "State CHARGING",
+      "passed": true
+    },
+    {
+      "check": "State READY",
+      "passed": true
+    },
+    {
+      "check": "State ACTIVE",
+      "passed": true
+    },
+    {
+      "check": "State COOLDOWN",
+      "passed": true
+    },
+    {
+      "check": "Activation gate: not enabled",
+      "passed": true
+    },
+    {
+      "check": "Activation gate: get_tree().paused",
+      "passed": true
+    },
+    {
+      "check": "Activation gate: RunState.RUNNING",
+      "passed": true
+    },
+    {
+      "check": "Activation gate: State.READY",
+      "passed": true
+    },
+    {
+      "check": "Activation gate: activation_min_speed",
+      "passed": true
+    },
+    {
+      "check": "Activation gate: held(\"brake\")",
+      "passed": true
+    },
+    {
+      "check": "Run-local meter and free uses reset; saved extras remain separate",
+      "passed": true
+    },
+    {
+      "check": "Charge clamps both boundaries",
+      "passed": true
+    },
+    {
+      "check": "Drain clamps zero",
+      "passed": true
+    },
+    {
+      "check": "READY is edge-triggered",
+      "passed": true
+    },
+    {
+      "check": "Held SHIFT cannot auto-repeat",
+      "passed": true
+    },
+    {
+      "check": "Input clear discards activation",
+      "passed": true
+    },
+    {
+      "check": "Turbo attached to pausable world",
+      "passed": true
+    },
+    {
+      "check": "Finish explicitly stops boost",
+      "passed": true
+    },
+    {
+      "check": "Restart and Home reset",
+      "passed": true
+    },
+    {
+      "check": "Single integration connection: turbo.became_ready",
+      "passed": true
+    },
+    {
+      "check": "Single integration connection: turbo.activated.connect(_turbo_started)",
+      "passed": true
+    },
+    {
+      "check": "Single integration connection: turbo.ended",
+      "passed": true
+    },
+    {
+      "check": "Single integration connection: run.near_miss_awarded.connect(turbo.near_miss)",
+      "passed": true
+    },
+    {
+      "check": "Single integration connection: run.coin_awarded.connect(turbo.coin)",
+      "passed": true
+    },
+    {
+      "check": "Activation integration: cameras.turbo_kick()",
+      "passed": true
+    },
+    {
+      "check": "Activation integration: exhaust.ignition()",
+      "passed": true
+    },
+    {
+      "check": "Activation integration: turbo_ui.kick()",
+      "passed": true
+    },
+    {
+      "check": "Activation integration: RushHaptics.pulse(45)",
+      "passed": true
+    },
+    {
+      "check": "Activation integration: GameAudio.event(\"turbo_ignition\")",
+      "passed": true
+    },
+    {
+      "check": "No node/resource construction in Turbo/TurboController.gd:_physics_process",
+      "passed": true
+    },
+    {
+      "check": "No node/resource construction in Turbo/TurboController.gd:request_activation",
+      "passed": true
+    },
+    {
+      "check": "No node/resource construction in VFX/ExhaustEffects.gd:_process",
+      "passed": true
+    },
+    {
+      "check": "No node/resource construction in VFX/SpeedStreaks.gd:_draw",
+      "passed": true
+    },
+    {
+      "check": "No node/resource construction in Audio/GameAudio.gd:update_vehicle",
+      "passed": true
+    },
+    {
+      "check": "Audio loops are not restarted every frame",
+      "passed": true
+    },
+    {
+      "check": "Audio pauses all gameplay categories",
+      "passed": true
+    },
+    {
+      "check": "Exhaust model-local emitters",
+      "passed": true
+    },
+    {
+      "check": "Finite peripheral density",
+      "passed": true
+    },
+    {
+      "check": "Effects prewarmed before ready",
+      "passed": true
+    },
+    {
+      "check": "No global slow motion",
+      "passed": true
+    },
+    {
+      "check": "Phase 2 bytes unchanged: Data/HighwayRush.tres",
+      "passed": true
+    },
+    {
+      "check": "Phase 2 bytes unchanged: Collectibles/CoinSystem.gd",
+      "passed": true
+    },
+    {
+      "check": "wind PCM format",
+      "passed": true
+    },
+    {
+      "check": "wind nonempty/unclipped",
+      "passed": true
+    },
+    {
+      "check": "wind loop seam",
+      "passed": true
+    },
+    {
+      "check": "turbo_spool PCM format",
+      "passed": true
+    },
+    {
+      "check": "turbo_spool nonempty/unclipped",
+      "passed": true
+    },
+    {
+      "check": "turbo_spool loop seam",
+      "passed": true
+    },
+    {
+      "check": "turbo_ready PCM format",
+      "passed": true
+    },
+    {
+      "check": "turbo_ready nonempty/unclipped",
+      "passed": true
+    },
+    {
+      "check": "turbo_ready endpoint envelope",
+      "passed": true
+    },
+    {
+      "check": "turbo_ignition PCM format",
+      "passed": true
+    },
+    {
+      "check": "turbo_ignition nonempty/unclipped",
+      "passed": true
+    },
+    {
+      "check": "turbo_ignition endpoint envelope",
+      "passed": true
+    },
+    {
+      "check": "turbo_flare PCM format",
+      "passed": true
+    },
+    {
+      "check": "turbo_flare nonempty/unclipped",
+      "passed": true
+    },
+    {
+      "check": "turbo_flare endpoint envelope",
+      "passed": true
+    },
+    {
+      "check": "turbo_end PCM format",
+      "passed": true
+    },
+    {
+      "check": "turbo_end nonempty/unclipped",
+      "passed": true
+    },
+    {
+      "check": "turbo_end endpoint envelope",
+      "passed": true
+    },
+    {
+      "check": "Six-second nominal duration",
+      "passed": true
+    },
+    {
+      "check": "Coin cannot dominate full budget",
+      "passed": true
+    },
+    {
+      "check": "Balance fixture steady",
+      "passed": true
+    },
+    {
+      "check": "Balance fixture skilled",
+      "passed": true
+    },
+    {
+      "check": "Balance fixture long skilled",
+      "passed": true
+    }
+  ]
+}

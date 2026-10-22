@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="topVignette" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#03070d" stop-opacity="0.75"/>
+      <stop offset="12%" stop-color="#050c16" stop-opacity="0.40"/>
+      <stop offset="28%" stop-color="#08111e" stop-opacity="0.08"/>
+      <stop offset="50%" stop-color="#08111e" stop-opacity="0.0"/>
+    </linearGradient>
+    <linearGradient id="bottomVignette" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#03070d" stop-opacity="0.80"/>
+      <stop offset="14%" stop-color="#050c16" stop-opacity="0.45"/>
+      <stop offset="30%" stop-color="#08111e" stop-opacity="0.10"/>
+      <stop offset="55%" stop-color="#08111e" stop-opacity="0.0"/>
+    </linearGradient>
+    <radialGradient id="edgeVignette" cx="50%" cy="50%" r="70%">
+      <stop offset="70%" stop-color="#03070d" stop-opacity="0.0"/>
+      <stop offset="100%" stop-color="#03070d" stop-opacity="0.45"/>
+    </radialGradient>
+    <!-- Subtle high-tech luminous accent lines across corners -->
+    <linearGradient id="cyanStreak" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#83cede" stop-opacity="0.0"/>
+      <stop offset="50%" stop-color="#83cede" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#83cede" stop-opacity="0.0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#topVignette)"/>
+  <rect width="1280" height="720" fill="url(#bottomVignette)"/>
+  <rect width="1280" height="720" fill="url(#edgeVignette)"/>
+  <!-- Top cinematic precision line -->
+  <line x1="140" y1="88" x2="1140" y2="88" stroke="url(#cyanStreak)" stroke-width="1"/>
+  <!-- Bottom dock precision line -->
+  <line x1="200" y1="656" x2="1080" y2="656" stroke="url(#cyanStreak)" stroke-width="1"/>
+</svg>

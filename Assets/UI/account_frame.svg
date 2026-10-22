@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+<defs>
+ <linearGradient id="metal" x2="0.15" y2="1"><stop stop-color="#abc7d4"/><stop offset=".08" stop-color="#283d50"/><stop offset=".48" stop-color="#0a101d"/><stop offset=".76" stop-color="#537082"/><stop offset="1" stop-color="#121b2b"/></linearGradient>
+ <linearGradient id="edge" x2="0" y2="1"><stop stop-color="#d1e6ee" stop-opacity=".8"/><stop offset=".5" stop-color="#5282a0" stop-opacity=".3"/><stop offset="1" stop-color="#89adc0" stop-opacity=".7"/></linearGradient>
+ <pattern id="weave" width="10" height="10" patternUnits="userSpaceOnUse"><rect width="10" height="10" fill="#0d1520"/><path d="M-5 10L5 0M0 15L15 0M5 20L20 5" stroke="#263242" stroke-width="2" opacity=".55"/></pattern>
+</defs>
+<path d="M30 14H380Q455 14 510 27H770Q825 14 900 14H1250Q1268 14 1264 38L1227 678Q1226 706 1200 706H80Q54 706 53 678L16 38Q12 14 30 14Z M79 64Q69 64 71 82L100 636Q101 654 122 654H1158Q1179 654 1180 636L1209 82Q1211 64 1201 64Z" fill="url(#metal)" fill-rule="evenodd" stroke="#668396" stroke-width="2"/>
+<path d="M43 31H386L508 43H772L894 31H1237L1206 684H74Z M78 62L100 637Q101 657 122 657H1158Q1179 657 1180 637L1202 62Z" fill="url(#weave)" fill-rule="evenodd"/>
+<path d="M79 62H1201Q1213 62 1211 83L1181 638Q1180 657 1158 657H122Q100 657 99 638L69 83Q67 62 79 62Z" fill="none" stroke="url(#edge)" stroke-width="4"/>
+<path d="M119 666H1161M86 53H1194" stroke="#71c8e3" opacity=".3" stroke-width="2"/>
+</svg>

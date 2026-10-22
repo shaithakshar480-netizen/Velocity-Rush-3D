@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="RushTurboSpec" load_steps=2 format=3]
+[ext_resource type="Script" path="res://Data/TurboSpec.gd" id="1"]
+[resource]
+script = ExtResource("1")
+capacity = 100.0
+starting_charge = 0.0
+charge_multiplier = 1.0
+near_miss_charge = 16.0
+combo_step = 0.08
+coin_charge = 0.35
+high_speed_threshold = 150.0
+high_speed_charge = 0.6
+drain_per_second = 16.666667
+cooldown_seconds = 3.0
+acceleration_multiplier = 2.7
+top_speed_kmh = 270.0
+ramp_in_seconds = 0.3
+ramp_out_seconds = 0.75
+overspeed_deceleration = 5.0
+collision_charge_loss = 8.0
+activation_min_speed = 25.0
+fov_degrees = 9.0
+chase_pullback = 0.85

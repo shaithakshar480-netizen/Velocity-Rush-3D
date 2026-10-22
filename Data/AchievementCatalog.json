@@ -1,0 +1,272 @@
+[
+  {
+    "id": "rookie",
+    "title": "Rookie Driver",
+    "event": "completed",
+    "target": 1,
+    "coins": 200,
+    "xp": 100,
+    "mode": "max",
+    "tier": "easy"
+  },
+  {
+    "id": "regular",
+    "title": "Expressway Regular",
+    "event": "completed",
+    "target": 10,
+    "coins": 400,
+    "xp": 150,
+    "mode": "max",
+    "tier": "easy"
+  },
+  {
+    "id": "veteran",
+    "title": "Rush Veteran",
+    "event": "completed",
+    "target": 100,
+    "coins": 1200,
+    "xp": 400,
+    "mode": "max",
+    "tier": "easy"
+  },
+  {
+    "id": "close_call",
+    "title": "Close Call",
+    "event": "near_misses",
+    "target": 10,
+    "coins": 250,
+    "xp": 100,
+    "mode": "max",
+    "tier": "easy"
+  },
+  {
+    "id": "daredevil",
+    "title": "Daredevil",
+    "event": "near_misses",
+    "target": 100,
+    "coins": 750,
+    "xp": 250,
+    "mode": "max",
+    "tier": "easy"
+  },
+  {
+    "id": "speed_hunter",
+    "title": "Speed Hunter",
+    "event": "highest_speed",
+    "target": 250,
+    "coins": 500,
+    "xp": 180,
+    "mode": "max",
+    "tier": "easy"
+  },
+  {
+    "id": "turbo_addict",
+    "title": "Turbo Addict",
+    "event": "turbo_activations",
+    "target": 25,
+    "coins": 500,
+    "xp": 180,
+    "mode": "max",
+    "tier": "easy"
+  },
+  {
+    "id": "collector",
+    "title": "Collector",
+    "event": "cars_owned",
+    "target": 3,
+    "coins": 600,
+    "xp": 250,
+    "mode": "max",
+    "tier": "easy"
+  },
+  {
+    "id": "garage_king",
+    "title": "Garage King",
+    "event": "cars_owned",
+    "target": 6,
+    "coins": 1500,
+    "xp": 500,
+    "mode": "max",
+    "tier": "easy"
+  },
+  {
+    "id": "tuner",
+    "title": "Tuner",
+    "event": "upgrades_purchased",
+    "target": 10,
+    "coins": 400,
+    "xp": 150,
+    "mode": "max",
+    "tier": "easy"
+  },
+  {
+    "id": "master_mechanic",
+    "title": "Master Mechanic",
+    "event": "upgrades_purchased",
+    "target": 50,
+    "coins": 1000,
+    "xp": 350,
+    "mode": "max",
+    "tier": "easy"
+  },
+  {
+    "id": "road_warrior",
+    "title": "Road Warrior",
+    "event": "distance",
+    "target": 100000,
+    "coins": 600,
+    "xp": 200,
+    "mode": "max",
+    "tier": "easy"
+  },
+  {
+    "id": "million_points",
+    "title": "Million Point Club",
+    "event": "cumulative_score",
+    "target": 1000000,
+    "coins": 1500,
+    "xp": 500,
+    "mode": "max",
+    "tier": "easy"
+  },
+  {
+    "id": "coin_runner",
+    "title": "Coin Runner",
+    "event": "pickups",
+    "target": 1000,
+    "coins": 600,
+    "xp": 200,
+    "mode": "max",
+    "tier": "easy"
+  },
+  {
+    "id": "combo_master",
+    "title": "Combo Master",
+    "event": "best_combo",
+    "target": 5,
+    "coins": 400,
+    "xp": 150,
+    "mode": "max",
+    "tier": "easy"
+  },
+  {
+    "id": "distance_25k",
+    "title": "Open Road \u2022 Drive 25 KM",
+    "event": "distance",
+    "target": 25000,
+    "coins": 250,
+    "xp": 90,
+    "mode": "max",
+    "tier": "easy"
+  },
+  {
+    "id": "distance_250k",
+    "title": "Long Haul \u2022 Drive 250 KM",
+    "event": "distance",
+    "target": 250000,
+    "coins": 900,
+    "xp": 300,
+    "mode": "max",
+    "tier": "easy"
+  },
+  {
+    "id": "distance_500k",
+    "title": "Endurance \u2022 Drive 500 KM",
+    "event": "distance",
+    "target": 500000,
+    "coins": 1200,
+    "xp": 400,
+    "mode": "max",
+    "tier": "easy"
+  },
+  {
+    "id": "finish_25",
+    "title": "Pro Driver \u2022 Finish 25 runs",
+    "event": "completed",
+    "target": 25,
+    "coins": 600,
+    "xp": 200,
+    "mode": "max",
+    "tier": "easy"
+  },
+  {
+    "id": "finish_50",
+    "title": "Road Champion \u2022 Finish 50 runs",
+    "event": "completed",
+    "target": 50,
+    "coins": 900,
+    "xp": 300,
+    "mode": "max",
+    "tier": "easy"
+  },
+  {
+    "id": "pickups_250",
+    "title": "Coin Scout \u2022 Collect 250 road coins",
+    "event": "pickups",
+    "target": 250,
+    "coins": 250,
+    "xp": 90,
+    "mode": "max",
+    "tier": "easy"
+  },
+  {
+    "id": "pickups_2500",
+    "title": "Treasure Run \u2022 Collect 2,500 road coins",
+    "event": "pickups",
+    "target": 2500,
+    "coins": 1000,
+    "xp": 350,
+    "mode": "max",
+    "tier": "easy"
+  },
+  {
+    "id": "near_50_career",
+    "title": "Gap Finder \u2022 Make 50 near misses",
+    "event": "near_misses",
+    "target": 50,
+    "coins": 400,
+    "xp": 150,
+    "mode": "max",
+    "tier": "easy"
+  },
+  {
+    "id": "near_250_career",
+    "title": "Precision Driver \u2022 250 near misses",
+    "event": "near_misses",
+    "target": 250,
+    "coins": 1000,
+    "xp": 350,
+    "mode": "max",
+    "tier": "easy"
+  },
+  {
+    "id": "turbo_10_career",
+    "title": "Boost Initiate \u2022 Use Turbo 10 times",
+    "event": "turbo_activations",
+    "target": 10,
+    "coins": 250,
+    "xp": 90,
+    "mode": "max",
+    "tier": "easy"
+  },
+  {
+    "id": "turbo_100_career",
+    "title": "Boost Specialist \u2022 Use Turbo 100 times",
+    "event": "turbo_activations",
+    "target": 100,
+    "coins": 1000,
+    "xp": 350,
+    "mode": "max",
+    "tier": "easy"
+  },
+  {
+    "id": "score_100k_career",
+    "title": "Rising Star \u2022 Earn 100,000 total score",
+    "event": "cumulative_score",
+    "target": 100000,
+    "coins": 400,
+    "xp": 150,
+    "mode": "max",
+    "tier": "easy"
+  }
+]

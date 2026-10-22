@@ -1,0 +1,38 @@
+[
+  {
+    "racer_id": "ai_rex",
+    "display_name": "REX",
+    "skill": 0.91,
+    "aggression": 0.3,
+    "preferred_car": "falcon_s1",
+    "current_position": 0,
+    "finish_time": -1
+  },
+  {
+    "racer_id": "ai_nova",
+    "display_name": "NOVA",
+    "skill": 0.96,
+    "aggression": 0.44999999999999996,
+    "preferred_car": "apex_rs",
+    "current_position": 0,
+    "finish_time": -1
+  },
+  {
+    "racer_id": "ai_kai",
+    "display_name": "KAI",
+    "skill": 1,
+    "aggression": 0.6,
+    "preferred_car": "inferno_r",
+    "current_position": 0,
+    "finish_time": -1
+  },
+  {
+    "racer_id": "ai_zane",
+    "display_name": "ZANE",
+    "skill": 1.035,
+    "aggression": 0.75,
+    "preferred_car": "phantom_x",
+    "current_position": 0,
+    "finish_time": -1
+  }
+]

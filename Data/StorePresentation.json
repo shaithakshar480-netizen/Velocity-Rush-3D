@@ -1,0 +1,84 @@
+{
+  "coins": {
+    "coins_50": {
+      "art": "res://Assets/Store/coin_stack.svg",
+      "badge": ""
+    },
+    "coins_80": {
+      "art": "res://Assets/Store/coin_pile.svg",
+      "badge": "POPULAR"
+    },
+    "coins_150": {
+      "art": "res://Assets/Store/coin_bag.svg",
+      "badge": ""
+    },
+    "coins_250": {
+      "art": "res://Assets/Store/coin_chest.svg",
+      "badge": "HIGH VALUE"
+    },
+    "coins_500": {
+      "art": "res://Assets/Store/coin_vault.svg",
+      "badge": "BEST VALUE"
+    }
+  },
+  "boosts": {
+    "turbo": {
+      "art": "res://Assets/Store/turbo.svg",
+      "title": "TURBO BOOSTERS",
+      "description": "+2 Turbo Charges",
+      "reward_label": "+2 TURBO"
+    },
+    "repair": {
+      "art": "res://Assets/Store/repair.svg",
+      "title": "REPAIR KIT",
+      "description": "Restore vehicle durability",
+      "reward_label": "+1 REPAIR KIT"
+    },
+    "magnet": {
+      "art": "res://Assets/Store/magnet.svg",
+      "title": "COIN MAGNET",
+      "description": "Attract nearby road coins",
+      "reward_label": "+1 COIN MAGNET"
+    },
+    "shield": {
+      "art": "res://Assets/Store/shield.svg",
+      "title": "SHIELD",
+      "description": "Block one eligible impact",
+      "reward_label": "+1 SHIELD"
+    }
+  },
+  "memberships": {
+    "weekly": {
+      "art": "res://Assets/Store/pass_weekly.svg",
+      "title": "WEEKLY RUSH PASS",
+      "duration": "7 DAYS",
+      "fallback_price_inr": 99,
+      "price_period": "WEEK",
+      "provider_product_id": "weekly",
+      "badge": "WEEKLY ACCESS",
+      "initial_coins": 8000,
+      "daily_coins": 1500,
+      "race_bonus_percent": 10
+    },
+    "monthly": {
+      "art": "res://Assets/Store/pass_monthly.svg",
+      "title": "MONTHLY RUSH PASS",
+      "duration": "30 DAYS",
+      "fallback_price_inr": 299,
+      "price_period": "MONTH",
+      "provider_product_id": "monthly",
+      "badge": "BEST VALUE",
+      "initial_coins": 25000,
+      "daily_coins": 2500,
+      "race_bonus_percent": 20
+    }
+  },
+  "benefit_icons": {
+    "coins": "res://Assets/Store/benefit_coins.svg",
+    "car": "res://Assets/Store/benefit_car.svg",
+    "paint": "res://Assets/Store/benefit_paint.svg",
+    "no_ads": "res://Assets/Store/benefit_no_ads.svg",
+    "bonus": "res://Assets/Store/benefit_bonus.svg",
+    "calendar": "res://Assets/Store/benefit_calendar.svg"
+  }
+}

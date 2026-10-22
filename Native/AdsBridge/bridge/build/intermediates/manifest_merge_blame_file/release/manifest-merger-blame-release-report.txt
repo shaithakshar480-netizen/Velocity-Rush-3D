@@ -1,0 +1,42 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.velocityrush3d.ads" >
+4
+5    <uses-sdk android:minSdkVersion="23" />
+6
+7    <uses-permission android:name="android.permission.INTERNET" />
+7-->F:\VelocityRush3D-Phase1\VelocityRush3D\Native\AdsBridge\bridge\src\main\AndroidManifest.xml:2:5-67
+7-->F:\VelocityRush3D-Phase1\VelocityRush3D\Native\AdsBridge\bridge\src\main\AndroidManifest.xml:2:22-64
+8    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+8-->F:\VelocityRush3D-Phase1\VelocityRush3D\Native\AdsBridge\bridge\src\main\AndroidManifest.xml:3:5-79
+8-->F:\VelocityRush3D-Phase1\VelocityRush3D\Native\AdsBridge\bridge\src\main\AndroidManifest.xml:3:22-76
+9
+10    <application>
+10-->F:\VelocityRush3D-Phase1\VelocityRush3D\Native\AdsBridge\bridge\src\main\AndroidManifest.xml:4:5-9:19
+11        <meta-data
+11-->F:\VelocityRush3D-Phase1\VelocityRush3D\Native\AdsBridge\bridge\src\main\AndroidManifest.xml:5:9-130
+12            android:name="org.godotengine.plugin.v2.RushAdsBridge"
+12-->F:\VelocityRush3D-Phase1\VelocityRush3D\Native\AdsBridge\bridge\src\main\AndroidManifest.xml:5:20-74
+13            android:value="com.velocityrush3d.ads.RushAdsBridge" />
+13-->F:\VelocityRush3D-Phase1\VelocityRush3D\Native\AdsBridge\bridge\src\main\AndroidManifest.xml:5:75-127
+14        <meta-data
+14-->F:\VelocityRush3D-Phase1\VelocityRush3D\Native\AdsBridge\bridge\src\main\AndroidManifest.xml:6:9-119
+15            android:name="com.google.android.gms.ads.APPLICATION_ID"
+15-->F:\VelocityRush3D-Phase1\VelocityRush3D\Native\AdsBridge\bridge\src\main\AndroidManifest.xml:6:20-76
+16            android:value="@string/rush_ads_app_id" />
+16-->F:\VelocityRush3D-Phase1\VelocityRush3D\Native\AdsBridge\bridge\src\main\AndroidManifest.xml:6:77-116
+17        <meta-data
+17-->F:\VelocityRush3D-Phase1\VelocityRush3D\Native\AdsBridge\bridge\src\main\AndroidManifest.xml:7:9-114
+18            android:name="com.google.android.gms.ads.flag.OPTIMIZE_INITIALIZATION"
+18-->F:\VelocityRush3D-Phase1\VelocityRush3D\Native\AdsBridge\bridge\src\main\AndroidManifest.xml:7:20-90
+19            android:value="true" />
+19-->F:\VelocityRush3D-Phase1\VelocityRush3D\Native\AdsBridge\bridge\src\main\AndroidManifest.xml:7:91-111
+20        <meta-data
+20-->F:\VelocityRush3D-Phase1\VelocityRush3D\Native\AdsBridge\bridge\src\main\AndroidManifest.xml:8:9-110
+21            android:name="com.google.android.gms.ads.flag.OPTIMIZE_AD_LOADING"
+21-->F:\VelocityRush3D-Phase1\VelocityRush3D\Native\AdsBridge\bridge\src\main\AndroidManifest.xml:8:20-86
+22            android:value="true" />
+22-->F:\VelocityRush3D-Phase1\VelocityRush3D\Native\AdsBridge\bridge\src\main\AndroidManifest.xml:8:87-107
+23    </application>
+24
+25</manifest>

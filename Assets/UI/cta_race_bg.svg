@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 86">
+  <defs>
+    <!-- Background Gradient: Deep rich cockpit navy with luminous cyan rim -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e2a3e" stop-opacity="0.96"/>
+      <stop offset="60%" stop-color="#071926" stop-opacity="0.98"/>
+      <stop offset="100%" stop-color="#040e17" stop-opacity="1.0"/>
+    </linearGradient>
+    
+    <!-- Neon Accent Glow: High-voltage racing cyan -->
+    <linearGradient id="neonGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#55e7ff" stop-opacity="0.9"/>
+      <stop offset="70%" stop-color="#83cede" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#3aa9bf" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <!-- Slanted Chevron Accent -->
+    <linearGradient id="chevGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#55e7ff" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#55e7ff" stop-opacity="0.0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Chamfered / Slanted Hexagonal Race Button Base Shape -->
+  <!-- Top-left chamfer (20,2), Top-right rounded/angled, Bottom-right chamfer (240,84), Bottom-left rounded -->
+  <path d="M 22,2 L 250,2 Q 258,2 258,10 L 258,66 L 240,84 L 10,84 Q 2,84 2,76 L 2,22 Z" 
+        fill="url(#bgGrad)" 
+        stroke="#2d5269" 
+        stroke-width="1.5" />
+
+  <!-- Speed Chevrons (Subtle background automotive dynamic stripes) -->
+  <path d="M 175,8 L 195,8 L 175,78 L 155,78 Z" fill="url(#chevGrad)"/>
+  <path d="M 198,8 L 218,8 L 198,78 L 178,78 Z" fill="url(#chevGrad)"/>
+
+  <!-- Top Cyan Luminous Edge Line -->
+  <path d="M 24,3 L 248,3" stroke="url(#neonGlow)" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Bottom-Right Chamfer Highlight Accent -->
+  <path d="M 238,83 L 257,64" stroke="#55e7ff" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Left Edge Vertical Racing Pips -->
+  <rect x="6" y="28" width="3" height="7" rx="1.5" fill="#55e7ff" opacity="0.8"/>
+  <rect x="6" y="38" width="3" height="7" rx="1.5" fill="#83cede" opacity="0.6"/>
+  <rect x="6" y="48" width="3" height="7" rx="1.5" fill="#2d5269" opacity="0.4"/>
+</svg>

@@ -1,0 +1,5775 @@
+{
+  "scope": "Offline GLB bytes, source contracts and checkpoint comparison; not compilation/render/runtime",
+  "checks": 1410,
+  "failed": 0,
+  "mesh_metrics": [
+    {
+      "id": "vortex_s",
+      "tier": "low",
+      "triangles": 7394,
+      "surface_instances": 22,
+      "bytes": 424724
+    },
+    {
+      "id": "vortex_s",
+      "tier": "medium",
+      "triangles": 16778,
+      "surface_instances": 27,
+      "bytes": 933976
+    },
+    {
+      "id": "vortex_s",
+      "tier": "high",
+      "triangles": 33450,
+      "surface_instances": 27,
+      "bytes": 1840608
+    },
+    {
+      "id": "falcon_s1",
+      "tier": "low",
+      "triangles": 7474,
+      "surface_instances": 23,
+      "bytes": 429324
+    },
+    {
+      "id": "falcon_s1",
+      "tier": "medium",
+      "triangles": 17018,
+      "surface_instances": 26,
+      "bytes": 940288
+    },
+    {
+      "id": "falcon_s1",
+      "tier": "high",
+      "triangles": 33818,
+      "surface_instances": 27,
+      "bytes": 1849808
+    },
+    {
+      "id": "apex_rs",
+      "tier": "low",
+      "triangles": 7642,
+      "surface_instances": 23,
+      "bytes": 443172
+    },
+    {
+      "id": "apex_rs",
+      "tier": "medium",
+      "triangles": 17026,
+      "surface_instances": 27,
+      "bytes": 951824
+    },
+    {
+      "id": "apex_rs",
+      "tier": "high",
+      "triangles": 33698,
+      "surface_instances": 27,
+      "bytes": 1858472
+    },
+    {
+      "id": "inferno_r",
+      "tier": "low",
+      "triangles": 7918,
+      "surface_instances": 23,
+      "bytes": 459620
+    },
+    {
+      "id": "inferno_r",
+      "tier": "medium",
+      "triangles": 17694,
+      "surface_instances": 27,
+      "bytes": 979216
+    },
+    {
+      "id": "inferno_r",
+      "tier": "high",
+      "triangles": 34654,
+      "surface_instances": 27,
+      "bytes": 1892776
+    },
+    {
+      "id": "phantom_x",
+      "tier": "low",
+      "triangles": 7962,
+      "surface_instances": 23,
+      "bytes": 466220
+    },
+    {
+      "id": "phantom_x",
+      "tier": "medium",
+      "triangles": 17418,
+      "surface_instances": 27,
+      "bytes": 980056
+    },
+    {
+      "id": "phantom_x",
+      "tier": "high",
+      "triangles": 34122,
+      "surface_instances": 27,
+      "bytes": 1889024
+    },
+    {
+      "id": "titan_v12",
+      "tier": "low",
+      "triangles": 7982,
+      "surface_instances": 23,
+      "bytes": 462452
+    },
+    {
+      "id": "titan_v12",
+      "tier": "medium",
+      "triangles": 17918,
+      "surface_instances": 27,
+      "bytes": 984928
+    },
+    {
+      "id": "titan_v12",
+      "tier": "high",
+      "triangles": 35006,
+      "surface_instances": 27,
+      "bytes": 1900796
+    }
+  ],
+  "results": [
+    {
+      "check": "vortex_s High path authoritative",
+      "passed": true
+    },
+    {
+      "check": "vortex_s three different LOD resources",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low thirteen explicit material roles",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low opaque materials",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low finite Body/0",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low finite Body/1",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low finite Body/2",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low finite Body/4",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low finite Body/5",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low finite Body/6",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low finite Body/7",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low finite Body/10",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low finite Body/11",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low finite Body/12",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low finite Wheel_0/3",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low finite Wheel_0/4",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low finite Wheel_0/9",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low finite Wheel_1/3",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low finite Wheel_1/4",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low finite Wheel_1/9",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low finite Wheel_2/3",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low finite Wheel_2/4",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low finite Wheel_2/9",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low finite Wheel_3/3",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low finite Wheel_3/4",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low finite Wheel_3/9",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low requested triangle budget",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low bounded material surfaces",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low four shared-wheel instances",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low wheel on road Wheel_0",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low calibrated wheelbase Wheel_0",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low wheel on road Wheel_1",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low calibrated wheelbase Wheel_1",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low wheel on road Wheel_2",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low calibrated wheelbase Wheel_2",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low wheel on road Wheel_3",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low calibrated wheelbase Wheel_3",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low all geometry above road",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low hood anchor clearance",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low bumper in front of mesh",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low exhaust aligns to modeled outlet",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Low exhaust aligns to modeled outlet",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium thirteen explicit material roles",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium opaque materials",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium finite Body/0",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium finite Body/1",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium finite Body/2",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium finite Body/4",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium finite Body/5",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium finite Body/6",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium finite Body/7",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium finite Body/8",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium finite Body/10",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium finite Body/11",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium finite Body/12",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium finite Wheel_0/3",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium finite Wheel_0/4",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium finite Wheel_0/8",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium finite Wheel_0/9",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium finite Wheel_1/3",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium finite Wheel_1/4",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium finite Wheel_1/8",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium finite Wheel_1/9",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium finite Wheel_2/3",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium finite Wheel_2/4",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium finite Wheel_2/8",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium finite Wheel_2/9",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium finite Wheel_3/3",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium finite Wheel_3/4",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium finite Wheel_3/8",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium finite Wheel_3/9",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium requested triangle budget",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium bounded material surfaces",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium four shared-wheel instances",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium wheel on road Wheel_0",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium calibrated wheelbase Wheel_0",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium wheel on road Wheel_1",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium calibrated wheelbase Wheel_1",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium wheel on road Wheel_2",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium calibrated wheelbase Wheel_2",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium wheel on road Wheel_3",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium calibrated wheelbase Wheel_3",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium all geometry above road",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium hood anchor clearance",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium bumper in front of mesh",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium exhaust aligns to modeled outlet",
+      "passed": true
+    },
+    {
+      "check": "vortex_s Medium exhaust aligns to modeled outlet",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High thirteen explicit material roles",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High opaque materials",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High finite Body/0",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High finite Body/1",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High finite Body/2",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High finite Body/4",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High finite Body/5",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High finite Body/6",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High finite Body/7",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High finite Body/8",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High finite Body/10",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High finite Body/11",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High finite Body/12",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High finite Wheel_0/3",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High finite Wheel_0/4",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High finite Wheel_0/8",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High finite Wheel_0/9",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High finite Wheel_1/3",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High finite Wheel_1/4",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High finite Wheel_1/8",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High finite Wheel_1/9",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High finite Wheel_2/3",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High finite Wheel_2/4",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High finite Wheel_2/8",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High finite Wheel_2/9",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High finite Wheel_3/3",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High finite Wheel_3/4",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High finite Wheel_3/8",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High finite Wheel_3/9",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High requested triangle budget",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High bounded material surfaces",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High four shared-wheel instances",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High wheel on road Wheel_0",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High calibrated wheelbase Wheel_0",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High wheel on road Wheel_1",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High calibrated wheelbase Wheel_1",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High wheel on road Wheel_2",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High calibrated wheelbase Wheel_2",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High wheel on road Wheel_3",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High calibrated wheelbase Wheel_3",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High all geometry above road",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High hood anchor clearance",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High bumper in front of mesh",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High exhaust aligns to modeled outlet",
+      "passed": true
+    },
+    {
+      "check": "vortex_s High exhaust aligns to modeled outlet",
+      "passed": true
+    },
+    {
+      "check": "vortex_s silhouette retained across tiers",
+      "passed": true
+    },
+    {
+      "check": "vortex_s five camera anchors",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High path authoritative",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 three different LOD resources",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low thirteen explicit material roles",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low opaque materials",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low finite Body/0",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low finite Body/1",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low finite Body/2",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low finite Body/4",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low finite Body/5",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low finite Body/6",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low finite Body/7",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low finite Body/8",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low finite Body/10",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low finite Body/11",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low finite Body/12",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low finite Wheel_0/3",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low finite Wheel_0/4",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low finite Wheel_0/9",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low finite Wheel_1/3",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low finite Wheel_1/4",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low finite Wheel_1/9",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low finite Wheel_2/3",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low finite Wheel_2/4",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low finite Wheel_2/9",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low finite Wheel_3/3",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low finite Wheel_3/4",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low finite Wheel_3/9",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low requested triangle budget",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low bounded material surfaces",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low four shared-wheel instances",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low wheel on road Wheel_0",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low calibrated wheelbase Wheel_0",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low wheel on road Wheel_1",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low calibrated wheelbase Wheel_1",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low wheel on road Wheel_2",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low calibrated wheelbase Wheel_2",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low wheel on road Wheel_3",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low calibrated wheelbase Wheel_3",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low all geometry above road",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low hood anchor clearance",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low bumper in front of mesh",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low exhaust aligns to modeled outlet",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Low exhaust aligns to modeled outlet",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium thirteen explicit material roles",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium opaque materials",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium finite Body/0",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium finite Body/1",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium finite Body/2",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium finite Body/4",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium finite Body/5",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium finite Body/6",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium finite Body/7",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium finite Body/10",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium finite Body/11",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium finite Body/12",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium finite Wheel_0/3",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium finite Wheel_0/4",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium finite Wheel_0/8",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium finite Wheel_0/9",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium finite Wheel_1/3",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium finite Wheel_1/4",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium finite Wheel_1/8",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium finite Wheel_1/9",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium finite Wheel_2/3",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium finite Wheel_2/4",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium finite Wheel_2/8",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium finite Wheel_2/9",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium finite Wheel_3/3",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium finite Wheel_3/4",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium finite Wheel_3/8",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium finite Wheel_3/9",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium requested triangle budget",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium bounded material surfaces",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium four shared-wheel instances",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium wheel on road Wheel_0",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium calibrated wheelbase Wheel_0",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium wheel on road Wheel_1",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium calibrated wheelbase Wheel_1",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium wheel on road Wheel_2",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium calibrated wheelbase Wheel_2",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium wheel on road Wheel_3",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium calibrated wheelbase Wheel_3",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium all geometry above road",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium hood anchor clearance",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium bumper in front of mesh",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium exhaust aligns to modeled outlet",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 Medium exhaust aligns to modeled outlet",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High thirteen explicit material roles",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High opaque materials",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High finite Body/0",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High finite Body/1",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High finite Body/2",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High finite Body/4",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High finite Body/5",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High finite Body/6",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High finite Body/7",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High finite Body/8",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High finite Body/10",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High finite Body/11",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High finite Body/12",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High finite Wheel_0/3",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High finite Wheel_0/4",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High finite Wheel_0/8",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High finite Wheel_0/9",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High finite Wheel_1/3",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High finite Wheel_1/4",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High finite Wheel_1/8",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High finite Wheel_1/9",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High finite Wheel_2/3",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High finite Wheel_2/4",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High finite Wheel_2/8",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High finite Wheel_2/9",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High finite Wheel_3/3",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High finite Wheel_3/4",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High finite Wheel_3/8",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High finite Wheel_3/9",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High requested triangle budget",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High bounded material surfaces",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High four shared-wheel instances",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High wheel on road Wheel_0",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High calibrated wheelbase Wheel_0",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High wheel on road Wheel_1",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High calibrated wheelbase Wheel_1",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High wheel on road Wheel_2",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High calibrated wheelbase Wheel_2",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High wheel on road Wheel_3",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High calibrated wheelbase Wheel_3",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High all geometry above road",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High hood anchor clearance",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High bumper in front of mesh",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High exhaust aligns to modeled outlet",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 High exhaust aligns to modeled outlet",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 silhouette retained across tiers",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 five camera anchors",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High path authoritative",
+      "passed": true
+    },
+    {
+      "check": "apex_rs three different LOD resources",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low thirteen explicit material roles",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low opaque materials",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low finite Body/0",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low finite Body/1",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low finite Body/2",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low finite Body/4",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low finite Body/5",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low finite Body/6",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low finite Body/7",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low finite Body/8",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low finite Body/10",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low finite Body/11",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low finite Body/12",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low finite Wheel_0/3",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low finite Wheel_0/4",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low finite Wheel_0/9",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low finite Wheel_1/3",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low finite Wheel_1/4",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low finite Wheel_1/9",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low finite Wheel_2/3",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low finite Wheel_2/4",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low finite Wheel_2/9",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low finite Wheel_3/3",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low finite Wheel_3/4",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low finite Wheel_3/9",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low requested triangle budget",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low bounded material surfaces",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low four shared-wheel instances",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low wheel on road Wheel_0",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low calibrated wheelbase Wheel_0",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low wheel on road Wheel_1",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low calibrated wheelbase Wheel_1",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low wheel on road Wheel_2",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low calibrated wheelbase Wheel_2",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low wheel on road Wheel_3",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low calibrated wheelbase Wheel_3",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low all geometry above road",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low hood anchor clearance",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low bumper in front of mesh",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low exhaust aligns to modeled outlet",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Low exhaust aligns to modeled outlet",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium thirteen explicit material roles",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium opaque materials",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium finite Body/0",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium finite Body/1",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium finite Body/2",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium finite Body/4",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium finite Body/5",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium finite Body/6",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium finite Body/7",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium finite Body/8",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium finite Body/10",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium finite Body/11",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium finite Body/12",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium finite Wheel_0/3",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium finite Wheel_0/4",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium finite Wheel_0/8",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium finite Wheel_0/9",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium finite Wheel_1/3",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium finite Wheel_1/4",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium finite Wheel_1/8",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium finite Wheel_1/9",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium finite Wheel_2/3",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium finite Wheel_2/4",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium finite Wheel_2/8",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium finite Wheel_2/9",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium finite Wheel_3/3",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium finite Wheel_3/4",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium finite Wheel_3/8",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium finite Wheel_3/9",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium requested triangle budget",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium bounded material surfaces",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium four shared-wheel instances",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium wheel on road Wheel_0",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium calibrated wheelbase Wheel_0",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium wheel on road Wheel_1",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium calibrated wheelbase Wheel_1",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium wheel on road Wheel_2",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium calibrated wheelbase Wheel_2",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium wheel on road Wheel_3",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium calibrated wheelbase Wheel_3",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium all geometry above road",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium hood anchor clearance",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium bumper in front of mesh",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium exhaust aligns to modeled outlet",
+      "passed": true
+    },
+    {
+      "check": "apex_rs Medium exhaust aligns to modeled outlet",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High thirteen explicit material roles",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High opaque materials",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High finite Body/0",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High finite Body/1",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High finite Body/2",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High finite Body/4",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High finite Body/5",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High finite Body/6",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High finite Body/7",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High finite Body/8",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High finite Body/10",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High finite Body/11",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High finite Body/12",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High finite Wheel_0/3",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High finite Wheel_0/4",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High finite Wheel_0/8",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High finite Wheel_0/9",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High finite Wheel_1/3",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High finite Wheel_1/4",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High finite Wheel_1/8",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High finite Wheel_1/9",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High finite Wheel_2/3",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High finite Wheel_2/4",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High finite Wheel_2/8",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High finite Wheel_2/9",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High finite Wheel_3/3",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High finite Wheel_3/4",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High finite Wheel_3/8",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High finite Wheel_3/9",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High requested triangle budget",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High bounded material surfaces",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High four shared-wheel instances",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High wheel on road Wheel_0",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High calibrated wheelbase Wheel_0",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High wheel on road Wheel_1",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High calibrated wheelbase Wheel_1",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High wheel on road Wheel_2",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High calibrated wheelbase Wheel_2",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High wheel on road Wheel_3",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High calibrated wheelbase Wheel_3",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High all geometry above road",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High hood anchor clearance",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High bumper in front of mesh",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High exhaust aligns to modeled outlet",
+      "passed": true
+    },
+    {
+      "check": "apex_rs High exhaust aligns to modeled outlet",
+      "passed": true
+    },
+    {
+      "check": "apex_rs silhouette retained across tiers",
+      "passed": true
+    },
+    {
+      "check": "apex_rs five camera anchors",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High path authoritative",
+      "passed": true
+    },
+    {
+      "check": "inferno_r three different LOD resources",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low thirteen explicit material roles",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low opaque materials",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low finite Body/0",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low finite Body/1",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low finite Body/2",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low finite Body/4",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low finite Body/5",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low finite Body/6",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low finite Body/7",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low finite Body/8",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low finite Body/10",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low finite Body/11",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low finite Body/12",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low finite Wheel_0/3",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low finite Wheel_0/4",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low finite Wheel_0/9",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low finite Wheel_1/3",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low finite Wheel_1/4",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low finite Wheel_1/9",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low finite Wheel_2/3",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low finite Wheel_2/4",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low finite Wheel_2/9",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low finite Wheel_3/3",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low finite Wheel_3/4",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low finite Wheel_3/9",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low requested triangle budget",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low bounded material surfaces",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low four shared-wheel instances",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low wheel on road Wheel_0",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low calibrated wheelbase Wheel_0",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low wheel on road Wheel_1",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low calibrated wheelbase Wheel_1",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low wheel on road Wheel_2",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low calibrated wheelbase Wheel_2",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low wheel on road Wheel_3",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low calibrated wheelbase Wheel_3",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low all geometry above road",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low hood anchor clearance",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low bumper in front of mesh",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low exhaust aligns to modeled outlet",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Low exhaust aligns to modeled outlet",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium thirteen explicit material roles",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium opaque materials",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium finite Body/0",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium finite Body/1",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium finite Body/2",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium finite Body/4",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium finite Body/5",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium finite Body/6",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium finite Body/7",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium finite Body/8",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium finite Body/10",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium finite Body/11",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium finite Body/12",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium finite Wheel_0/3",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium finite Wheel_0/4",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium finite Wheel_0/8",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium finite Wheel_0/9",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium finite Wheel_1/3",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium finite Wheel_1/4",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium finite Wheel_1/8",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium finite Wheel_1/9",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium finite Wheel_2/3",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium finite Wheel_2/4",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium finite Wheel_2/8",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium finite Wheel_2/9",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium finite Wheel_3/3",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium finite Wheel_3/4",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium finite Wheel_3/8",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium finite Wheel_3/9",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium requested triangle budget",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium bounded material surfaces",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium four shared-wheel instances",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium wheel on road Wheel_0",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium calibrated wheelbase Wheel_0",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium wheel on road Wheel_1",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium calibrated wheelbase Wheel_1",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium wheel on road Wheel_2",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium calibrated wheelbase Wheel_2",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium wheel on road Wheel_3",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium calibrated wheelbase Wheel_3",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium all geometry above road",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium hood anchor clearance",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium bumper in front of mesh",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium exhaust aligns to modeled outlet",
+      "passed": true
+    },
+    {
+      "check": "inferno_r Medium exhaust aligns to modeled outlet",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High thirteen explicit material roles",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High opaque materials",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High finite Body/0",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High finite Body/1",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High finite Body/2",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High finite Body/4",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High finite Body/5",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High finite Body/6",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High finite Body/7",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High finite Body/8",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High finite Body/10",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High finite Body/11",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High finite Body/12",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High finite Wheel_0/3",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High finite Wheel_0/4",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High finite Wheel_0/8",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High finite Wheel_0/9",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High finite Wheel_1/3",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High finite Wheel_1/4",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High finite Wheel_1/8",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High finite Wheel_1/9",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High finite Wheel_2/3",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High finite Wheel_2/4",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High finite Wheel_2/8",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High finite Wheel_2/9",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High finite Wheel_3/3",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High finite Wheel_3/4",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High finite Wheel_3/8",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High finite Wheel_3/9",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High requested triangle budget",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High bounded material surfaces",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High four shared-wheel instances",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High wheel on road Wheel_0",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High calibrated wheelbase Wheel_0",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High wheel on road Wheel_1",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High calibrated wheelbase Wheel_1",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High wheel on road Wheel_2",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High calibrated wheelbase Wheel_2",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High wheel on road Wheel_3",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High calibrated wheelbase Wheel_3",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High all geometry above road",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High hood anchor clearance",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High bumper in front of mesh",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High exhaust aligns to modeled outlet",
+      "passed": true
+    },
+    {
+      "check": "inferno_r High exhaust aligns to modeled outlet",
+      "passed": true
+    },
+    {
+      "check": "inferno_r silhouette retained across tiers",
+      "passed": true
+    },
+    {
+      "check": "inferno_r five camera anchors",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High path authoritative",
+      "passed": true
+    },
+    {
+      "check": "phantom_x three different LOD resources",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low thirteen explicit material roles",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low opaque materials",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low finite Body/0",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low finite Body/1",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low finite Body/2",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low finite Body/4",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low finite Body/5",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low finite Body/6",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low finite Body/7",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low finite Body/8",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low finite Body/10",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low finite Body/11",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low finite Body/12",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low finite Wheel_0/3",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low finite Wheel_0/4",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low finite Wheel_0/9",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low finite Wheel_1/3",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low finite Wheel_1/4",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low finite Wheel_1/9",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low finite Wheel_2/3",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low finite Wheel_2/4",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low finite Wheel_2/9",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low finite Wheel_3/3",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low finite Wheel_3/4",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low finite Wheel_3/9",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low requested triangle budget",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low bounded material surfaces",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low four shared-wheel instances",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low wheel on road Wheel_0",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low calibrated wheelbase Wheel_0",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low wheel on road Wheel_1",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low calibrated wheelbase Wheel_1",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low wheel on road Wheel_2",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low calibrated wheelbase Wheel_2",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low wheel on road Wheel_3",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low calibrated wheelbase Wheel_3",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low all geometry above road",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low hood anchor clearance",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low bumper in front of mesh",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low exhaust aligns to modeled outlet",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Low exhaust aligns to modeled outlet",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium thirteen explicit material roles",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium opaque materials",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium finite Body/0",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium finite Body/1",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium finite Body/2",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium finite Body/4",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium finite Body/5",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium finite Body/6",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium finite Body/7",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium finite Body/8",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium finite Body/10",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium finite Body/11",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium finite Body/12",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium finite Wheel_0/3",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium finite Wheel_0/4",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium finite Wheel_0/8",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium finite Wheel_0/9",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium finite Wheel_1/3",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium finite Wheel_1/4",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium finite Wheel_1/8",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium finite Wheel_1/9",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium finite Wheel_2/3",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium finite Wheel_2/4",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium finite Wheel_2/8",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium finite Wheel_2/9",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium finite Wheel_3/3",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium finite Wheel_3/4",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium finite Wheel_3/8",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium finite Wheel_3/9",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium requested triangle budget",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium bounded material surfaces",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium four shared-wheel instances",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium wheel on road Wheel_0",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium calibrated wheelbase Wheel_0",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium wheel on road Wheel_1",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium calibrated wheelbase Wheel_1",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium wheel on road Wheel_2",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium calibrated wheelbase Wheel_2",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium wheel on road Wheel_3",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium calibrated wheelbase Wheel_3",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium all geometry above road",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium hood anchor clearance",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium bumper in front of mesh",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium exhaust aligns to modeled outlet",
+      "passed": true
+    },
+    {
+      "check": "phantom_x Medium exhaust aligns to modeled outlet",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High thirteen explicit material roles",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High opaque materials",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High finite Body/0",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High finite Body/1",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High finite Body/2",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High finite Body/4",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High finite Body/5",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High finite Body/6",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High finite Body/7",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High finite Body/8",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High finite Body/10",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High finite Body/11",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High finite Body/12",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High finite Wheel_0/3",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High finite Wheel_0/4",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High finite Wheel_0/8",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High finite Wheel_0/9",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High finite Wheel_1/3",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High finite Wheel_1/4",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High finite Wheel_1/8",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High finite Wheel_1/9",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High finite Wheel_2/3",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High finite Wheel_2/4",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High finite Wheel_2/8",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High finite Wheel_2/9",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High finite Wheel_3/3",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High finite Wheel_3/4",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High finite Wheel_3/8",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High finite Wheel_3/9",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High requested triangle budget",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High bounded material surfaces",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High four shared-wheel instances",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High wheel on road Wheel_0",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High calibrated wheelbase Wheel_0",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High wheel on road Wheel_1",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High calibrated wheelbase Wheel_1",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High wheel on road Wheel_2",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High calibrated wheelbase Wheel_2",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High wheel on road Wheel_3",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High calibrated wheelbase Wheel_3",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High all geometry above road",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High hood anchor clearance",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High bumper in front of mesh",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High exhaust aligns to modeled outlet",
+      "passed": true
+    },
+    {
+      "check": "phantom_x High exhaust aligns to modeled outlet",
+      "passed": true
+    },
+    {
+      "check": "phantom_x silhouette retained across tiers",
+      "passed": true
+    },
+    {
+      "check": "phantom_x five camera anchors",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High path authoritative",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 three different LOD resources",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low thirteen explicit material roles",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low opaque materials",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low finite Body/0",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low finite Body/1",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low finite Body/2",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low finite Body/4",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low finite Body/5",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low finite Body/6",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low finite Body/7",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low finite Body/8",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low finite Body/10",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low finite Body/11",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low finite Body/12",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low finite Wheel_0/3",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low finite Wheel_0/4",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low finite Wheel_0/9",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low finite Wheel_1/3",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low finite Wheel_1/4",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low finite Wheel_1/9",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low finite Wheel_2/3",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low finite Wheel_2/4",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low finite Wheel_2/9",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low finite Wheel_3/3",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low finite Wheel_3/4",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low finite Wheel_3/9",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low requested triangle budget",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low bounded material surfaces",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low four shared-wheel instances",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low wheel on road Wheel_0",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low calibrated wheelbase Wheel_0",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low wheel on road Wheel_1",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low calibrated wheelbase Wheel_1",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low wheel on road Wheel_2",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low calibrated wheelbase Wheel_2",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low wheel on road Wheel_3",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low calibrated wheelbase Wheel_3",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low all geometry above road",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low hood anchor clearance",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low bumper in front of mesh",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low exhaust aligns to modeled outlet",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Low exhaust aligns to modeled outlet",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium thirteen explicit material roles",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium opaque materials",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium finite Body/0",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium finite Body/1",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium finite Body/2",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium finite Body/4",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium finite Body/5",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium finite Body/6",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium finite Body/7",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium finite Body/8",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium finite Body/10",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium finite Body/11",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium finite Body/12",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium finite Wheel_0/3",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium finite Wheel_0/4",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium finite Wheel_0/8",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium finite Wheel_0/9",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium finite Wheel_1/3",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium finite Wheel_1/4",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium finite Wheel_1/8",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium finite Wheel_1/9",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium finite Wheel_2/3",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium finite Wheel_2/4",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium finite Wheel_2/8",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium finite Wheel_2/9",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium finite Wheel_3/3",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium finite Wheel_3/4",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium finite Wheel_3/8",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium finite Wheel_3/9",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium requested triangle budget",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium bounded material surfaces",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium four shared-wheel instances",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium wheel on road Wheel_0",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium calibrated wheelbase Wheel_0",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium wheel on road Wheel_1",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium calibrated wheelbase Wheel_1",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium wheel on road Wheel_2",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium calibrated wheelbase Wheel_2",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium wheel on road Wheel_3",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium calibrated wheelbase Wheel_3",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium all geometry above road",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium hood anchor clearance",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium bumper in front of mesh",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium exhaust aligns to modeled outlet",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 Medium exhaust aligns to modeled outlet",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High thirteen explicit material roles",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High opaque materials",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High finite Body/0",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High finite Body/1",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High finite Body/2",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High finite Body/4",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High finite Body/5",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High finite Body/6",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High finite Body/7",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High finite Body/8",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High finite Body/10",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High finite Body/11",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High finite Body/12",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High finite Wheel_0/3",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High finite Wheel_0/4",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High finite Wheel_0/8",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High finite Wheel_0/9",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High finite Wheel_1/3",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High finite Wheel_1/4",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High finite Wheel_1/8",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High finite Wheel_1/9",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High finite Wheel_2/3",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High finite Wheel_2/4",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High finite Wheel_2/8",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High finite Wheel_2/9",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High finite Wheel_3/3",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High finite Wheel_3/4",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High finite Wheel_3/8",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High finite Wheel_3/9",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High no collision conversion",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High requested triangle budget",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High bounded material surfaces",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High four shared-wheel instances",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High wheel on road Wheel_0",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High calibrated wheelbase Wheel_0",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High wheel on road Wheel_1",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High calibrated wheelbase Wheel_1",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High wheel on road Wheel_2",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High calibrated wheelbase Wheel_2",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High wheel on road Wheel_3",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High calibrated wheelbase Wheel_3",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High all geometry above road",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High hood anchor clearance",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High bumper in front of mesh",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High exhaust aligns to modeled outlet",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 High exhaust aligns to modeled outlet",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 silhouette retained across tiers",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 five camera anchors",
+      "passed": true
+    },
+    {
+      "check": "Custom native name override removed",
+      "passed": true
+    },
+    {
+      "check": "All profile callers renamed",
+      "passed": true
+    },
+    {
+      "check": "Setter keeps atomic persistence",
+      "passed": true
+    },
+    {
+      "check": "No global warning suppression",
+      "passed": true
+    },
+    {
+      "check": "Data-driven visual paths",
+      "passed": true
+    },
+    {
+      "check": "Threaded boot resource loading",
+      "passed": true
+    },
+    {
+      "check": "LOD switch constructs no scene",
+      "passed": true
+    },
+    {
+      "check": "Wheel rotation transfers on LOD change",
+      "passed": true
+    },
+    {
+      "check": "Body rotation transfers on LOD change",
+      "passed": true
+    },
+    {
+      "check": "Body roll cannot lift tires",
+      "passed": true
+    },
+    {
+      "check": "Cached shell lookup in animation",
+      "passed": true
+    },
+    {
+      "check": "No material allocation per frame",
+      "passed": true
+    },
+    {
+      "check": "Paint shared per car across LODs",
+      "passed": true
+    },
+    {
+      "check": "Brake emission isolated per car",
+      "passed": true
+    },
+    {
+      "check": "Sky reflection costs bounded",
+      "passed": true
+    },
+    {
+      "check": "Camera reads selected spec",
+      "passed": true
+    },
+    {
+      "check": "Low Medium High real mesh tiers",
+      "passed": true
+    },
+    {
+      "check": "Actual shadow and render profiles",
+      "passed": true
+    },
+    {
+      "check": "Ordered bounded fallback",
+      "passed": true
+    },
+    {
+      "check": "Downgrades cannot change traffic/physics logic",
+      "passed": true
+    },
+    {
+      "check": "No monetization SDK dependencies",
+      "passed": true
+    },
+    {
+      "check": "Phase 5 bytes preserved Progression/ProgressionData.gd",
+      "passed": true
+    },
+    {
+      "check": "Phase 5 bytes preserved Data/ProgressionSpec.json",
+      "passed": true
+    },
+    {
+      "check": "Phase 5 bytes preserved Data/MissionCatalog.json",
+      "passed": true
+    },
+    {
+      "check": "Phase 5 bytes preserved Data/AchievementCatalog.json",
+      "passed": true
+    },
+    {
+      "check": "Phase 5 bytes preserved Gameplay/RunManager.gd",
+      "passed": true
+    },
+    {
+      "check": "Phase 5 bytes preserved Collectibles/CoinSystem.gd",
+      "passed": true
+    },
+    {
+      "check": "Reward service changes only API name",
+      "passed": true
+    },
+    {
+      "check": "vortex_s unchanged gameplay id",
+      "passed": true
+    },
+    {
+      "check": "vortex_s unchanged gameplay price",
+      "passed": true
+    },
+    {
+      "check": "vortex_s unchanged gameplay top_speed_kmh",
+      "passed": true
+    },
+    {
+      "check": "vortex_s unchanged gameplay acceleration",
+      "passed": true
+    },
+    {
+      "check": "vortex_s unchanged gameplay braking",
+      "passed": true
+    },
+    {
+      "check": "vortex_s unchanged gameplay grip",
+      "passed": true
+    },
+    {
+      "check": "vortex_s unchanged gameplay weight_kg",
+      "passed": true
+    },
+    {
+      "check": "vortex_s unchanged gameplay turbo_speed",
+      "passed": true
+    },
+    {
+      "check": "vortex_s unchanged gameplay turbo_acceleration",
+      "passed": true
+    },
+    {
+      "check": "vortex_s unchanged gameplay turbo_charge",
+      "passed": true
+    },
+    {
+      "check": "vortex_s unchanged gameplay wheelbase",
+      "passed": true
+    },
+    {
+      "check": "vortex_s unchanged gameplay wheel_radius",
+      "passed": true
+    },
+    {
+      "check": "vortex_s unchanged gameplay length",
+      "passed": true
+    },
+    {
+      "check": "vortex_s unchanged gameplay width",
+      "passed": true
+    },
+    {
+      "check": "vortex_s unchanged gameplay exhaust_points",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 unchanged gameplay id",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 unchanged gameplay price",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 unchanged gameplay top_speed_kmh",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 unchanged gameplay acceleration",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 unchanged gameplay braking",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 unchanged gameplay grip",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 unchanged gameplay weight_kg",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 unchanged gameplay turbo_speed",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 unchanged gameplay turbo_acceleration",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 unchanged gameplay turbo_charge",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 unchanged gameplay wheelbase",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 unchanged gameplay wheel_radius",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 unchanged gameplay length",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 unchanged gameplay width",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 unchanged gameplay exhaust_points",
+      "passed": true
+    },
+    {
+      "check": "apex_rs unchanged gameplay id",
+      "passed": true
+    },
+    {
+      "check": "apex_rs unchanged gameplay price",
+      "passed": true
+    },
+    {
+      "check": "apex_rs unchanged gameplay top_speed_kmh",
+      "passed": true
+    },
+    {
+      "check": "apex_rs unchanged gameplay acceleration",
+      "passed": true
+    },
+    {
+      "check": "apex_rs unchanged gameplay braking",
+      "passed": true
+    },
+    {
+      "check": "apex_rs unchanged gameplay grip",
+      "passed": true
+    },
+    {
+      "check": "apex_rs unchanged gameplay weight_kg",
+      "passed": true
+    },
+    {
+      "check": "apex_rs unchanged gameplay turbo_speed",
+      "passed": true
+    },
+    {
+      "check": "apex_rs unchanged gameplay turbo_acceleration",
+      "passed": true
+    },
+    {
+      "check": "apex_rs unchanged gameplay turbo_charge",
+      "passed": true
+    },
+    {
+      "check": "apex_rs unchanged gameplay wheelbase",
+      "passed": true
+    },
+    {
+      "check": "apex_rs unchanged gameplay wheel_radius",
+      "passed": true
+    },
+    {
+      "check": "apex_rs unchanged gameplay length",
+      "passed": true
+    },
+    {
+      "check": "apex_rs unchanged gameplay width",
+      "passed": true
+    },
+    {
+      "check": "apex_rs unchanged gameplay exhaust_points",
+      "passed": true
+    },
+    {
+      "check": "inferno_r unchanged gameplay id",
+      "passed": true
+    },
+    {
+      "check": "inferno_r unchanged gameplay price",
+      "passed": true
+    },
+    {
+      "check": "inferno_r unchanged gameplay top_speed_kmh",
+      "passed": true
+    },
+    {
+      "check": "inferno_r unchanged gameplay acceleration",
+      "passed": true
+    },
+    {
+      "check": "inferno_r unchanged gameplay braking",
+      "passed": true
+    },
+    {
+      "check": "inferno_r unchanged gameplay grip",
+      "passed": true
+    },
+    {
+      "check": "inferno_r unchanged gameplay weight_kg",
+      "passed": true
+    },
+    {
+      "check": "inferno_r unchanged gameplay turbo_speed",
+      "passed": true
+    },
+    {
+      "check": "inferno_r unchanged gameplay turbo_acceleration",
+      "passed": true
+    },
+    {
+      "check": "inferno_r unchanged gameplay turbo_charge",
+      "passed": true
+    },
+    {
+      "check": "inferno_r unchanged gameplay wheelbase",
+      "passed": true
+    },
+    {
+      "check": "inferno_r unchanged gameplay wheel_radius",
+      "passed": true
+    },
+    {
+      "check": "inferno_r unchanged gameplay length",
+      "passed": true
+    },
+    {
+      "check": "inferno_r unchanged gameplay width",
+      "passed": true
+    },
+    {
+      "check": "inferno_r unchanged gameplay exhaust_points",
+      "passed": true
+    },
+    {
+      "check": "phantom_x unchanged gameplay id",
+      "passed": true
+    },
+    {
+      "check": "phantom_x unchanged gameplay price",
+      "passed": true
+    },
+    {
+      "check": "phantom_x unchanged gameplay top_speed_kmh",
+      "passed": true
+    },
+    {
+      "check": "phantom_x unchanged gameplay acceleration",
+      "passed": true
+    },
+    {
+      "check": "phantom_x unchanged gameplay braking",
+      "passed": true
+    },
+    {
+      "check": "phantom_x unchanged gameplay grip",
+      "passed": true
+    },
+    {
+      "check": "phantom_x unchanged gameplay weight_kg",
+      "passed": true
+    },
+    {
+      "check": "phantom_x unchanged gameplay turbo_speed",
+      "passed": true
+    },
+    {
+      "check": "phantom_x unchanged gameplay turbo_acceleration",
+      "passed": true
+    },
+    {
+      "check": "phantom_x unchanged gameplay turbo_charge",
+      "passed": true
+    },
+    {
+      "check": "phantom_x unchanged gameplay wheelbase",
+      "passed": true
+    },
+    {
+      "check": "phantom_x unchanged gameplay wheel_radius",
+      "passed": true
+    },
+    {
+      "check": "phantom_x unchanged gameplay length",
+      "passed": true
+    },
+    {
+      "check": "phantom_x unchanged gameplay width",
+      "passed": true
+    },
+    {
+      "check": "phantom_x unchanged gameplay exhaust_points",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 unchanged gameplay id",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 unchanged gameplay price",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 unchanged gameplay top_speed_kmh",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 unchanged gameplay acceleration",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 unchanged gameplay braking",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 unchanged gameplay grip",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 unchanged gameplay weight_kg",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 unchanged gameplay turbo_speed",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 unchanged gameplay turbo_acceleration",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 unchanged gameplay turbo_charge",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 unchanged gameplay wheelbase",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 unchanged gameplay wheel_radius",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 unchanged gameplay length",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 unchanged gameplay width",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 unchanged gameplay exhaust_points",
+      "passed": true
+    },
+    {
+      "check": "Upgrade economics unchanged",
+      "passed": true
+    },
+    {
+      "check": "Colored traffic mesh retained aero_f.glb",
+      "passed": true
+    },
+    {
+      "check": "Colored traffic mesh retained forge_u.glb",
+      "passed": true
+    },
+    {
+      "check": "Colored traffic mesh retained luma_c.glb",
+      "passed": true
+    },
+    {
+      "check": "Colored traffic mesh retained summit_x.glb",
+      "passed": true
+    },
+    {
+      "check": "Colored traffic mesh retained meridian_s.glb",
+      "passed": true
+    }
+  ]
+}

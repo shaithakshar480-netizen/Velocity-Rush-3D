@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cmf2xc5kun8w6"]
+
+[ext_resource type="Script" uid="uid://b1kk71355yjyp" path="res://Core/Game.gd" id="1"]
+
+[node name="VelocityRush3D" type="Node" unique_id=655076133]
+script = ExtResource("1")

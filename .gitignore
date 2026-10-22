@@ -1,0 +1,45 @@
+.godot/
+/build/
+override.cfg
+*.keystore
+*.jks
+*.apk
+*.aab
+__pycache__/
+
+# Generated Android build outputs
+/android/build/.gradle/
+/android/build/build/
+/android/build/libs/godot-lib.template_debug.aar
+/android/build/libs/godot-lib.template_release.aar
+/VelocityRush3D.apk.idsig
+/VelocityRush3D.zip
+/Camera.zip
+/Traffic.zip
+/Traffic (2).zip
+/Turbo.zip
+/configure-diagnostics-test.txt
+/configure-return-test.txt
+/google-signin-handshake-test.txt
+
+# Generated Android export output
+/android/build/src/main/assets/
+/android/build/assetPackInstallTime/
+**/.gradle/
+# Generated Android export output
+/android/build/build/
+/android/build/src/main/assets/
+/android/build/src/instrumented/
+/android/build/assetPackInstallTime/
+/android/build/libs/
+
+# Generated native Gradle build files and caches
+**/.gradle/
+/Native/FirebaseBridge/bridge/build/
+/Native/FirebaseBridge/build/
+/Native/AdsBridge/build/
+
+# Temporary authentication logs
+/Native/FirebaseBridge/google-signin-only.txt
+/Native/FirebaseBridge/velocity-rush-auth*.txt
+/Docs/engine-checks.log

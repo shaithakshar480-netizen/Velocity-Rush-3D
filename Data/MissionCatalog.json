@@ -1,0 +1,122 @@
+[
+  {
+    "id": "finish_one",
+    "title": "Finish one Highway Rush",
+    "event": "completed",
+    "target": 1,
+    "coins": 150,
+    "xp": 60,
+    "mode": "sum",
+    "tier": "easy"
+  },
+  {
+    "id": "coins_30",
+    "title": "Collect 30 road coins",
+    "event": "pickups",
+    "target": 30,
+    "coins": 200,
+    "xp": 60,
+    "mode": "sum",
+    "tier": "easy"
+  },
+  {
+    "id": "near_5",
+    "title": "Make 5 near misses",
+    "event": "near_misses",
+    "target": 5,
+    "coins": 200,
+    "xp": 70,
+    "mode": "sum",
+    "tier": "easy"
+  },
+  {
+    "id": "speed_180",
+    "title": "Reach 180 KM/H",
+    "event": "highest_speed",
+    "target": 180,
+    "coins": 150,
+    "xp": 50,
+    "mode": "max",
+    "tier": "easy"
+  },
+  {
+    "id": "combo_3",
+    "title": "Reach a x3 combo",
+    "event": "best_combo",
+    "target": 3,
+    "coins": 300,
+    "xp": 100,
+    "mode": "max",
+    "tier": "medium"
+  },
+  {
+    "id": "turbo_2",
+    "title": "Activate Turbo twice",
+    "event": "turbo_activations",
+    "target": 2,
+    "coins": 300,
+    "xp": 100,
+    "mode": "sum",
+    "tier": "medium"
+  },
+  {
+    "id": "drive_5k",
+    "title": "Drive 5 KM forward",
+    "event": "distance",
+    "target": 5000,
+    "coins": 300,
+    "xp": 100,
+    "mode": "sum",
+    "tier": "medium"
+  },
+  {
+    "id": "score_2000",
+    "title": "Score 2,000 in one run",
+    "event": "best_score",
+    "target": 2000,
+    "coins": 300,
+    "xp": 100,
+    "mode": "max",
+    "tier": "medium"
+  },
+  {
+    "id": "finish_three",
+    "title": "Finish three Highway Rush runs",
+    "event": "completed",
+    "target": 3,
+    "coins": 500,
+    "xp": 160,
+    "mode": "sum",
+    "tier": "hard"
+  },
+  {
+    "id": "near_12",
+    "title": "Make 12 near misses",
+    "event": "near_misses",
+    "target": 12,
+    "coins": 500,
+    "xp": 160,
+    "mode": "sum",
+    "tier": "hard"
+  },
+  {
+    "id": "speed_220",
+    "title": "Reach 220 KM/H with Turbo",
+    "event": "highest_speed",
+    "target": 220,
+    "coins": 500,
+    "xp": 160,
+    "mode": "max",
+    "tier": "hard"
+  },
+  {
+    "id": "clean_finish",
+    "title": "Finish with at most 2 collisions",
+    "event": "clean_finish",
+    "target": 1,
+    "coins": 500,
+    "xp": 160,
+    "mode": "sum",
+    "tier": "hard"
+  }
+]

@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "com.velocityrush3d.ads.bridge-merged_res-17:/layout/notification_template_part_time.xml",
+        "source": "com.velocityrush3d.ads.bridge-core-1.8.0-0:/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "com.velocityrush3d.ads.bridge-merged_res-17:/layout/offline_ads_dialog.xml",
+        "source": "com.velocityrush3d.ads.bridge-play-services-ads-24.1.0-1:/layout/offline_ads_dialog.xml"
+    },
+    {
+        "merged": "com.velocityrush3d.ads.bridge-merged_res-17:/layout/admob_empty_layout.xml",
+        "source": "com.velocityrush3d.ads.bridge-play-services-ads-api-24.1.0-6:/layout/admob_empty_layout.xml"
+    },
+    {
+        "merged": "com.velocityrush3d.ads.bridge-merged_res-17:/layout/notification_template_part_chronometer.xml",
+        "source": "com.velocityrush3d.ads.bridge-core-1.8.0-0:/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "com.velocityrush3d.ads.bridge-merged_res-17:/layout/browser_actions_context_menu_row.xml",
+        "source": "com.velocityrush3d.ads.bridge-browser-1.8.0-13:/layout/browser_actions_context_menu_row.xml"
+    },
+    {
+        "merged": "com.velocityrush3d.ads.bridge-merged_res-17:/layout/browser_actions_context_menu_page.xml",
+        "source": "com.velocityrush3d.ads.bridge-browser-1.8.0-13:/layout/browser_actions_context_menu_page.xml"
+    },
+    {
+        "merged": "com.velocityrush3d.ads.bridge-merged_res-17:/layout/custom_dialog.xml",
+        "source": "com.velocityrush3d.ads.bridge-core-1.8.0-0:/layout/custom_dialog.xml"
+    }
+]

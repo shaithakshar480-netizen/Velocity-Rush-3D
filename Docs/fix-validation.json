@@ -1,0 +1,1391 @@
+{
+  "scope": "Offline structure and generated geometry only; no GDScript compilation or runtime testing",
+  "checks": 346,
+  "failures": 0,
+  "results": [
+    {
+      "check": "luma_c GLB header",
+      "passed": true
+    },
+    {
+      "check": "luma_c embedded buffers",
+      "passed": true
+    },
+    {
+      "check": "luma_c finite accessor",
+      "passed": true
+    },
+    {
+      "check": "luma_c finite accessor",
+      "passed": true
+    },
+    {
+      "check": "luma_c finite accessor",
+      "passed": true
+    },
+    {
+      "check": "luma_c finite accessor",
+      "passed": true
+    },
+    {
+      "check": "luma_c finite accessor",
+      "passed": true
+    },
+    {
+      "check": "luma_c finite accessor",
+      "passed": true
+    },
+    {
+      "check": "luma_c finite accessor",
+      "passed": true
+    },
+    {
+      "check": "luma_c finite accessor",
+      "passed": true
+    },
+    {
+      "check": "luma_c finite accessor",
+      "passed": true
+    },
+    {
+      "check": "luma_c finite accessor",
+      "passed": true
+    },
+    {
+      "check": "luma_c finite accessor",
+      "passed": true
+    },
+    {
+      "check": "luma_c finite accessor",
+      "passed": true
+    },
+    {
+      "check": "luma_c finite accessor",
+      "passed": true
+    },
+    {
+      "check": "luma_c finite accessor",
+      "passed": true
+    },
+    {
+      "check": "luma_c finite accessor",
+      "passed": true
+    },
+    {
+      "check": "luma_c finite accessor",
+      "passed": true
+    },
+    {
+      "check": "luma_c finite accessor",
+      "passed": true
+    },
+    {
+      "check": "luma_c finite accessor",
+      "passed": true
+    },
+    {
+      "check": "luma_c four shared wheels",
+      "passed": true
+    },
+    {
+      "check": "luma_c wheel touches road",
+      "passed": true
+    },
+    {
+      "check": "luma_c wheel touches road",
+      "passed": true
+    },
+    {
+      "check": "luma_c wheel touches road",
+      "passed": true
+    },
+    {
+      "check": "luma_c wheel touches road",
+      "passed": true
+    },
+    {
+      "check": "luma_c under 3000 triangles",
+      "passed": true
+    },
+    {
+      "check": "meridian_s GLB header",
+      "passed": true
+    },
+    {
+      "check": "meridian_s embedded buffers",
+      "passed": true
+    },
+    {
+      "check": "meridian_s finite accessor",
+      "passed": true
+    },
+    {
+      "check": "meridian_s finite accessor",
+      "passed": true
+    },
+    {
+      "check": "meridian_s finite accessor",
+      "passed": true
+    },
+    {
+      "check": "meridian_s finite accessor",
+      "passed": true
+    },
+    {
+      "check": "meridian_s finite accessor",
+      "passed": true
+    },
+    {
+      "check": "meridian_s finite accessor",
+      "passed": true
+    },
+    {
+      "check": "meridian_s finite accessor",
+      "passed": true
+    },
+    {
+      "check": "meridian_s finite accessor",
+      "passed": true
+    },
+    {
+      "check": "meridian_s finite accessor",
+      "passed": true
+    },
+    {
+      "check": "meridian_s finite accessor",
+      "passed": true
+    },
+    {
+      "check": "meridian_s finite accessor",
+      "passed": true
+    },
+    {
+      "check": "meridian_s finite accessor",
+      "passed": true
+    },
+    {
+      "check": "meridian_s finite accessor",
+      "passed": true
+    },
+    {
+      "check": "meridian_s finite accessor",
+      "passed": true
+    },
+    {
+      "check": "meridian_s finite accessor",
+      "passed": true
+    },
+    {
+      "check": "meridian_s finite accessor",
+      "passed": true
+    },
+    {
+      "check": "meridian_s finite accessor",
+      "passed": true
+    },
+    {
+      "check": "meridian_s finite accessor",
+      "passed": true
+    },
+    {
+      "check": "meridian_s four shared wheels",
+      "passed": true
+    },
+    {
+      "check": "meridian_s wheel touches road",
+      "passed": true
+    },
+    {
+      "check": "meridian_s wheel touches road",
+      "passed": true
+    },
+    {
+      "check": "meridian_s wheel touches road",
+      "passed": true
+    },
+    {
+      "check": "meridian_s wheel touches road",
+      "passed": true
+    },
+    {
+      "check": "meridian_s under 3000 triangles",
+      "passed": true
+    },
+    {
+      "check": "aero_f GLB header",
+      "passed": true
+    },
+    {
+      "check": "aero_f embedded buffers",
+      "passed": true
+    },
+    {
+      "check": "aero_f finite accessor",
+      "passed": true
+    },
+    {
+      "check": "aero_f finite accessor",
+      "passed": true
+    },
+    {
+      "check": "aero_f finite accessor",
+      "passed": true
+    },
+    {
+      "check": "aero_f finite accessor",
+      "passed": true
+    },
+    {
+      "check": "aero_f finite accessor",
+      "passed": true
+    },
+    {
+      "check": "aero_f finite accessor",
+      "passed": true
+    },
+    {
+      "check": "aero_f finite accessor",
+      "passed": true
+    },
+    {
+      "check": "aero_f finite accessor",
+      "passed": true
+    },
+    {
+      "check": "aero_f finite accessor",
+      "passed": true
+    },
+    {
+      "check": "aero_f finite accessor",
+      "passed": true
+    },
+    {
+      "check": "aero_f finite accessor",
+      "passed": true
+    },
+    {
+      "check": "aero_f finite accessor",
+      "passed": true
+    },
+    {
+      "check": "aero_f finite accessor",
+      "passed": true
+    },
+    {
+      "check": "aero_f finite accessor",
+      "passed": true
+    },
+    {
+      "check": "aero_f finite accessor",
+      "passed": true
+    },
+    {
+      "check": "aero_f finite accessor",
+      "passed": true
+    },
+    {
+      "check": "aero_f finite accessor",
+      "passed": true
+    },
+    {
+      "check": "aero_f finite accessor",
+      "passed": true
+    },
+    {
+      "check": "aero_f four shared wheels",
+      "passed": true
+    },
+    {
+      "check": "aero_f wheel touches road",
+      "passed": true
+    },
+    {
+      "check": "aero_f wheel touches road",
+      "passed": true
+    },
+    {
+      "check": "aero_f wheel touches road",
+      "passed": true
+    },
+    {
+      "check": "aero_f wheel touches road",
+      "passed": true
+    },
+    {
+      "check": "aero_f under 3000 triangles",
+      "passed": true
+    },
+    {
+      "check": "summit_x GLB header",
+      "passed": true
+    },
+    {
+      "check": "summit_x embedded buffers",
+      "passed": true
+    },
+    {
+      "check": "summit_x finite accessor",
+      "passed": true
+    },
+    {
+      "check": "summit_x finite accessor",
+      "passed": true
+    },
+    {
+      "check": "summit_x finite accessor",
+      "passed": true
+    },
+    {
+      "check": "summit_x finite accessor",
+      "passed": true
+    },
+    {
+      "check": "summit_x finite accessor",
+      "passed": true
+    },
+    {
+      "check": "summit_x finite accessor",
+      "passed": true
+    },
+    {
+      "check": "summit_x finite accessor",
+      "passed": true
+    },
+    {
+      "check": "summit_x finite accessor",
+      "passed": true
+    },
+    {
+      "check": "summit_x finite accessor",
+      "passed": true
+    },
+    {
+      "check": "summit_x finite accessor",
+      "passed": true
+    },
+    {
+      "check": "summit_x finite accessor",
+      "passed": true
+    },
+    {
+      "check": "summit_x finite accessor",
+      "passed": true
+    },
+    {
+      "check": "summit_x finite accessor",
+      "passed": true
+    },
+    {
+      "check": "summit_x finite accessor",
+      "passed": true
+    },
+    {
+      "check": "summit_x finite accessor",
+      "passed": true
+    },
+    {
+      "check": "summit_x finite accessor",
+      "passed": true
+    },
+    {
+      "check": "summit_x finite accessor",
+      "passed": true
+    },
+    {
+      "check": "summit_x finite accessor",
+      "passed": true
+    },
+    {
+      "check": "summit_x four shared wheels",
+      "passed": true
+    },
+    {
+      "check": "summit_x wheel touches road",
+      "passed": true
+    },
+    {
+      "check": "summit_x wheel touches road",
+      "passed": true
+    },
+    {
+      "check": "summit_x wheel touches road",
+      "passed": true
+    },
+    {
+      "check": "summit_x wheel touches road",
+      "passed": true
+    },
+    {
+      "check": "summit_x under 3000 triangles",
+      "passed": true
+    },
+    {
+      "check": "forge_u GLB header",
+      "passed": true
+    },
+    {
+      "check": "forge_u embedded buffers",
+      "passed": true
+    },
+    {
+      "check": "forge_u finite accessor",
+      "passed": true
+    },
+    {
+      "check": "forge_u finite accessor",
+      "passed": true
+    },
+    {
+      "check": "forge_u finite accessor",
+      "passed": true
+    },
+    {
+      "check": "forge_u finite accessor",
+      "passed": true
+    },
+    {
+      "check": "forge_u finite accessor",
+      "passed": true
+    },
+    {
+      "check": "forge_u finite accessor",
+      "passed": true
+    },
+    {
+      "check": "forge_u finite accessor",
+      "passed": true
+    },
+    {
+      "check": "forge_u finite accessor",
+      "passed": true
+    },
+    {
+      "check": "forge_u finite accessor",
+      "passed": true
+    },
+    {
+      "check": "forge_u finite accessor",
+      "passed": true
+    },
+    {
+      "check": "forge_u finite accessor",
+      "passed": true
+    },
+    {
+      "check": "forge_u finite accessor",
+      "passed": true
+    },
+    {
+      "check": "forge_u finite accessor",
+      "passed": true
+    },
+    {
+      "check": "forge_u finite accessor",
+      "passed": true
+    },
+    {
+      "check": "forge_u finite accessor",
+      "passed": true
+    },
+    {
+      "check": "forge_u finite accessor",
+      "passed": true
+    },
+    {
+      "check": "forge_u finite accessor",
+      "passed": true
+    },
+    {
+      "check": "forge_u finite accessor",
+      "passed": true
+    },
+    {
+      "check": "forge_u four shared wheels",
+      "passed": true
+    },
+    {
+      "check": "forge_u wheel touches road",
+      "passed": true
+    },
+    {
+      "check": "forge_u wheel touches road",
+      "passed": true
+    },
+    {
+      "check": "forge_u wheel touches road",
+      "passed": true
+    },
+    {
+      "check": "forge_u wheel touches road",
+      "passed": true
+    },
+    {
+      "check": "forge_u under 3000 triangles",
+      "passed": true
+    },
+    {
+      "check": "Consistent planar collision model",
+      "passed": true
+    },
+    {
+      "check": "No competing gravity or grounding ray",
+      "passed": true
+    },
+    {
+      "check": "Camera consumes interpolated vehicle pose",
+      "passed": true
+    },
+    {
+      "check": "Recycled chunks have no colliders",
+      "passed": true
+    },
+    {
+      "check": "Traffic JSON exported",
+      "passed": true
+    },
+    {
+      "check": "Coin lane clears barrier",
+      "passed": true
+    },
+    {
+      "check": "Coin lane clears barrier",
+      "passed": true
+    },
+    {
+      "check": "Coin lane clears barrier",
+      "passed": true
+    },
+    {
+      "check": "Coin lane clears barrier",
+      "passed": true
+    },
+    {
+      "check": "Smooth transition monotonic and centered",
+      "passed": true
+    },
+    {
+      "check": "Smooth transition monotonic and centered",
+      "passed": true
+    },
+    {
+      "check": "Smooth transition monotonic and centered",
+      "passed": true
+    },
+    {
+      "check": "Smooth transition monotonic and centered",
+      "passed": true
+    },
+    {
+      "check": "Smooth transition monotonic and centered",
+      "passed": true
+    },
+    {
+      "check": "Smooth transition monotonic and centered",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    },
+    {
+      "check": "Visual segment seam alignment",
+      "passed": true
+    }
+  ]
+}

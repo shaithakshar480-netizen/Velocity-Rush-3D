@@ -1,0 +1,38 @@
+[
+  {
+    "id": "vortex_s",
+    "triangles": 3062,
+    "bytes": 133964,
+    "wheel_contact_y": 0.0
+  },
+  {
+    "id": "falcon_s1",
+    "triangles": 3062,
+    "bytes": 134020,
+    "wheel_contact_y": 0.0
+  },
+  {
+    "id": "apex_rs",
+    "triangles": 3062,
+    "bytes": 134128,
+    "wheel_contact_y": 0.0
+  },
+  {
+    "id": "inferno_r",
+    "triangles": 3092,
+    "bytes": 136044,
+    "wheel_contact_y": 0.0
+  },
+  {
+    "id": "phantom_x",
+    "triangles": 3092,
+    "bytes": 136052,
+    "wheel_contact_y": 0.0
+  },
+  {
+    "id": "titan_v12",
+    "triangles": 3092,
+    "bytes": 136048,
+    "wheel_contact_y": 0.0
+  }
+]

@@ -1,0 +1,1311 @@
+{
+  "scope": "Offline data arithmetic, file bytes, PCM and source contracts only; GDScript tests NOT executed",
+  "checks": 319,
+  "failed": 6,
+  "level_50_total_xp": 561638,
+  "total_level_coins": 66000,
+  "economy_fixtures": [
+    {
+      "days": 30,
+      "runs_per_day": 4,
+      "coins_per_run": 880,
+      "race_income": 105600,
+      "daily_income": 21300,
+      "mission_income": 30000,
+      "achievement_allowance": 2500,
+      "level_rewards": 13400,
+      "ending_level": 22,
+      "race_income_share": 0.6111
+    },
+    {
+      "days": 30,
+      "runs_per_day": 6,
+      "coins_per_run": 880,
+      "race_income": 158400,
+      "daily_income": 21300,
+      "mission_income": 30000,
+      "achievement_allowance": 2500,
+      "level_rewards": 17000,
+      "ending_level": 25,
+      "race_income_share": 0.6911
+    }
+  ],
+  "results": [
+    {
+      "check": "Configured cap 50",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 1",
+      "passed": true
+    },
+    {
+      "check": "Boundary 1",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 2",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 2",
+      "passed": true
+    },
+    {
+      "check": "Boundary 2",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 3",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 3",
+      "passed": true
+    },
+    {
+      "check": "Boundary 3",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 4",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 4",
+      "passed": true
+    },
+    {
+      "check": "Boundary 4",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 5",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 5",
+      "passed": true
+    },
+    {
+      "check": "Boundary 5",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 6",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 6",
+      "passed": true
+    },
+    {
+      "check": "Boundary 6",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 7",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 7",
+      "passed": true
+    },
+    {
+      "check": "Boundary 7",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 8",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 8",
+      "passed": true
+    },
+    {
+      "check": "Boundary 8",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 9",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 9",
+      "passed": true
+    },
+    {
+      "check": "Boundary 9",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 10",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 10",
+      "passed": true
+    },
+    {
+      "check": "Boundary 10",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 11",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 11",
+      "passed": true
+    },
+    {
+      "check": "Boundary 11",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 12",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 12",
+      "passed": true
+    },
+    {
+      "check": "Boundary 12",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 13",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 13",
+      "passed": true
+    },
+    {
+      "check": "Boundary 13",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 14",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 14",
+      "passed": true
+    },
+    {
+      "check": "Boundary 14",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 15",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 15",
+      "passed": true
+    },
+    {
+      "check": "Boundary 15",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 16",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 16",
+      "passed": true
+    },
+    {
+      "check": "Boundary 16",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 17",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 17",
+      "passed": true
+    },
+    {
+      "check": "Boundary 17",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 18",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 18",
+      "passed": true
+    },
+    {
+      "check": "Boundary 18",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 19",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 19",
+      "passed": true
+    },
+    {
+      "check": "Boundary 19",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 20",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 20",
+      "passed": true
+    },
+    {
+      "check": "Boundary 20",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 21",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 21",
+      "passed": true
+    },
+    {
+      "check": "Boundary 21",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 22",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 22",
+      "passed": true
+    },
+    {
+      "check": "Boundary 22",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 23",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 23",
+      "passed": true
+    },
+    {
+      "check": "Boundary 23",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 24",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 24",
+      "passed": true
+    },
+    {
+      "check": "Boundary 24",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 25",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 25",
+      "passed": true
+    },
+    {
+      "check": "Boundary 25",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 26",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 26",
+      "passed": true
+    },
+    {
+      "check": "Boundary 26",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 27",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 27",
+      "passed": true
+    },
+    {
+      "check": "Boundary 27",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 28",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 28",
+      "passed": true
+    },
+    {
+      "check": "Boundary 28",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 29",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 29",
+      "passed": true
+    },
+    {
+      "check": "Boundary 29",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 30",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 30",
+      "passed": true
+    },
+    {
+      "check": "Boundary 30",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 31",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 31",
+      "passed": true
+    },
+    {
+      "check": "Boundary 31",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 32",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 32",
+      "passed": true
+    },
+    {
+      "check": "Boundary 32",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 33",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 33",
+      "passed": true
+    },
+    {
+      "check": "Boundary 33",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 34",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 34",
+      "passed": true
+    },
+    {
+      "check": "Boundary 34",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 35",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 35",
+      "passed": true
+    },
+    {
+      "check": "Boundary 35",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 36",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 36",
+      "passed": true
+    },
+    {
+      "check": "Boundary 36",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 37",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 37",
+      "passed": true
+    },
+    {
+      "check": "Boundary 37",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 38",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 38",
+      "passed": true
+    },
+    {
+      "check": "Boundary 38",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 39",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 39",
+      "passed": true
+    },
+    {
+      "check": "Boundary 39",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 40",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 40",
+      "passed": true
+    },
+    {
+      "check": "Boundary 40",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 41",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 41",
+      "passed": true
+    },
+    {
+      "check": "Boundary 41",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 42",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 42",
+      "passed": true
+    },
+    {
+      "check": "Boundary 42",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 43",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 43",
+      "passed": true
+    },
+    {
+      "check": "Boundary 43",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 44",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 44",
+      "passed": true
+    },
+    {
+      "check": "Boundary 44",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 45",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 45",
+      "passed": true
+    },
+    {
+      "check": "Boundary 45",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 46",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 46",
+      "passed": true
+    },
+    {
+      "check": "Boundary 46",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 47",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 47",
+      "passed": true
+    },
+    {
+      "check": "Boundary 47",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 48",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 48",
+      "passed": true
+    },
+    {
+      "check": "Boundary 48",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 49",
+      "passed": true
+    },
+    {
+      "check": "Positive increasing XP 49",
+      "passed": true
+    },
+    {
+      "check": "Boundary 49",
+      "passed": true
+    },
+    {
+      "check": "Level reward band 50",
+      "passed": true
+    },
+    {
+      "check": "Early onboarding L5 within six 404-XP runs",
+      "passed": true
+    },
+    {
+      "check": "Long-term L50",
+      "passed": true
+    },
+    {
+      "check": "Level ID implicit in earned-level boundary",
+      "passed": true
+    },
+    {
+      "check": "XP capped persistently",
+      "passed": true
+    },
+    {
+      "check": "Level derived from XP on migration",
+      "passed": true
+    },
+    {
+      "check": "Race XP supports completion, score, near miss, high speed and Turbo",
+      "passed": true
+    },
+    {
+      "check": "Daily unique stable IDs",
+      "passed": true
+    },
+    {
+      "check": "Daily positive target/reward finish_one",
+      "passed": true
+    },
+    {
+      "check": "Daily known event finish_one",
+      "passed": true
+    },
+    {
+      "check": "Daily positive target/reward coins_30",
+      "passed": true
+    },
+    {
+      "check": "Daily known event coins_30",
+      "passed": true
+    },
+    {
+      "check": "Daily positive target/reward near_5",
+      "passed": true
+    },
+    {
+      "check": "Daily known event near_5",
+      "passed": true
+    },
+    {
+      "check": "Daily positive target/reward speed_180",
+      "passed": true
+    },
+    {
+      "check": "Daily known event speed_180",
+      "passed": true
+    },
+    {
+      "check": "Daily positive target/reward combo_3",
+      "passed": true
+    },
+    {
+      "check": "Daily known event combo_3",
+      "passed": true
+    },
+    {
+      "check": "Daily positive target/reward turbo_2",
+      "passed": true
+    },
+    {
+      "check": "Daily known event turbo_2",
+      "passed": true
+    },
+    {
+      "check": "Daily positive target/reward drive_5k",
+      "passed": true
+    },
+    {
+      "check": "Daily known event drive_5k",
+      "passed": true
+    },
+    {
+      "check": "Daily positive target/reward score_2000",
+      "passed": true
+    },
+    {
+      "check": "Daily known event score_2000",
+      "passed": true
+    },
+    {
+      "check": "Daily positive target/reward finish_three",
+      "passed": true
+    },
+    {
+      "check": "Daily known event finish_three",
+      "passed": true
+    },
+    {
+      "check": "Daily positive target/reward near_12",
+      "passed": true
+    },
+    {
+      "check": "Daily known event near_12",
+      "passed": true
+    },
+    {
+      "check": "Daily positive target/reward speed_220",
+      "passed": true
+    },
+    {
+      "check": "Daily known event speed_220",
+      "passed": true
+    },
+    {
+      "check": "Daily positive target/reward clean_finish",
+      "passed": true
+    },
+    {
+      "check": "Daily known event clean_finish",
+      "passed": true
+    },
+    {
+      "check": "Career unique stable IDs",
+      "passed": true
+    },
+    {
+      "check": "Career positive target/reward rookie",
+      "passed": true
+    },
+    {
+      "check": "Career known event rookie",
+      "passed": true
+    },
+    {
+      "check": "Career positive target/reward regular",
+      "passed": true
+    },
+    {
+      "check": "Career known event regular",
+      "passed": true
+    },
+    {
+      "check": "Career positive target/reward veteran",
+      "passed": true
+    },
+    {
+      "check": "Career known event veteran",
+      "passed": true
+    },
+    {
+      "check": "Career positive target/reward close_call",
+      "passed": true
+    },
+    {
+      "check": "Career known event close_call",
+      "passed": true
+    },
+    {
+      "check": "Career positive target/reward daredevil",
+      "passed": true
+    },
+    {
+      "check": "Career known event daredevil",
+      "passed": true
+    },
+    {
+      "check": "Career positive target/reward speed_hunter",
+      "passed": true
+    },
+    {
+      "check": "Career known event speed_hunter",
+      "passed": true
+    },
+    {
+      "check": "Career positive target/reward turbo_addict",
+      "passed": true
+    },
+    {
+      "check": "Career known event turbo_addict",
+      "passed": true
+    },
+    {
+      "check": "Career positive target/reward collector",
+      "passed": true
+    },
+    {
+      "check": "Career known event collector",
+      "passed": true
+    },
+    {
+      "check": "Career positive target/reward garage_king",
+      "passed": true
+    },
+    {
+      "check": "Career known event garage_king",
+      "passed": true
+    },
+    {
+      "check": "Career positive target/reward tuner",
+      "passed": true
+    },
+    {
+      "check": "Career known event tuner",
+      "passed": true
+    },
+    {
+      "check": "Career positive target/reward master_mechanic",
+      "passed": true
+    },
+    {
+      "check": "Career known event master_mechanic",
+      "passed": true
+    },
+    {
+      "check": "Career positive target/reward road_warrior",
+      "passed": true
+    },
+    {
+      "check": "Career known event road_warrior",
+      "passed": true
+    },
+    {
+      "check": "Career positive target/reward million_points",
+      "passed": true
+    },
+    {
+      "check": "Career known event million_points",
+      "passed": true
+    },
+    {
+      "check": "Career positive target/reward coin_runner",
+      "passed": true
+    },
+    {
+      "check": "Career known event coin_runner",
+      "passed": true
+    },
+    {
+      "check": "Career positive target/reward combo_master",
+      "passed": true
+    },
+    {
+      "check": "Career known event combo_master",
+      "passed": true
+    },
+    {
+      "check": "At least 15 achievements",
+      "passed": true
+    },
+    {
+      "check": "easy has four choices",
+      "passed": true
+    },
+    {
+      "check": "easy reward budget",
+      "passed": true
+    },
+    {
+      "check": "medium has four choices",
+      "passed": true
+    },
+    {
+      "check": "medium reward budget",
+      "passed": true
+    },
+    {
+      "check": "hard has four choices",
+      "passed": true
+    },
+    {
+      "check": "hard reward budget",
+      "passed": true
+    },
+    {
+      "check": "No unowned-car prerequisite",
+      "passed": true
+    },
+    {
+      "check": "Fair deterministic set 2026-09-06",
+      "passed": true
+    },
+    {
+      "check": "Fair deterministic set 2026-09-07",
+      "passed": true
+    },
+    {
+      "check": "Fair deterministic set 2026-09-08",
+      "passed": true
+    },
+    {
+      "check": "Fair deterministic set 2026-09-09",
+      "passed": true
+    },
+    {
+      "check": "Fair deterministic set 2026-09-10",
+      "passed": true
+    },
+    {
+      "check": "Fair deterministic set 2026-09-11",
+      "passed": true
+    },
+    {
+      "check": "Fair deterministic set 2026-09-12",
+      "passed": true
+    },
+    {
+      "check": "Fair deterministic set 2026-09-13",
+      "passed": true
+    },
+    {
+      "check": "Fair deterministic set 2026-09-14",
+      "passed": true
+    },
+    {
+      "check": "Fair deterministic set 2026-09-15",
+      "passed": true
+    },
+    {
+      "check": "Fair deterministic set 2026-09-16",
+      "passed": true
+    },
+    {
+      "check": "Fair deterministic set 2026-09-17",
+      "passed": true
+    },
+    {
+      "check": "Fair deterministic set 2026-09-18",
+      "passed": true
+    },
+    {
+      "check": "Fair deterministic set 2026-09-19",
+      "passed": true
+    },
+    {
+      "check": "Fair deterministic set 2026-09-20",
+      "passed": true
+    },
+    {
+      "check": "Fair deterministic set 2026-09-21",
+      "passed": true
+    },
+    {
+      "check": "Fair deterministic set 2026-09-22",
+      "passed": true
+    },
+    {
+      "check": "Fair deterministic set 2026-09-23",
+      "passed": true
+    },
+    {
+      "check": "Fair deterministic set 2026-09-24",
+      "passed": true
+    },
+    {
+      "check": "Fair deterministic set 2026-09-25",
+      "passed": true
+    },
+    {
+      "check": "Fair deterministic set 2026-09-26",
+      "passed": true
+    },
+    {
+      "check": "Fair deterministic set 2026-09-27",
+      "passed": true
+    },
+    {
+      "check": "Fair deterministic set 2026-09-28",
+      "passed": true
+    },
+    {
+      "check": "Fair deterministic set 2026-09-29",
+      "passed": true
+    },
+    {
+      "check": "Fair deterministic set 2026-09-30",
+      "passed": true
+    },
+    {
+      "check": "Fair deterministic set 2026-10-01",
+      "passed": true
+    },
+    {
+      "check": "Fair deterministic set 2026-10-02",
+      "passed": true
+    },
+    {
+      "check": "Fair deterministic set 2026-10-03",
+      "passed": true
+    },
+    {
+      "check": "Fair deterministic set 2026-10-04",
+      "passed": true
+    },
+    {
+      "check": "Fair deterministic set 2026-10-05",
+      "passed": true
+    },
+    {
+      "check": "Fair deterministic set 2026-10-06",
+      "passed": true
+    },
+    {
+      "check": "Fair deterministic set 2026-10-07",
+      "passed": true
+    },
+    {
+      "check": "Fair deterministic set 2026-10-08",
+      "passed": true
+    },
+    {
+      "check": "Fair deterministic set 2026-10-09",
+      "passed": true
+    },
+    {
+      "check": "Fair deterministic set 2026-10-10",
+      "passed": true
+    },
+    {
+      "check": "Full-date ordering 2026-09-06 -> 2026-09-07",
+      "passed": true
+    },
+    {
+      "check": "Full-date ordering 2026-09-30 -> 2026-10-01",
+      "passed": true
+    },
+    {
+      "check": "Full-date ordering 2026-12-31 -> 2027-01-01",
+      "passed": true
+    },
+    {
+      "check": "Full-date ordering 2028-02-28 -> 2028-02-29",
+      "passed": true
+    },
+    {
+      "check": "Full-date ordering 2028-02-29 -> 2028-03-01",
+      "passed": true
+    },
+    {
+      "check": "Month lengths and Gregorian leap years in source",
+      "passed": true
+    },
+    {
+      "check": "Backward clock cannot recreate missions",
+      "passed": true
+    },
+    {
+      "check": "Same calendar date preserves missions",
+      "passed": true
+    },
+    {
+      "check": "Daily rewards repeat forgiving cycle",
+      "passed": true
+    },
+    {
+      "check": "Full-date same day and backward claim guard",
+      "passed": true
+    },
+    {
+      "check": "Seven configured rewards",
+      "passed": true
+    },
+    {
+      "check": "Mission date/id/claim/progress gates",
+      "passed": true
+    },
+    {
+      "check": "Career claim gated by ID and actual stat",
+      "passed": true
+    },
+    {
+      "check": "Central source identifiers",
+      "passed": true
+    },
+    {
+      "check": "Atomic schema contains wallet collection progression",
+      "passed": false
+    },
+    {
+      "check": "Reads all prior schemas",
+      "passed": false
+    },
+    {
+      "check": "Atomic reward rollback restores both",
+      "passed": true
+    },
+    {
+      "check": "Transaction cannot overflow wallet",
+      "passed": true
+    },
+    {
+      "check": "Failed pending cannot replay later",
+      "passed": true
+    },
+    {
+      "check": "Race API delegates rewards",
+      "passed": true
+    },
+    {
+      "check": "Race XP and completion in same candidate",
+      "passed": true
+    },
+    {
+      "check": "No wallet writes in progression UI",
+      "passed": true
+    },
+    {
+      "check": "Idempotent cumulative run snapshots",
+      "passed": false
+    },
+    {
+      "check": "Start ID is issued and strictly increasing",
+      "passed": true
+    },
+    {
+      "check": "Actual forward distance, not full route",
+      "passed": true
+    },
+    {
+      "check": "Highest speed rejects teleport and unachieved velocity",
+      "passed": true
+    },
+    {
+      "check": "Pause checkpoints before pausing",
+      "passed": true
+    },
+    {
+      "check": "Restart checkpoints before reset",
+      "passed": true
+    },
+    {
+      "check": "Exit checkpoint and flush",
+      "passed": true
+    },
+    {
+      "check": "Single debounced collision subscriber",
+      "passed": true
+    },
+    {
+      "check": "Turbo event subscriber",
+      "passed": true
+    },
+    {
+      "check": "Purchases and stats atomic",
+      "passed": true
+    },
+    {
+      "check": "No mission scanning per render frame",
+      "passed": true
+    },
+    {
+      "check": "No disk writes in telemetry",
+      "passed": true
+    },
+    {
+      "check": "No menu construction in refresh",
+      "passed": true
+    },
+    {
+      "check": "One reusable level component",
+      "passed": true
+    },
+    {
+      "check": "Profile name constraints",
+      "passed": true
+    },
+    {
+      "check": "Safe notices, no race HUD",
+      "passed": true
+    },
+    {
+      "check": "Notice cleared on navigation",
+      "passed": true
+    },
+    {
+      "check": "Profile selected car reused",
+      "passed": true
+    },
+    {
+      "check": "Menus scroll inside safe area",
+      "passed": false
+    },
+    {
+      "check": "Results scroll to fit short landscape",
+      "passed": false
+    },
+    {
+      "check": "Fast menu transition",
+      "passed": true
+    },
+    {
+      "check": "No progress reset in player UI",
+      "passed": true
+    },
+    {
+      "check": "Debug inspection gated",
+      "passed": true
+    },
+    {
+      "check": "xp_gain safe original PCM",
+      "passed": true
+    },
+    {
+      "check": "xp_gain silent endpoints",
+      "passed": true
+    },
+    {
+      "check": "xp_gain prewarmed",
+      "passed": true
+    },
+    {
+      "check": "level_up safe original PCM",
+      "passed": true
+    },
+    {
+      "check": "level_up silent endpoints",
+      "passed": true
+    },
+    {
+      "check": "level_up prewarmed",
+      "passed": true
+    },
+    {
+      "check": "mission_complete safe original PCM",
+      "passed": true
+    },
+    {
+      "check": "mission_complete silent endpoints",
+      "passed": true
+    },
+    {
+      "check": "mission_complete prewarmed",
+      "passed": true
+    },
+    {
+      "check": "reward_claim safe original PCM",
+      "passed": true
+    },
+    {
+      "check": "reward_claim silent endpoints",
+      "passed": true
+    },
+    {
+      "check": "reward_claim prewarmed",
+      "passed": true
+    },
+    {
+      "check": "achievement safe original PCM",
+      "passed": true
+    },
+    {
+      "check": "achievement silent endpoints",
+      "passed": true
+    },
+    {
+      "check": "achievement prewarmed",
+      "passed": true
+    },
+    {
+      "check": "daily_reward safe original PCM",
+      "passed": true
+    },
+    {
+      "check": "daily_reward silent endpoints",
+      "passed": true
+    },
+    {
+      "check": "daily_reward prewarmed",
+      "passed": true
+    },
+    {
+      "check": "Active 4 runs/day budget 60\u201375%",
+      "passed": true
+    },
+    {
+      "check": "Active 6 runs/day budget 60\u201375%",
+      "passed": true
+    },
+    {
+      "check": "Car prices unchanged",
+      "passed": false
+    }
+  ]
+}

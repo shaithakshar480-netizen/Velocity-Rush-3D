@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="VehicleSpec" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Data/VehicleSpec.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+vehicle_id = "vortex_s"
+display_name = "Vortex S"
+top_speed_kmh = 210.0
+acceleration = 11.5
+braking = 24.0

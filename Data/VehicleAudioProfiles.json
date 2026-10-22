@@ -1,0 +1,110 @@
+{
+  "vortex_s": {
+    "engine_id": "vortex_s",
+    "pitch": 1,
+    "load_gain": 0.96,
+    "brake_path": "res://Assets/Audio/brake_vortex_s.wav",
+    "tire_path": "res://Assets/Audio/tire_vortex_s.wav",
+    "brake_pitch": 0.9,
+    "voice_label": "Classic four-cylinder rasp"
+  },
+  "falcon_s1": {
+    "engine_id": "falcon_s1",
+    "pitch": 0.98,
+    "load_gain": 1,
+    "brake_path": "res://Assets/Audio/brake_falcon_s1.wav",
+    "tire_path": "res://Assets/Audio/tire_falcon_s1.wav",
+    "brake_pitch": 0.919,
+    "voice_label": "Sonorous six-cylinder"
+  },
+  "apex_rs": {
+    "engine_id": "apex_rs",
+    "pitch": 0.94,
+    "load_gain": 0.97,
+    "brake_path": "res://Assets/Audio/brake_apex_rs.wav",
+    "tire_path": "res://Assets/Audio/tire_apex_rs.wav",
+    "brake_pitch": 0.938,
+    "voice_label": "Deep touring V8"
+  },
+  "inferno_r": {
+    "engine_id": "inferno_r",
+    "pitch": 1.01,
+    "load_gain": 1,
+    "brake_path": "res://Assets/Audio/brake_inferno_r.wav",
+    "tire_path": "res://Assets/Audio/tire_inferno_r.wav",
+    "brake_pitch": 0.957,
+    "voice_label": "Twin-turbo six-cylinder"
+  },
+  "phantom_x": {
+    "engine_id": "phantom_x",
+    "pitch": 0.97,
+    "load_gain": 1.01,
+    "brake_path": "res://Assets/Audio/brake_phantom_x.wav",
+    "tire_path": "res://Assets/Audio/tire_phantom_x.wav",
+    "brake_pitch": 0.976,
+    "voice_label": "Race V8 bark"
+  },
+  "titan_v12": {
+    "engine_id": "titan_v12",
+    "pitch": 0.96,
+    "load_gain": 0.98,
+    "brake_path": "res://Assets/Audio/brake_titan_v12.wav",
+    "tire_path": "res://Assets/Audio/tire_titan_v12.wav",
+    "brake_pitch": 0.995,
+    "voice_label": "Turbo V12 grand touring"
+  },
+  "tempest_gt": {
+    "engine_id": "tempest_gt",
+    "pitch": 1.02,
+    "load_gain": 1,
+    "brake_path": "res://Assets/Audio/brake_tempest_gt.wav",
+    "tire_path": "res://Assets/Audio/tire_tempest_gt.wav",
+    "brake_pitch": 1.014,
+    "voice_label": "High-revving V12"
+  },
+  "nebula_r": {
+    "engine_id": "aether_one",
+    "pitch": 1.01,
+    "load_gain": 0.98,
+    "brake_path": "res://Assets/Audio/brake_nebula_r.wav",
+    "tire_path": "res://Assets/Audio/tire_nebula_r.wav",
+    "brake_pitch": 1.033,
+    "voice_label": "Layered hypercar V12"
+  },
+  "razor_x": {
+    "engine_id": "phantom_x",
+    "pitch": 0.97,
+    "load_gain": 1.01,
+    "brake_path": "res://Assets/Audio/brake_razor_x.wav",
+    "tire_path": "res://Assets/Audio/tire_razor_x.wav",
+    "brake_pitch": 1.052,
+    "voice_label": "Race V8 bark"
+  },
+  "solaris_v": {
+    "engine_id": "tempest_gt",
+    "pitch": 1.02,
+    "load_gain": 1,
+    "brake_path": "res://Assets/Audio/brake_solaris_v.wav",
+    "tire_path": "res://Assets/Audio/tire_solaris_v.wav",
+    "brake_pitch": 1.071,
+    "voice_label": "High-revving V12"
+  },
+  "cyclone_rs": {
+    "engine_id": "aether_one",
+    "pitch": 1.01,
+    "load_gain": 0.98,
+    "brake_path": "res://Assets/Audio/brake_cyclone_rs.wav",
+    "tire_path": "res://Assets/Audio/tire_cyclone_rs.wav",
+    "brake_pitch": 1.09,
+    "voice_label": "Layered hypercar V12"
+  },
+  "aether_one": {
+    "engine_id": "aether_one",
+    "pitch": 1.01,
+    "load_gain": 0.98,
+    "brake_path": "res://Assets/Audio/brake_aether_one.wav",
+    "tire_path": "res://Assets/Audio/tire_aether_one.wav",
+    "brake_pitch": 1.109,
+    "voice_label": "Layered hypercar V12"
+  }
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "luma_c",
+    "triangles": 2358,
+    "bytes": 103960,
+    "wheel_contact_y": 0.0
+  },
+  {
+    "id": "meridian_s",
+    "triangles": 2358,
+    "bytes": 103996,
+    "wheel_contact_y": 0.0
+  },
+  {
+    "id": "aero_f",
+    "triangles": 2362,
+    "bytes": 104344,
+    "wheel_contact_y": 0.0
+  },
+  {
+    "id": "summit_x",
+    "triangles": 2382,
+    "bytes": 105740,
+    "wheel_contact_y": 0.0
+  },
+  {
+    "id": "forge_u",
+    "triangles": 2354,
+    "bytes": 103724,
+    "wheel_contact_y": 0.0
+  }
+]

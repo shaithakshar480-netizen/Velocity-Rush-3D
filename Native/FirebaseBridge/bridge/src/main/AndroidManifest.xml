@@ -1,0 +1,7 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application>
+        <meta-data android:name="org.godotengine.plugin.v2.RushFirebaseBridge"
+            android:value="com.velocityrush3d.firebase.RushFirebaseBridge" />
+    </application>
+</manifest>

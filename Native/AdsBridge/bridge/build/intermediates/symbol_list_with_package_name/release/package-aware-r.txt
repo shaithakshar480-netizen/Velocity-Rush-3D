@@ -1,0 +1,2 @@
+com.velocityrush3d.ads
+string rush_ads_app_id

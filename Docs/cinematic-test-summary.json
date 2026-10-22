@@ -1,0 +1,66 @@
+{
+  "offline": [
+    {
+      "tool": "validate_source",
+      "exit_code": 0,
+      "output": "Offline validation: 364 checks, 0 failures\n",
+      "error": ""
+    },
+    {
+      "tool": "validate_driving_pass",
+      "exit_code": 0,
+      "output": "DRIVING OFFLINE: 194 checks, 0 failures\n",
+      "error": ""
+    },
+    {
+      "tool": "validate_fix_pass",
+      "exit_code": 0,
+      "output": "FIX OFFLINE: 348 checks, 0 failures\n",
+      "error": ""
+    },
+    {
+      "tool": "validate_phase2",
+      "exit_code": 0,
+      "output": "Phase 2 offline checks: 56, failures: 0\n",
+      "error": ""
+    },
+    {
+      "tool": "validate_phase3",
+      "exit_code": 0,
+      "output": "PHASE3 OFFLINE: 66 checks, 0 failures\n[{\"label\": \"steady\", \"seconds\": 180, \"near_miss_interval\": 20, \"combo\": 1, \"activations\": 2}, {\"label\": \"skilled\", \"seconds\": 180, \"near_miss_interval\": 14, \"combo\": 2, \"activations\": 3}, {\"label\": \"long skilled\", \"seconds\": 240, \"near_miss_interval\": 15, \"combo\": 2, \"activations\": 3}]\n",
+      "error": ""
+    },
+    {
+      "tool": "validate_phase4",
+      "exit_code": 0,
+      "output": "PHASE4 OFFLINE: 569 checks, 0 failures\n",
+      "error": ""
+    },
+    {
+      "tool": "validate_phase5",
+      "exit_code": 0,
+      "output": "PHASE5 OFFLINE: 339 checks, 0 failures\n[{\"days\": 30, \"runs_per_day\": 4, \"coins_per_run\": 880, \"race_income\": 105600, \"daily_income\": 21300, \"mission_income\": 30000, \"achievement_allowance\": 2500, \"level_rewards\": 13400, \"ending_level\": 22, \"race_income_share\": 0.6111}, {\"days\": 30, \"runs_per_day\": 6, \"coins_per_run\": 880, \"race_income\": 158400, \"daily_income\": 21300, \"mission_income\": 30000, \"achievement_allowance\": 2500, \"level_rewards\": 17000, \"ending_level\": 25, \"race_income_share\": 0.6911}]\n",
+      "error": ""
+    },
+    {
+      "tool": "validate_visual_pass",
+      "exit_code": 0,
+      "output": "VISUAL PASS OFFLINE: 1410 checks, 0 failures\n",
+      "error": ""
+    },
+    {
+      "tool": "validate_premium_pass",
+      "exit_code": 0,
+      "output": "PREMIUM OFFLINE: 111 checks, 0 failures\n",
+      "error": ""
+    }
+  ],
+  "godot_runtime": {
+    "executed": false,
+    "exit_code": 2,
+    "output": "BLOCKED: Godot is not installed. Pass --godot with the Godot 4 executable.\n"
+  },
+  "android_runtime": false,
+  "total_offline_checks": 3457,
+  "scope": "Source/asset checks and numerical reference models; not compilation or gameplay."
+}

@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.velocityrush3d.ads.bridge-mergeReleaseResources-15:/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Admin\\.gradle\\caches\\8.11.1\\transforms\\08e10f91efd161de1ab8f370eb809f21\\transformed\\core-1.8.0\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.velocityrush3d.ads.bridge-merged_res-17:/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Admin\\.gradle\\caches\\8.11.1\\transforms\\08e10f91efd161de1ab8f370eb809f21\\transformed\\core-1.8.0\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+# Premium Store presentation pass
+
+Source-level only. No Godot compilation, runtime, Android build or device tests.
+
+Store now uses an opaque automotive gradient, responsive product grids, whole-card coin purchase hit areas, focus/press states, loading feedback and original tiered coin/boost/pass SVGs. Boost cards prominently expose exact rewarded quantities with an alternative CTA when coins are insufficient. Rendered the SVG artwork for static visual review; Store layout itself remains unverified in Godot.
+
+All existing coin/boost values and IDs are unchanged. PurchaseProvider, PurchaseService and SaveService are unchanged. Schema 5 and existing claim protection preserved. Rewarded unavailable message is user-facing and no test controls were added.
+
+Weekly ₹99/week and Monthly ₹299/month are reference presentation prices, replaced by localized provider data when available. Consumable bundles remain 15/10/10 and 60/40/40. Added initial 8,000 / 25,000 coins in the same verified period-marker transaction, including rollback. Existing paid-period markers do not receive another bundle. Verified restore refreshes metadata without regranting rewards. Membership callbacks use a request ID and provider-gated CTA; no local button activates a membership.
+
+Daily coins, race multipliers, premium-car access, paints and ad removal are preview benefits awaiting integration. Membership purchase requires a provider implementing subscription acknowledgement/restoration, a trusted paid-period verifier and explicit confirmation that all advertised benefits are supported. No billing provider is installed. Existing state names are handled for display without treating local metadata as authority.
+
+Static review: 87 scripts structurally checked, 127 literal resource paths, 17 SVGs and catalogue JSON. Protected-file hashes confirm unchanged gameplay, Garage, vehicles, maps, HUD, progression, purchase verification, save code and online systems. These checks are not GDScript compilation.
+
+Local checks: compile/import, 1280×720 and narrower landscape layouts, full-card input/focus/scroll, pending purchase locks, affordability/ad alternatives, inventory refresh, provider failure/cancel/duplicate/stale receipts, subscription renewal/restore/expiry and failed-save retries.
+
+## Startup / collected coins / reward presentation — source-only pass
+Opaque full-viewport startup gate covers warm-up and all newly built pages start hidden unless selected. GEN-Z lasts 2.1 seconds, followed by a car-track intro with actual boot milestone progress and a short completion exit; one dedicated audio voice is stopped before Home.
+Road coins now award exactly one each; bounded pool retained, budget 360, pattern interval 190 m and five varied safe-lane patterns. Completion/performance economy unchanged. Rewarded double credits only the saved road_coins subtotal once per settled run, with exact amount disclosed.
+One bounded post-commit reward presenter handles positive wallet/inventory changes, coalesces bundles, uses shared Store art and original sounds, and scales spark counts by quality. Race dock explicitly displays shared icons and xN labels at zero. Save schema and provider verification contracts unchanged.
+Static delimiter, duplicate-definition, resource existence and asset hash checks passed; these are not GDScript compilation. Godot/Android were not run. Device review must verify startup/audio, loading stalls, reward placement, smaller aspect ratios, pickup density and ad success/failure/duplicate/recovery paths.
+
+## Account/cloud foundation — source only
+Added local Guest choice/persistence, provider-gated Google/link/restore/sign-out, Profile account/cloud status, modular cloud snapshot coordinator, post-local-commit debounce and revision compare-and-set contract. Timeouts, stale callback guards, account binding and conservative conflicts preserve offline saves. Schema 5 and all unrelated gameplay/economy sources retained. Native Firebase integration and validated cloud-to-local restoration remain outstanding; see FIREBASE_SETUP.md. No Godot, Android or network authentication tests performed. Static delimiter/resource/duplicate checks passed; unchanged asset hashes verified.
+
+## Real REST adapter and restoration — source-only follow-up
+Supersedes the prior missing-provider/missing-restore foundation limitations: added FirebaseRestProvider and FirestoreCodec for real Authentication REST exchange/anonymous/refresh/lookup and Firestore consistent reads/atomic compare-and-set writes. No native addon was found; Google account picker, Keystore credential storage and App Check remain explicit platform hooks, with unavailable behavior until supplied. Configuration remains blank/disabled.
+CloudRestore now validates schema-5 data, preserves missing fields, checks replay-ledger regressions and commits through SaveService with a pre-restore recovery copy. Optional cloud_meta records revision/owner/local digest atomically; the prior sidecar owner binding migrates without reset. New or unchanged-local/newer-cloud cases restore; concurrent/account conflicts preserve both sides. Restore waits for safe menus and no pending purchases/rewards, and does not celebrate restored balances as new rewards.
+Static source checks cover delimiters, duplicate classes/functions, resource references, JSON config, provider/restore safety assertions and protected file hashes. No Godot compiler/runtime, Firebase network, Android or device tests were performed. See FIREBASE_SETUP.md for remaining real configuration/native-hook work.
+
+## Supplied Firebase config and native Google bridge — source only
+Imported the exact supplied client JSON into Config/Firebase/google-services.json and mapped its matching package/API key/Web and Android OAuth clients to Data/FirebaseConfig.json. Firebase is configured for velocity-rush-3d in explicit development App Check mode. No Firebase project/server configuration was changed.
+Added Godot v2 native plugin source using Android Credential Manager's Google button flow, Web-client audience/nonce correlation, deferred request-ID callbacks and Keystore AES/GCM refresh-token storage. AuthService binds the native bridge before account launch; REST Auth/Firestore, account linking and cloud restoration remain the existing implementation. Internet permission and Gradle export are enabled, with an export plugin/manifest/dependency declarations. No Google Services Gradle plugin is claimed active; the client JSON has one canonical source location.
+Static config/method/signal/manifest/dependency/protected-file checks passed. Native AAR and matching Godot custom Android build template remain required. No Gradle, Kotlin/Godot compiler, Firebase login, Android or device tests were run. See FIREBASE_ANDROID_BRIDGE.md for exact setup and validation steps.

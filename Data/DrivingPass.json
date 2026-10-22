@@ -1,0 +1,217 @@
+{
+  "transmission": {
+    "speed_fractions": [
+      0.19,
+      0.33,
+      0.48,
+      0.64,
+      0.82,
+      1.13
+    ],
+    "torque": [
+      1.05,
+      0.96,
+      0.88,
+      0.78,
+      0.69,
+      0.61
+    ],
+    "shift_seconds": 0.18,
+    "minimum_hold": 0.65,
+    "idle_rpm": 900,
+    "redline_rpm": 7600
+  },
+  "durability": {
+    "vortex_s": 100,
+    "falcon_s1": 90,
+    "apex_rs": 110,
+    "inferno_r": 100,
+    "phantom_x": 105,
+    "titan_v12": 125
+  },
+  "near_miss": {
+    "close_gap": 0.4,
+    "insane_gap": 0.2,
+    "close_kmh": 150,
+    "insane_kmh": 220
+  },
+  "turbo_offers": [
+    {
+      "id": "boost_2",
+      "charges": 2,
+      "coins": 500
+    },
+    {
+      "id": "boost_4",
+      "charges": 4,
+      "coins": 900
+    },
+    {
+      "id": "boost_10",
+      "charges": 10,
+      "coins": 2000
+    }
+  ],
+  "personalities": [
+    {
+      "name": "CAUTIOUS",
+      "decision": 1.2,
+      "headway": 2.0,
+      "acceleration": 8.0,
+      "risk_gap": 24.0
+    },
+    {
+      "name": "BALANCED",
+      "decision": 0.85,
+      "headway": 1.65,
+      "acceleration": 10.0,
+      "risk_gap": 20.0
+    },
+    {
+      "name": "AGGRESSIVE",
+      "decision": 0.65,
+      "headway": 1.4,
+      "acceleration": 11.0,
+      "risk_gap": 18.0
+    },
+    {
+      "name": "ELITE",
+      "decision": 0.45,
+      "headway": 1.25,
+      "acceleration": 12.0,
+      "risk_gap": 17.0
+    }
+  ],
+  "vehicle_transmissions": {
+    "vortex_s": {
+      "speed_fractions": [
+        0.19,
+        0.33,
+        0.48,
+        0.64,
+        0.82,
+        1.13
+      ],
+      "torque": [
+        1.05,
+        0.96,
+        0.88,
+        0.78,
+        0.69,
+        0.61
+      ]
+    },
+    "falcon_s1": {
+      "speed_fractions": [
+        0.19,
+        0.33,
+        0.48,
+        0.64,
+        0.82,
+        1.13
+      ],
+      "torque": [
+        1.05,
+        0.96,
+        0.88,
+        0.78,
+        0.69,
+        0.61
+      ]
+    },
+    "apex_rs": {
+      "speed_fractions": [
+        0.19,
+        0.33,
+        0.48,
+        0.64,
+        0.82,
+        1.13
+      ],
+      "torque": [
+        1.05,
+        0.96,
+        0.88,
+        0.78,
+        0.69,
+        0.61
+      ]
+    },
+    "inferno_r": {
+      "speed_fractions": [
+        0.19,
+        0.33,
+        0.48,
+        0.64,
+        0.82,
+        1.13
+      ],
+      "torque": [
+        1.05,
+        0.96,
+        0.88,
+        0.78,
+        0.69,
+        0.61
+      ]
+    },
+    "phantom_x": {
+      "speed_fractions": [
+        0.19,
+        0.33,
+        0.48,
+        0.64,
+        0.82,
+        1.13
+      ],
+      "torque": [
+        1.05,
+        0.96,
+        0.88,
+        0.78,
+        0.69,
+        0.61
+      ]
+    },
+    "titan_v12": {
+      "speed_fractions": [
+        0.19,
+        0.33,
+        0.48,
+        0.64,
+        0.82,
+        1.13
+      ],
+      "torque": [
+        1.05,
+        0.96,
+        0.88,
+        0.78,
+        0.69,
+        0.61
+      ]
+    }
+  },
+  "five_racer_rewards": [
+    {
+      "coins": 500,
+      "xp": 120
+    },
+    {
+      "coins": 350,
+      "xp": 90
+    },
+    {
+      "coins": 250,
+      "xp": 65
+    },
+    {
+      "coins": 150,
+      "xp": 40
+    },
+    {
+      "coins": 100,
+      "xp": 25
+    }
+  ]
+}

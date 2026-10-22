@@ -1,0 +1,14 @@
+{
+  "configured": true,
+  "firebase_project_id": "velocity-rush-3d",
+  "firebase_project_number": "496920430239",
+  "firebase_app_id": "1:496920430239:android:15b2bfa71523bc1345c4aa",
+  "firebase_api_key": "AIzaSyC5Sx9HwgMNqhfA9_6oF7Zrs5LVmdYLIk4",
+  "android_package_name": "com.velocityrush3d.game",
+  "storage_bucket": "velocity-rush-3d.firebasestorage.app",
+  "android_oauth_client_id": "496920430239-ia3npdgie60dl9mgtngd6b4v7qbbbgtn.apps.googleusercontent.com",
+  "web_client_id": "496920430239-jqn6r0pntejd840pggb109kebe4k9h4d.apps.googleusercontent.com",
+  "require_app_check": false,
+  "app_check_mode": "development",
+  "oauth_request_uri": "http://localhost"
+}

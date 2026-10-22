@@ -1,0 +1,70 @@
+[
+  {
+    "id": "open_mountain",
+    "triangles": 5590,
+    "bytes": 409284,
+    "parts": [
+      "Terrain",
+      "RidgeNear",
+      "RidgeFar",
+      "RidgeHorizon",
+      "Vegetation",
+      "Rocks",
+      "Structures",
+      "StructuresFar",
+      "Details",
+      "Overpass"
+    ]
+  },
+  {
+    "id": "rock_cut",
+    "triangles": 4540,
+    "bytes": 333680,
+    "parts": [
+      "Terrain",
+      "RidgeNear",
+      "RidgeFar",
+      "RidgeHorizon",
+      "Vegetation",
+      "Rocks",
+      "Structures",
+      "StructuresFar",
+      "Details",
+      "Overpass"
+    ]
+  },
+  {
+    "id": "city_approach",
+    "triangles": 7183,
+    "bytes": 525840,
+    "parts": [
+      "Terrain",
+      "RidgeNear",
+      "RidgeFar",
+      "RidgeHorizon",
+      "Vegetation",
+      "Rocks",
+      "Structures",
+      "StructuresFar",
+      "Details",
+      "Overpass"
+    ]
+  },
+  {
+    "id": "outskirts",
+    "triangles": 8266,
+    "bytes": 603820,
+    "parts": [
+      "Terrain",
+      "RidgeNear",
+      "RidgeFar",
+      "RidgeHorizon",
+      "Vegetation",
+      "Rocks",
+      "Structures",
+      "StructuresFar",
+      "Details",
+      "Overpass"
+    ]
+  }
+]

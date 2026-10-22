@@ -1,0 +1,11 @@
+{
+  "mode": "TEST",
+  "test": {
+    "app_id": "ca-app-pub-3940256099942544~3347511713",
+    "rewarded_id": "ca-app-pub-3940256099942544/5224354917",
+    "interstitial_id": "ca-app-pub-3940256099942544/1033173712"
+  },
+  "production": {"app_id": "", "rewarded_id": "", "interstitial_id": "", "privacy_setup_complete": false},
+  "interstitial_cooldown_seconds": 120,
+  "interstitial_min_completed_races": 2
+}

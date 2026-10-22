@@ -1,0 +1,50 @@
+-- Merging decision tree log ---
+manifest
+ADDED from F:\VelocityRush3D-Phase1\VelocityRush3D\Native\AdsBridge\bridge\src\main\AndroidManifest.xml:1:1-10:12
+INJECTED from F:\VelocityRush3D-Phase1\VelocityRush3D\Native\AdsBridge\bridge\src\main\AndroidManifest.xml:1:1-10:12
+	package
+		INJECTED from F:\VelocityRush3D-Phase1\VelocityRush3D\Native\AdsBridge\bridge\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from F:\VelocityRush3D-Phase1\VelocityRush3D\Native\AdsBridge\bridge\src\main\AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from F:\VelocityRush3D-Phase1\VelocityRush3D\Native\AdsBridge\bridge\src\main\AndroidManifest.xml:2:5-67
+	android:name
+		ADDED from F:\VelocityRush3D-Phase1\VelocityRush3D\Native\AdsBridge\bridge\src\main\AndroidManifest.xml:2:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from F:\VelocityRush3D-Phase1\VelocityRush3D\Native\AdsBridge\bridge\src\main\AndroidManifest.xml:3:5-79
+	android:name
+		ADDED from F:\VelocityRush3D-Phase1\VelocityRush3D\Native\AdsBridge\bridge\src\main\AndroidManifest.xml:3:22-76
+application
+ADDED from F:\VelocityRush3D-Phase1\VelocityRush3D\Native\AdsBridge\bridge\src\main\AndroidManifest.xml:4:5-9:19
+meta-data#org.godotengine.plugin.v2.RushAdsBridge
+ADDED from F:\VelocityRush3D-Phase1\VelocityRush3D\Native\AdsBridge\bridge\src\main\AndroidManifest.xml:5:9-130
+	android:value
+		ADDED from F:\VelocityRush3D-Phase1\VelocityRush3D\Native\AdsBridge\bridge\src\main\AndroidManifest.xml:5:75-127
+	android:name
+		ADDED from F:\VelocityRush3D-Phase1\VelocityRush3D\Native\AdsBridge\bridge\src\main\AndroidManifest.xml:5:20-74
+meta-data#com.google.android.gms.ads.APPLICATION_ID
+ADDED from F:\VelocityRush3D-Phase1\VelocityRush3D\Native\AdsBridge\bridge\src\main\AndroidManifest.xml:6:9-119
+	android:value
+		ADDED from F:\VelocityRush3D-Phase1\VelocityRush3D\Native\AdsBridge\bridge\src\main\AndroidManifest.xml:6:77-116
+	android:name
+		ADDED from F:\VelocityRush3D-Phase1\VelocityRush3D\Native\AdsBridge\bridge\src\main\AndroidManifest.xml:6:20-76
+meta-data#com.google.android.gms.ads.flag.OPTIMIZE_INITIALIZATION
+ADDED from F:\VelocityRush3D-Phase1\VelocityRush3D\Native\AdsBridge\bridge\src\main\AndroidManifest.xml:7:9-114
+	android:value
+		ADDED from F:\VelocityRush3D-Phase1\VelocityRush3D\Native\AdsBridge\bridge\src\main\AndroidManifest.xml:7:91-111
+	android:name
+		ADDED from F:\VelocityRush3D-Phase1\VelocityRush3D\Native\AdsBridge\bridge\src\main\AndroidManifest.xml:7:20-90
+meta-data#com.google.android.gms.ads.flag.OPTIMIZE_AD_LOADING
+ADDED from F:\VelocityRush3D-Phase1\VelocityRush3D\Native\AdsBridge\bridge\src\main\AndroidManifest.xml:8:9-110
+	android:value
+		ADDED from F:\VelocityRush3D-Phase1\VelocityRush3D\Native\AdsBridge\bridge\src\main\AndroidManifest.xml:8:87-107
+	android:name
+		ADDED from F:\VelocityRush3D-Phase1\VelocityRush3D\Native\AdsBridge\bridge\src\main\AndroidManifest.xml:8:20-86
+uses-sdk
+INJECTED from F:\VelocityRush3D-Phase1\VelocityRush3D\Native\AdsBridge\bridge\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from F:\VelocityRush3D-Phase1\VelocityRush3D\Native\AdsBridge\bridge\src\main\AndroidManifest.xml
+INJECTED from F:\VelocityRush3D-Phase1\VelocityRush3D\Native\AdsBridge\bridge\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from F:\VelocityRush3D-Phase1\VelocityRush3D\Native\AdsBridge\bridge\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from F:\VelocityRush3D-Phase1\VelocityRush3D\Native\AdsBridge\bridge\src\main\AndroidManifest.xml

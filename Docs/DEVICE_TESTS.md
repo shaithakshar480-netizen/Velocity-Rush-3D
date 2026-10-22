@@ -1,0 +1,12 @@
+# Premium overhaul — required local acceptance pass
+
+1. Run `python Tools/run_engine_checks.py --godot /absolute/path/to/godot` with Godot 4.7.2. Confirm imports, compilation and every engine suite completion marker. These suites were not executed here.
+2. Capture comparable Home, Garage, chase driving, hood view, Turbo and Results screenshots. Inspect all six cars at Low/Medium/High: body curvature, glass, lamp layers, mirrors, tire contact, calipers, wheel rotation, paint reflections and silhouette differences. Approve the visual direction only from real engine screenshots.
+3. Check Home → Garage/Profile/Settings → Home → Race → Results → Replay. Change quality on Home and paused in-race; showroom lighting must remain studio lighting, with highway lighting restored for the race. Browse cars rapidly and select paint during transitions.
+4. Check gas/brake artwork over bright and dark road sections. Test steering + gas + Turbo with three fingers, steering + brake, sliding off a touch zone, pause during a touch and background/resume. Check Buttons/Wheel/Tilt and keyboard controls. Reverse must show R separately from the brake artwork.
+5. Drive all four highway sections at maximum upgraded/Turbo speed. Confirm no road gaps, visual jitter, scenery popping in the driving corridor, floating tires or mesh/camera clipping. Check collisions, near misses, coins, scoring, progress and results.
+6. Listen to multiple Home and Race loops, repeated crossfades, pause/resume, engine coast/load shifts, Turbo, coins, collisions and UI/reward sounds. Check speaker and headphone balance; move every volume slider, mute and relaunch.
+7. Confirm the existing wallet, owned cars, paints, upgrades, XP, missions, achievements, daily rewards, career stats and settings survive relaunch. Test purchase/upgrade success, insufficient funds, MAX and saved result recovery. Old receipts may have no top-speed display.
+8. Measure frame time, memory, initial prewarm, thermal throttling and battery behavior on a mid-range Android phone (Medium), weaker phone (Low) and capable phone (High). Verify fallback steps are unobtrusive. Check several landscape aspect ratios, safe areas and Android export using your existing SDK installation.
+
+The source implementation is integrated. Godot runtime and physical-device verification are the remaining mandatory gate. No monetization phase should start before that gate passes.

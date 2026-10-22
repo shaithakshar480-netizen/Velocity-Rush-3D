@@ -1,0 +1,69 @@
+{
+  "coin_packs": [
+    {
+      "id": "coins_50",
+      "reference_price_inr": 50,
+      "base": 10000,
+      "bonus": 0,
+      "total": 10000
+    },
+    {
+      "id": "coins_80",
+      "reference_price_inr": 80,
+      "base": 15000,
+      "bonus": 2000,
+      "total": 17000
+    },
+    {
+      "id": "coins_150",
+      "reference_price_inr": 150,
+      "base": 30000,
+      "bonus": 5000,
+      "total": 35000
+    },
+    {
+      "id": "coins_250",
+      "reference_price_inr": 250,
+      "base": 55000,
+      "bonus": 10000,
+      "total": 65000
+    },
+    {
+      "id": "coins_500",
+      "reference_price_inr": 500,
+      "base": 120000,
+      "bonus": 30000,
+      "total": 150000
+    }
+  ],
+  "boosts": [
+    {
+      "id": "turbo",
+      "title": "Turbo Boosters",
+      "inventory": "turbo_inventory",
+      "quantity": 2,
+      "coins": 1000
+    },
+    {
+      "id": "repair",
+      "title": "Repair Kit",
+      "inventory": "repair_kits",
+      "quantity": 1,
+      "coins": 1500
+    },
+    {
+      "id": "magnet",
+      "title": "Coin Magnet",
+      "inventory": "coin_magnets",
+      "quantity": 1,
+      "coins": 1250
+    },
+    {
+      "id": "shield",
+      "title": "Shield",
+      "inventory": "shields",
+      "quantity": 1,
+      "coins": 2000
+    }
+  ]
+}

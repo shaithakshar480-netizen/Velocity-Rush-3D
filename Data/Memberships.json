@@ -1,0 +1,23 @@
+{
+  "weekly": {
+    "turbo": 15,
+    "magnets": 10,
+    "repairs": 10,
+    "initial_coins": 8000
+  },
+  "monthly": {
+    "turbo": 60,
+    "magnets": 40,
+    "repairs": 40,
+    "initial_coins": 25000
+  },
+  "benefits": [
+    "coin_rewards",
+    "premium_car_access_while_active",
+    "exclusive_paints",
+    "race_coin_bonus",
+    "remove_interstitials",
+    "optional_rewarded_ads"
+  ],
+  "billing_provider_required": true
+}

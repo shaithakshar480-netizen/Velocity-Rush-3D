@@ -1,0 +1,112 @@
+{
+  "daily": {
+    "template_only": true,
+    "title": "DAILY CUP",
+    "room_size": 5,
+    "rounds": [
+      "qualification",
+      "final"
+    ],
+    "qualification": {
+      "attempts": 1,
+      "advance": 3,
+      "retain_best": false
+    },
+    "reward_table": [
+      {
+        "coins": 5000,
+        "xp": 300,
+        "turbo": 5,
+        "repairs": 2,
+        "magnets": 2
+      },
+      {
+        "coins": 3000,
+        "xp": 220,
+        "turbo": 3,
+        "repairs": 1,
+        "magnets": 1
+      },
+      {
+        "coins": 2000,
+        "xp": 160,
+        "turbo": 2,
+        "repairs": 1,
+        "magnets": 0
+      },
+      {
+        "coins": 1000,
+        "xp": 100,
+        "turbo": 0,
+        "repairs": 0,
+        "magnets": 0
+      },
+      {
+        "coins": 500,
+        "xp": 70,
+        "turbo": 0,
+        "repairs": 0,
+        "magnets": 0
+      }
+    ]
+  },
+  "weekly": {
+    "template_only": true,
+    "title": "WEEKLY CUP",
+    "room_size": 5,
+    "rounds": [
+      "qualification",
+      "final"
+    ],
+    "qualification": {
+      "attempts": 5,
+      "advance": 5,
+      "retain_best": true
+    },
+    "reward_table": [
+      {
+        "coins": 25000,
+        "xp": 1000,
+        "turbo": 20,
+        "repairs": 10,
+        "magnets": 10,
+        "paint": "exclusive_tournament"
+      },
+      {
+        "coins": 15000,
+        "xp": 750,
+        "turbo": 12,
+        "repairs": 6,
+        "magnets": 6
+      },
+      {
+        "coins": 10000,
+        "xp": 500,
+        "turbo": 8,
+        "repairs": 4,
+        "magnets": 4
+      },
+      {
+        "coins": 5000,
+        "xp": 300,
+        "turbo": 4,
+        "repairs": 2,
+        "magnets": 0
+      },
+      {
+        "coins": 3000,
+        "xp": 200,
+        "turbo": 2,
+        "repairs": 0,
+        "magnets": 0
+      }
+    ]
+  },
+  "special": {
+    "template_only": true,
+    "title": "SPECIAL EVENT",
+    "room_size": 5,
+    "rounds": [],
+    "reward_table": []
+  }
+}

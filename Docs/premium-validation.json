@@ -1,0 +1,465 @@
+{
+  "scope": "Offline only; no Godot engine or Android execution",
+  "checks": 111,
+  "failures": 0,
+  "decoded_music": [
+    {
+      "name": "home_music",
+      "peak": 0.776239275932312,
+      "rms": 0.14411373436450958,
+      "decoded_boundary_delta": 0.014347821474075317
+    },
+    {
+      "name": "race_music",
+      "peak": 0.7278381586074829,
+      "rms": 0.1539299637079239,
+      "decoded_boundary_delta": 0.016879480332136154
+    }
+  ],
+  "results": [
+    {
+      "check": "Preserved baseline bytes: Gameplay/RunManager.gd",
+      "passed": true
+    },
+    {
+      "check": "Preserved baseline bytes: Collectibles/CoinSystem.gd",
+      "passed": true
+    },
+    {
+      "check": "Preserved baseline bytes: Progression/ProgressionData.gd",
+      "passed": true
+    },
+    {
+      "check": "Preserved baseline bytes: Progression/RewardService.gd",
+      "passed": true
+    },
+    {
+      "check": "Preserved baseline bytes: Data/ProgressionSpec.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved baseline bytes: Data/MissionCatalog.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved baseline bytes: Data/AchievementCatalog.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved baseline bytes: Data/HighwayRush.tres",
+      "passed": true
+    },
+    {
+      "check": "Preserved baseline bytes: Data/TrafficProfiles.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved baseline bytes: Environment/RoadFrame.gd",
+      "passed": true
+    },
+    {
+      "check": "Preserved baseline bytes: project.godot",
+      "passed": true
+    },
+    {
+      "check": "Preserved baseline bytes: export_presets.cfg",
+      "passed": true
+    },
+    {
+      "check": "Stable road method: _build_continuous_collision",
+      "passed": true
+    },
+    {
+      "check": "Stable road method: _static_box",
+      "passed": true
+    },
+    {
+      "check": "Stable road method: update_chunks",
+      "passed": true
+    },
+    {
+      "check": "Stable road method: _physics_process",
+      "passed": true
+    },
+    {
+      "check": "Garage transaction behavior: _allow_purchase",
+      "passed": true
+    },
+    {
+      "check": "Garage transaction behavior: _action",
+      "passed": true
+    },
+    {
+      "check": "Garage transaction behavior: _upgrade",
+      "passed": true
+    },
+    {
+      "check": "Garage transaction behavior: _paint",
+      "passed": true
+    },
+    {
+      "check": "Original traffic retained aero_f.glb",
+      "passed": true
+    },
+    {
+      "check": "Original traffic retained forge_u.glb",
+      "passed": true
+    },
+    {
+      "check": "Original traffic retained luma_c.glb",
+      "passed": true
+    },
+    {
+      "check": "Original traffic retained summit_x.glb",
+      "passed": true
+    },
+    {
+      "check": "Original traffic retained meridian_s.glb",
+      "passed": true
+    },
+    {
+      "check": "Invalid reflection constant removed",
+      "passed": true
+    },
+    {
+      "check": "Documented reflection constant Garage/Showroom.gd",
+      "passed": true
+    },
+    {
+      "check": "Documented reflection constant Environment/Highway.gd",
+      "passed": true
+    },
+    {
+      "check": "No per-frame pedal resources",
+      "passed": true
+    },
+    {
+      "check": "Separate pedal artwork",
+      "passed": true
+    },
+    {
+      "check": "Pedals retain input-region routing",
+      "passed": true
+    },
+    {
+      "check": "No generic pedal labels",
+      "passed": true
+    },
+    {
+      "check": "Camera kick uses physics acceleration",
+      "passed": true
+    },
+    {
+      "check": "Cached pedal styles",
+      "passed": true
+    },
+    {
+      "check": "Mission progress cards",
+      "passed": true
+    },
+    {
+      "check": "Garage current and next effects",
+      "passed": true
+    },
+    {
+      "check": "Race closes showroom before driving",
+      "passed": true
+    },
+    {
+      "check": "Home cinematic showroom",
+      "passed": true
+    },
+    {
+      "check": "Showroom reflection isolated",
+      "passed": true
+    },
+    {
+      "check": "Original music crossfade",
+      "passed": true
+    },
+    {
+      "check": "No music restart during navigation",
+      "passed": true
+    },
+    {
+      "check": "Three simultaneous fingers covered",
+      "passed": true
+    },
+    {
+      "check": "Dynamic visual fallback six stages",
+      "passed": true
+    },
+    {
+      "check": "No heavy rendering Environment/asphalt.gdshader",
+      "passed": true
+    },
+    {
+      "check": "No heavy rendering Garage/Showroom.gd",
+      "passed": true
+    },
+    {
+      "check": "No heavy rendering Environment/Highway.gd",
+      "passed": true
+    },
+    {
+      "check": "home_music decode duration",
+      "passed": true
+    },
+    {
+      "check": "home_music mastered headroom",
+      "passed": true
+    },
+    {
+      "check": "home_music loop boundary",
+      "passed": true
+    },
+    {
+      "check": "home_music compressed mobile asset",
+      "passed": true
+    },
+    {
+      "check": "race_music decode duration",
+      "passed": true
+    },
+    {
+      "check": "race_music mastered headroom",
+      "passed": true
+    },
+    {
+      "check": "race_music loop boundary",
+      "passed": true
+    },
+    {
+      "check": "race_music compressed mobile asset",
+      "passed": true
+    },
+    {
+      "check": "engine PCM format and headroom",
+      "passed": true
+    },
+    {
+      "check": "engine clean endpoint",
+      "passed": true
+    },
+    {
+      "check": "wind PCM format and headroom",
+      "passed": true
+    },
+    {
+      "check": "wind clean endpoint",
+      "passed": true
+    },
+    {
+      "check": "skid PCM format and headroom",
+      "passed": true
+    },
+    {
+      "check": "skid clean endpoint",
+      "passed": true
+    },
+    {
+      "check": "turbo_spool PCM format and headroom",
+      "passed": true
+    },
+    {
+      "check": "turbo_spool clean endpoint",
+      "passed": true
+    },
+    {
+      "check": "collision PCM format and headroom",
+      "passed": true
+    },
+    {
+      "check": "collision clean endpoint",
+      "passed": true
+    },
+    {
+      "check": "ui PCM format and headroom",
+      "passed": true
+    },
+    {
+      "check": "ui clean endpoint",
+      "passed": true
+    },
+    {
+      "check": "coin PCM format and headroom",
+      "passed": true
+    },
+    {
+      "check": "coin clean endpoint",
+      "passed": true
+    },
+    {
+      "check": "near_miss PCM format and headroom",
+      "passed": true
+    },
+    {
+      "check": "near_miss clean endpoint",
+      "passed": true
+    },
+    {
+      "check": "turbo_ready PCM format and headroom",
+      "passed": true
+    },
+    {
+      "check": "turbo_ready clean endpoint",
+      "passed": true
+    },
+    {
+      "check": "turbo_ignition PCM format and headroom",
+      "passed": true
+    },
+    {
+      "check": "turbo_ignition clean endpoint",
+      "passed": true
+    },
+    {
+      "check": "turbo_flare PCM format and headroom",
+      "passed": true
+    },
+    {
+      "check": "turbo_flare clean endpoint",
+      "passed": true
+    },
+    {
+      "check": "turbo_end PCM format and headroom",
+      "passed": true
+    },
+    {
+      "check": "turbo_end clean endpoint",
+      "passed": true
+    },
+    {
+      "check": "car_select PCM format and headroom",
+      "passed": true
+    },
+    {
+      "check": "car_select clean endpoint",
+      "passed": true
+    },
+    {
+      "check": "purchase PCM format and headroom",
+      "passed": true
+    },
+    {
+      "check": "purchase clean endpoint",
+      "passed": true
+    },
+    {
+      "check": "upgrade PCM format and headroom",
+      "passed": true
+    },
+    {
+      "check": "upgrade clean endpoint",
+      "passed": true
+    },
+    {
+      "check": "xp_gain PCM format and headroom",
+      "passed": true
+    },
+    {
+      "check": "xp_gain clean endpoint",
+      "passed": true
+    },
+    {
+      "check": "level_up PCM format and headroom",
+      "passed": true
+    },
+    {
+      "check": "level_up clean endpoint",
+      "passed": true
+    },
+    {
+      "check": "mission_complete PCM format and headroom",
+      "passed": true
+    },
+    {
+      "check": "mission_complete clean endpoint",
+      "passed": true
+    },
+    {
+      "check": "reward_claim PCM format and headroom",
+      "passed": true
+    },
+    {
+      "check": "reward_claim clean endpoint",
+      "passed": true
+    },
+    {
+      "check": "achievement PCM format and headroom",
+      "passed": true
+    },
+    {
+      "check": "achievement clean endpoint",
+      "passed": true
+    },
+    {
+      "check": "daily_reward PCM format and headroom",
+      "passed": true
+    },
+    {
+      "check": "daily_reward clean endpoint",
+      "passed": true
+    },
+    {
+      "check": "asphalt_surface.png decodes and fits budget",
+      "passed": true
+    },
+    {
+      "check": "golden_hour.hdr HDR dimensions",
+      "passed": true
+    },
+    {
+      "check": "golden_hour.hdr complete HDR scanlines",
+      "passed": true
+    },
+    {
+      "check": "studio_reflections.hdr HDR dimensions",
+      "passed": true
+    },
+    {
+      "check": "studio_reflections.hdr complete HDR scanlines",
+      "passed": true
+    },
+    {
+      "check": "Genuine Low traffic budget aero_f.glb",
+      "passed": true
+    },
+    {
+      "check": "Genuine Low traffic budget forge_u.glb",
+      "passed": true
+    },
+    {
+      "check": "Genuine Low traffic budget luma_c.glb",
+      "passed": true
+    },
+    {
+      "check": "Genuine Low traffic budget summit_x.glb",
+      "passed": true
+    },
+    {
+      "check": "Genuine Low traffic budget meridian_s.glb",
+      "passed": true
+    },
+    {
+      "check": "Low traffic prewarmed",
+      "passed": true
+    },
+    {
+      "check": "Preview integrity sky-preview.png",
+      "passed": true
+    },
+    {
+      "check": "Preview integrity sports-models-preview.png",
+      "passed": true
+    },
+    {
+      "check": "Preview integrity traffic-geometry-preview.png",
+      "passed": true
+    },
+    {
+      "check": "Preview integrity player-geometry-preview.png",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+[
+    {
+        "merged": "com.velocityrush3d.ads.bridge-merged_res-17:/drawable/notification_tile_bg.xml",
+        "source": "com.velocityrush3d.ads.bridge-core-1.8.0-0:/drawable/notification_tile_bg.xml"
+    },
+    {
+        "merged": "com.velocityrush3d.ads.bridge-merged_res-17:/drawable/common_google_signin_btn_icon_light_normal.xml",
+        "source": "com.velocityrush3d.ads.bridge-play-services-base-18.0.0-8:/drawable/common_google_signin_btn_icon_light_normal.xml"
+    },
+    {
+        "merged": "com.velocityrush3d.ads.bridge-merged_res-17:/drawable/offline_dialog_background.xml",
+        "source": "com.velocityrush3d.ads.bridge-play-services-ads-24.1.0-1:/drawable/offline_dialog_background.xml"
+    },
+    {
+        "merged": "com.velocityrush3d.ads.bridge-merged_res-17:/drawable/common_google_signin_btn_text_disabled.xml",
+        "source": "com.velocityrush3d.ads.bridge-play-services-base-18.0.0-8:/drawable/common_google_signin_btn_text_disabled.xml"
+    },
+    {
+        "merged": "com.velocityrush3d.ads.bridge-merged_res-17:/drawable/admob_close_button_white_circle_black_cross.xml",
+        "source": "com.velocityrush3d.ads.bridge-play-services-ads-24.1.0-1:/drawable/admob_close_button_white_circle_black_cross.xml"
+    },
+    {
+        "merged": "com.velocityrush3d.ads.bridge-merged_res-17:/drawable/admob_close_button_white_cross.xml",
+        "source": "com.velocityrush3d.ads.bridge-play-services-ads-24.1.0-1:/drawable/admob_close_button_white_cross.xml"
+    },
+    {
+        "merged": "com.velocityrush3d.ads.bridge-merged_res-17:/drawable/common_google_signin_btn_text_dark_focused.xml",
+        "source": "com.velocityrush3d.ads.bridge-play-services-base-18.0.0-8:/drawable/common_google_signin_btn_text_dark_focused.xml"
+    },
+    {
+        "merged": "com.velocityrush3d.ads.bridge-merged_res-17:/drawable/common_google_signin_btn_text_light_normal.xml",
+        "source": "com.velocityrush3d.ads.bridge-play-services-base-18.0.0-8:/drawable/common_google_signin_btn_text_light_normal.xml"
+    },
+    {
+        "merged": "com.velocityrush3d.ads.bridge-merged_res-17:/drawable/common_google_signin_btn_icon_disabled.xml",
+        "source": "com.velocityrush3d.ads.bridge-play-services-base-18.0.0-8:/drawable/common_google_signin_btn_icon_disabled.xml"
+    },
+    {
+        "merged": "com.velocityrush3d.ads.bridge-merged_res-17:/drawable/admob_close_button_black_circle_white_cross.xml",
+        "source": "com.velocityrush3d.ads.bridge-play-services-ads-24.1.0-1:/drawable/admob_close_button_black_circle_white_cross.xml"
+    },
+    {
+        "merged": "com.velocityrush3d.ads.bridge-merged_res-17:/drawable/common_google_signin_btn_text_light.xml",
+        "source": "com.velocityrush3d.ads.bridge-play-services-base-18.0.0-8:/drawable/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "com.velocityrush3d.ads.bridge-merged_res-17:/drawable/offline_dialog_default_icon_42dp.xml",
+        "source": "com.velocityrush3d.ads.bridge-play-services-ads-24.1.0-1:/drawable/offline_dialog_default_icon_42dp.xml"
+    },
+    {
+        "merged": "com.velocityrush3d.ads.bridge-merged_res-17:/drawable/notification_bg_low.xml",
+        "source": "com.velocityrush3d.ads.bridge-core-1.8.0-0:/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "com.velocityrush3d.ads.bridge-merged_res-17:/drawable/common_google_signin_btn_text_dark_normal.xml",
+        "source": "com.velocityrush3d.ads.bridge-play-services-base-18.0.0-8:/drawable/common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
+        "merged": "com.velocityrush3d.ads.bridge-merged_res-17:/drawable/notification_icon_background.xml",
+        "source": "com.velocityrush3d.ads.bridge-core-1.8.0-0:/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "com.velocityrush3d.ads.bridge-merged_res-17:/drawable/common_google_signin_btn_icon_dark.xml",
+        "source": "com.velocityrush3d.ads.bridge-play-services-base-18.0.0-8:/drawable/common_google_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "com.velocityrush3d.ads.bridge-merged_res-17:/drawable/common_google_signin_btn_icon_dark_normal.xml",
+        "source": "com.velocityrush3d.ads.bridge-play-services-base-18.0.0-8:/drawable/common_google_signin_btn_icon_dark_normal.xml"
+    },
+    {
+        "merged": "com.velocityrush3d.ads.bridge-merged_res-17:/drawable/common_google_signin_btn_text_dark.xml",
+        "source": "com.velocityrush3d.ads.bridge-play-services-base-18.0.0-8:/drawable/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "com.velocityrush3d.ads.bridge-merged_res-17:/drawable/common_google_signin_btn_icon_dark_focused.xml",
+        "source": "com.velocityrush3d.ads.bridge-play-services-base-18.0.0-8:/drawable/common_google_signin_btn_icon_dark_focused.xml"
+    },
+    {
+        "merged": "com.velocityrush3d.ads.bridge-merged_res-17:/drawable/common_google_signin_btn_text_light_focused.xml",
+        "source": "com.velocityrush3d.ads.bridge-play-services-base-18.0.0-8:/drawable/common_google_signin_btn_text_light_focused.xml"
+    },
+    {
+        "merged": "com.velocityrush3d.ads.bridge-merged_res-17:/drawable/common_google_signin_btn_icon_light.xml",
+        "source": "com.velocityrush3d.ads.bridge-play-services-base-18.0.0-8:/drawable/common_google_signin_btn_icon_light.xml"
+    },
+    {
+        "merged": "com.velocityrush3d.ads.bridge-merged_res-17:/drawable/notification_bg.xml",
+        "source": "com.velocityrush3d.ads.bridge-core-1.8.0-0:/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "com.velocityrush3d.ads.bridge-merged_res-17:/drawable/common_google_signin_btn_icon_light_focused.xml",
+        "source": "com.velocityrush3d.ads.bridge-play-services-base-18.0.0-8:/drawable/common_google_signin_btn_icon_light_focused.xml"
+    }
+]

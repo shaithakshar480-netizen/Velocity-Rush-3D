@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.velocityrush3d.ads.bridge-merged_res-17:/color/common_google_signin_btn_text_dark.xml",
+        "source": "com.velocityrush3d.ads.bridge-play-services-base-18.0.0-8:/color/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "com.velocityrush3d.ads.bridge-merged_res-17:/color/common_google_signin_btn_text_light.xml",
+        "source": "com.velocityrush3d.ads.bridge-play-services-base-18.0.0-8:/color/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "com.velocityrush3d.ads.bridge-merged_res-17:/color/common_google_signin_btn_tint.xml",
+        "source": "com.velocityrush3d.ads.bridge-play-services-base-18.0.0-8:/color/common_google_signin_btn_tint.xml"
+    }
+]

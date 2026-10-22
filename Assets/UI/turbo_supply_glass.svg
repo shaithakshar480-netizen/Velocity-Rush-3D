@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="570" viewBox="0 0 840 570">
+<defs><linearGradient id="glass" x2="0" y2="1"><stop stop-color="#102d3d" stop-opacity=".94"/><stop offset=".6" stop-color="#071523" stop-opacity=".86"/><stop offset="1" stop-color="#092433" stop-opacity=".93"/></linearGradient></defs>
+<path d="M30 4H810L836 30V536L807 566H33L4 537V30Z" fill="url(#glass)" stroke="#36d5ee" stroke-opacity=".6" stroke-width="2"/>
+<path d="M35 11H180M660 11H805L829 35V110M829 460V532L802 559H660M180 559H37L11 532V460M11 110V36Z" fill="none" stroke="#81f4ff" stroke-width="3"/>
+<g fill="none" stroke="#45c5df" opacity=".18"><path d="M20 165H65L95 195V320L65 350H20M820 165H775L745 195V320L775 350H820M22 420H73L98 445M818 420H767L742 445M100 90H205M635 90H740"/><path d="M30 220H54V290H30M810 220H786V290H810"/></g>
+<path d="M250 84H590M340 561H500" stroke="#59dff2" stroke-opacity=".4"/>
+</svg>

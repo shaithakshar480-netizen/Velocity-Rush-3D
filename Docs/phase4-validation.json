@@ -1,0 +1,2283 @@
+{
+  "scope": "Offline contracts, mesh bytes, PCM data and catalog arithmetic only; runtime purchase/control scenarios NOT executed",
+  "checks": 569,
+  "failed": 0,
+  "results": [
+    {
+      "check": "Six unique vehicle IDs",
+      "passed": true
+    },
+    {
+      "check": "Ten configurable increasing costs",
+      "passed": true
+    },
+    {
+      "check": "Full category cost",
+      "passed": true
+    },
+    {
+      "check": "Six free paint choices",
+      "passed": true
+    },
+    {
+      "check": "vortex_s definition",
+      "passed": true
+    },
+    {
+      "check": "vortex_s physical proportions",
+      "passed": true
+    },
+    {
+      "check": "vortex_s exhaust behind rear",
+      "passed": true
+    },
+    {
+      "check": "vortex_s level 0 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "vortex_s level 1 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "vortex_s level 2 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "vortex_s level 3 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "vortex_s level 4 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "vortex_s level 5 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "vortex_s level 6 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "vortex_s level 7 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "vortex_s level 8 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "vortex_s level 9 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "vortex_s level 10 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 definition",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 physical proportions",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 exhaust behind rear",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 level 0 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 level 1 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 level 2 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 level 3 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 level 4 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 level 5 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 level 6 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 level 7 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 level 8 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 level 9 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 level 10 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "apex_rs definition",
+      "passed": true
+    },
+    {
+      "check": "apex_rs physical proportions",
+      "passed": true
+    },
+    {
+      "check": "apex_rs exhaust behind rear",
+      "passed": true
+    },
+    {
+      "check": "apex_rs level 0 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "apex_rs level 1 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "apex_rs level 2 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "apex_rs level 3 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "apex_rs level 4 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "apex_rs level 5 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "apex_rs level 6 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "apex_rs level 7 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "apex_rs level 8 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "apex_rs level 9 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "apex_rs level 10 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "inferno_r definition",
+      "passed": true
+    },
+    {
+      "check": "inferno_r physical proportions",
+      "passed": true
+    },
+    {
+      "check": "inferno_r exhaust behind rear",
+      "passed": true
+    },
+    {
+      "check": "inferno_r level 0 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "inferno_r level 1 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "inferno_r level 2 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "inferno_r level 3 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "inferno_r level 4 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "inferno_r level 5 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "inferno_r level 6 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "inferno_r level 7 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "inferno_r level 8 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "inferno_r level 9 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "inferno_r level 10 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "phantom_x definition",
+      "passed": true
+    },
+    {
+      "check": "phantom_x physical proportions",
+      "passed": true
+    },
+    {
+      "check": "phantom_x exhaust behind rear",
+      "passed": true
+    },
+    {
+      "check": "phantom_x level 0 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "phantom_x level 1 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "phantom_x level 2 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "phantom_x level 3 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "phantom_x level 4 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "phantom_x level 5 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "phantom_x level 6 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "phantom_x level 7 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "phantom_x level 8 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "phantom_x level 9 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "phantom_x level 10 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 definition",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 physical proportions",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 exhaust behind rear",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 level 0 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 level 1 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 level 2 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 level 3 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 level 4 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 level 5 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 level 6 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 level 7 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 level 8 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 level 9 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 level 10 performance envelope",
+      "passed": true
+    },
+    {
+      "check": "city_approach GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "city_approach embedded resources",
+      "passed": true
+    },
+    {
+      "check": "city_approach finite vertices/normals",
+      "passed": true
+    },
+    {
+      "check": "city_approach depth layers",
+      "passed": true
+    },
+    {
+      "check": "open_mountain GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "open_mountain embedded resources",
+      "passed": true
+    },
+    {
+      "check": "open_mountain finite vertices/normals",
+      "passed": true
+    },
+    {
+      "check": "open_mountain depth layers",
+      "passed": true
+    },
+    {
+      "check": "outskirts GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "outskirts embedded resources",
+      "passed": true
+    },
+    {
+      "check": "outskirts finite vertices/normals",
+      "passed": true
+    },
+    {
+      "check": "outskirts depth layers",
+      "passed": true
+    },
+    {
+      "check": "rock_cut GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "rock_cut embedded resources",
+      "passed": true
+    },
+    {
+      "check": "rock_cut finite vertices/normals",
+      "passed": true
+    },
+    {
+      "check": "rock_cut depth layers",
+      "passed": true
+    },
+    {
+      "check": "apex_rs GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "apex_rs embedded resources",
+      "passed": true
+    },
+    {
+      "check": "apex_rs finite vertices/normals",
+      "passed": true
+    },
+    {
+      "check": "apex_rs declared material roles",
+      "passed": true
+    },
+    {
+      "check": "apex_rs no vertex-color dependency",
+      "passed": true
+    },
+    {
+      "check": "apex_rs dark tires and glass",
+      "passed": true
+    },
+    {
+      "check": "apex_rs four shared wheels",
+      "passed": true
+    },
+    {
+      "check": "apex_rs wheel contact",
+      "passed": true
+    },
+    {
+      "check": "apex_rs wheel contact",
+      "passed": true
+    },
+    {
+      "check": "apex_rs wheel contact",
+      "passed": true
+    },
+    {
+      "check": "apex_rs wheel contact",
+      "passed": true
+    },
+    {
+      "check": "apex_rs tier-specific triangle budget",
+      "passed": true
+    },
+    {
+      "check": "apex_rs_low GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "apex_rs_low embedded resources",
+      "passed": true
+    },
+    {
+      "check": "apex_rs_low finite vertices/normals",
+      "passed": true
+    },
+    {
+      "check": "apex_rs_low declared material roles",
+      "passed": true
+    },
+    {
+      "check": "apex_rs_low no vertex-color dependency",
+      "passed": true
+    },
+    {
+      "check": "apex_rs_low dark tires and glass",
+      "passed": true
+    },
+    {
+      "check": "apex_rs_low four shared wheels",
+      "passed": true
+    },
+    {
+      "check": "apex_rs_low wheel contact",
+      "passed": true
+    },
+    {
+      "check": "apex_rs_low wheel contact",
+      "passed": true
+    },
+    {
+      "check": "apex_rs_low wheel contact",
+      "passed": true
+    },
+    {
+      "check": "apex_rs_low wheel contact",
+      "passed": true
+    },
+    {
+      "check": "apex_rs_low tier-specific triangle budget",
+      "passed": true
+    },
+    {
+      "check": "apex_rs_medium GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "apex_rs_medium embedded resources",
+      "passed": true
+    },
+    {
+      "check": "apex_rs_medium finite vertices/normals",
+      "passed": true
+    },
+    {
+      "check": "apex_rs_medium declared material roles",
+      "passed": true
+    },
+    {
+      "check": "apex_rs_medium no vertex-color dependency",
+      "passed": true
+    },
+    {
+      "check": "apex_rs_medium dark tires and glass",
+      "passed": true
+    },
+    {
+      "check": "apex_rs_medium four shared wheels",
+      "passed": true
+    },
+    {
+      "check": "apex_rs_medium wheel contact",
+      "passed": true
+    },
+    {
+      "check": "apex_rs_medium wheel contact",
+      "passed": true
+    },
+    {
+      "check": "apex_rs_medium wheel contact",
+      "passed": true
+    },
+    {
+      "check": "apex_rs_medium wheel contact",
+      "passed": true
+    },
+    {
+      "check": "apex_rs_medium tier-specific triangle budget",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 embedded resources",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 finite vertices/normals",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 declared material roles",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 no vertex-color dependency",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 dark tires and glass",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 four shared wheels",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 wheel contact",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 wheel contact",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 wheel contact",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 wheel contact",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1 tier-specific triangle budget",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1_low GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1_low embedded resources",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1_low finite vertices/normals",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1_low declared material roles",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1_low no vertex-color dependency",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1_low dark tires and glass",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1_low four shared wheels",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1_low wheel contact",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1_low wheel contact",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1_low wheel contact",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1_low wheel contact",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1_low tier-specific triangle budget",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1_medium GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1_medium embedded resources",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1_medium finite vertices/normals",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1_medium declared material roles",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1_medium no vertex-color dependency",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1_medium dark tires and glass",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1_medium four shared wheels",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1_medium wheel contact",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1_medium wheel contact",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1_medium wheel contact",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1_medium wheel contact",
+      "passed": true
+    },
+    {
+      "check": "falcon_s1_medium tier-specific triangle budget",
+      "passed": true
+    },
+    {
+      "check": "inferno_r GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "inferno_r embedded resources",
+      "passed": true
+    },
+    {
+      "check": "inferno_r finite vertices/normals",
+      "passed": true
+    },
+    {
+      "check": "inferno_r declared material roles",
+      "passed": true
+    },
+    {
+      "check": "inferno_r no vertex-color dependency",
+      "passed": true
+    },
+    {
+      "check": "inferno_r dark tires and glass",
+      "passed": true
+    },
+    {
+      "check": "inferno_r four shared wheels",
+      "passed": true
+    },
+    {
+      "check": "inferno_r wheel contact",
+      "passed": true
+    },
+    {
+      "check": "inferno_r wheel contact",
+      "passed": true
+    },
+    {
+      "check": "inferno_r wheel contact",
+      "passed": true
+    },
+    {
+      "check": "inferno_r wheel contact",
+      "passed": true
+    },
+    {
+      "check": "inferno_r tier-specific triangle budget",
+      "passed": true
+    },
+    {
+      "check": "inferno_r_low GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "inferno_r_low embedded resources",
+      "passed": true
+    },
+    {
+      "check": "inferno_r_low finite vertices/normals",
+      "passed": true
+    },
+    {
+      "check": "inferno_r_low declared material roles",
+      "passed": true
+    },
+    {
+      "check": "inferno_r_low no vertex-color dependency",
+      "passed": true
+    },
+    {
+      "check": "inferno_r_low dark tires and glass",
+      "passed": true
+    },
+    {
+      "check": "inferno_r_low four shared wheels",
+      "passed": true
+    },
+    {
+      "check": "inferno_r_low wheel contact",
+      "passed": true
+    },
+    {
+      "check": "inferno_r_low wheel contact",
+      "passed": true
+    },
+    {
+      "check": "inferno_r_low wheel contact",
+      "passed": true
+    },
+    {
+      "check": "inferno_r_low wheel contact",
+      "passed": true
+    },
+    {
+      "check": "inferno_r_low tier-specific triangle budget",
+      "passed": true
+    },
+    {
+      "check": "inferno_r_medium GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "inferno_r_medium embedded resources",
+      "passed": true
+    },
+    {
+      "check": "inferno_r_medium finite vertices/normals",
+      "passed": true
+    },
+    {
+      "check": "inferno_r_medium declared material roles",
+      "passed": true
+    },
+    {
+      "check": "inferno_r_medium no vertex-color dependency",
+      "passed": true
+    },
+    {
+      "check": "inferno_r_medium dark tires and glass",
+      "passed": true
+    },
+    {
+      "check": "inferno_r_medium four shared wheels",
+      "passed": true
+    },
+    {
+      "check": "inferno_r_medium wheel contact",
+      "passed": true
+    },
+    {
+      "check": "inferno_r_medium wheel contact",
+      "passed": true
+    },
+    {
+      "check": "inferno_r_medium wheel contact",
+      "passed": true
+    },
+    {
+      "check": "inferno_r_medium wheel contact",
+      "passed": true
+    },
+    {
+      "check": "inferno_r_medium tier-specific triangle budget",
+      "passed": true
+    },
+    {
+      "check": "phantom_x GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "phantom_x embedded resources",
+      "passed": true
+    },
+    {
+      "check": "phantom_x finite vertices/normals",
+      "passed": true
+    },
+    {
+      "check": "phantom_x declared material roles",
+      "passed": true
+    },
+    {
+      "check": "phantom_x no vertex-color dependency",
+      "passed": true
+    },
+    {
+      "check": "phantom_x dark tires and glass",
+      "passed": true
+    },
+    {
+      "check": "phantom_x four shared wheels",
+      "passed": true
+    },
+    {
+      "check": "phantom_x wheel contact",
+      "passed": true
+    },
+    {
+      "check": "phantom_x wheel contact",
+      "passed": true
+    },
+    {
+      "check": "phantom_x wheel contact",
+      "passed": true
+    },
+    {
+      "check": "phantom_x wheel contact",
+      "passed": true
+    },
+    {
+      "check": "phantom_x tier-specific triangle budget",
+      "passed": true
+    },
+    {
+      "check": "phantom_x_low GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "phantom_x_low embedded resources",
+      "passed": true
+    },
+    {
+      "check": "phantom_x_low finite vertices/normals",
+      "passed": true
+    },
+    {
+      "check": "phantom_x_low declared material roles",
+      "passed": true
+    },
+    {
+      "check": "phantom_x_low no vertex-color dependency",
+      "passed": true
+    },
+    {
+      "check": "phantom_x_low dark tires and glass",
+      "passed": true
+    },
+    {
+      "check": "phantom_x_low four shared wheels",
+      "passed": true
+    },
+    {
+      "check": "phantom_x_low wheel contact",
+      "passed": true
+    },
+    {
+      "check": "phantom_x_low wheel contact",
+      "passed": true
+    },
+    {
+      "check": "phantom_x_low wheel contact",
+      "passed": true
+    },
+    {
+      "check": "phantom_x_low wheel contact",
+      "passed": true
+    },
+    {
+      "check": "phantom_x_low tier-specific triangle budget",
+      "passed": true
+    },
+    {
+      "check": "phantom_x_medium GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "phantom_x_medium embedded resources",
+      "passed": true
+    },
+    {
+      "check": "phantom_x_medium finite vertices/normals",
+      "passed": true
+    },
+    {
+      "check": "phantom_x_medium declared material roles",
+      "passed": true
+    },
+    {
+      "check": "phantom_x_medium no vertex-color dependency",
+      "passed": true
+    },
+    {
+      "check": "phantom_x_medium dark tires and glass",
+      "passed": true
+    },
+    {
+      "check": "phantom_x_medium four shared wheels",
+      "passed": true
+    },
+    {
+      "check": "phantom_x_medium wheel contact",
+      "passed": true
+    },
+    {
+      "check": "phantom_x_medium wheel contact",
+      "passed": true
+    },
+    {
+      "check": "phantom_x_medium wheel contact",
+      "passed": true
+    },
+    {
+      "check": "phantom_x_medium wheel contact",
+      "passed": true
+    },
+    {
+      "check": "phantom_x_medium tier-specific triangle budget",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 embedded resources",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 finite vertices/normals",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 declared material roles",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 no vertex-color dependency",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 dark tires and glass",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 four shared wheels",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 wheel contact",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 wheel contact",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 wheel contact",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 wheel contact",
+      "passed": true
+    },
+    {
+      "check": "titan_v12 tier-specific triangle budget",
+      "passed": true
+    },
+    {
+      "check": "titan_v12_low GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "titan_v12_low embedded resources",
+      "passed": true
+    },
+    {
+      "check": "titan_v12_low finite vertices/normals",
+      "passed": true
+    },
+    {
+      "check": "titan_v12_low declared material roles",
+      "passed": true
+    },
+    {
+      "check": "titan_v12_low no vertex-color dependency",
+      "passed": true
+    },
+    {
+      "check": "titan_v12_low dark tires and glass",
+      "passed": true
+    },
+    {
+      "check": "titan_v12_low four shared wheels",
+      "passed": true
+    },
+    {
+      "check": "titan_v12_low wheel contact",
+      "passed": true
+    },
+    {
+      "check": "titan_v12_low wheel contact",
+      "passed": true
+    },
+    {
+      "check": "titan_v12_low wheel contact",
+      "passed": true
+    },
+    {
+      "check": "titan_v12_low wheel contact",
+      "passed": true
+    },
+    {
+      "check": "titan_v12_low tier-specific triangle budget",
+      "passed": true
+    },
+    {
+      "check": "titan_v12_medium GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "titan_v12_medium embedded resources",
+      "passed": true
+    },
+    {
+      "check": "titan_v12_medium finite vertices/normals",
+      "passed": true
+    },
+    {
+      "check": "titan_v12_medium declared material roles",
+      "passed": true
+    },
+    {
+      "check": "titan_v12_medium no vertex-color dependency",
+      "passed": true
+    },
+    {
+      "check": "titan_v12_medium dark tires and glass",
+      "passed": true
+    },
+    {
+      "check": "titan_v12_medium four shared wheels",
+      "passed": true
+    },
+    {
+      "check": "titan_v12_medium wheel contact",
+      "passed": true
+    },
+    {
+      "check": "titan_v12_medium wheel contact",
+      "passed": true
+    },
+    {
+      "check": "titan_v12_medium wheel contact",
+      "passed": true
+    },
+    {
+      "check": "titan_v12_medium wheel contact",
+      "passed": true
+    },
+    {
+      "check": "titan_v12_medium tier-specific triangle budget",
+      "passed": true
+    },
+    {
+      "check": "vortex_s GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "vortex_s embedded resources",
+      "passed": true
+    },
+    {
+      "check": "vortex_s finite vertices/normals",
+      "passed": true
+    },
+    {
+      "check": "vortex_s declared material roles",
+      "passed": true
+    },
+    {
+      "check": "vortex_s no vertex-color dependency",
+      "passed": true
+    },
+    {
+      "check": "vortex_s dark tires and glass",
+      "passed": true
+    },
+    {
+      "check": "vortex_s four shared wheels",
+      "passed": true
+    },
+    {
+      "check": "vortex_s wheel contact",
+      "passed": true
+    },
+    {
+      "check": "vortex_s wheel contact",
+      "passed": true
+    },
+    {
+      "check": "vortex_s wheel contact",
+      "passed": true
+    },
+    {
+      "check": "vortex_s wheel contact",
+      "passed": true
+    },
+    {
+      "check": "vortex_s tier-specific triangle budget",
+      "passed": true
+    },
+    {
+      "check": "vortex_s_low GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "vortex_s_low embedded resources",
+      "passed": true
+    },
+    {
+      "check": "vortex_s_low finite vertices/normals",
+      "passed": true
+    },
+    {
+      "check": "vortex_s_low declared material roles",
+      "passed": true
+    },
+    {
+      "check": "vortex_s_low no vertex-color dependency",
+      "passed": true
+    },
+    {
+      "check": "vortex_s_low dark tires and glass",
+      "passed": true
+    },
+    {
+      "check": "vortex_s_low four shared wheels",
+      "passed": true
+    },
+    {
+      "check": "vortex_s_low wheel contact",
+      "passed": true
+    },
+    {
+      "check": "vortex_s_low wheel contact",
+      "passed": true
+    },
+    {
+      "check": "vortex_s_low wheel contact",
+      "passed": true
+    },
+    {
+      "check": "vortex_s_low wheel contact",
+      "passed": true
+    },
+    {
+      "check": "vortex_s_low tier-specific triangle budget",
+      "passed": true
+    },
+    {
+      "check": "vortex_s_medium GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "vortex_s_medium embedded resources",
+      "passed": true
+    },
+    {
+      "check": "vortex_s_medium finite vertices/normals",
+      "passed": true
+    },
+    {
+      "check": "vortex_s_medium declared material roles",
+      "passed": true
+    },
+    {
+      "check": "vortex_s_medium no vertex-color dependency",
+      "passed": true
+    },
+    {
+      "check": "vortex_s_medium dark tires and glass",
+      "passed": true
+    },
+    {
+      "check": "vortex_s_medium four shared wheels",
+      "passed": true
+    },
+    {
+      "check": "vortex_s_medium wheel contact",
+      "passed": true
+    },
+    {
+      "check": "vortex_s_medium wheel contact",
+      "passed": true
+    },
+    {
+      "check": "vortex_s_medium wheel contact",
+      "passed": true
+    },
+    {
+      "check": "vortex_s_medium wheel contact",
+      "passed": true
+    },
+    {
+      "check": "vortex_s_medium tier-specific triangle budget",
+      "passed": true
+    },
+    {
+      "check": "aero_f GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "aero_f embedded resources",
+      "passed": true
+    },
+    {
+      "check": "aero_f finite vertices/normals",
+      "passed": true
+    },
+    {
+      "check": "aero_f declared material roles",
+      "passed": true
+    },
+    {
+      "check": "aero_f no vertex-color dependency",
+      "passed": true
+    },
+    {
+      "check": "aero_f dark tires and glass",
+      "passed": true
+    },
+    {
+      "check": "aero_f four shared wheels",
+      "passed": true
+    },
+    {
+      "check": "aero_f wheel contact",
+      "passed": true
+    },
+    {
+      "check": "aero_f wheel contact",
+      "passed": true
+    },
+    {
+      "check": "aero_f wheel contact",
+      "passed": true
+    },
+    {
+      "check": "aero_f wheel contact",
+      "passed": true
+    },
+    {
+      "check": "aero_f tier-specific triangle budget",
+      "passed": true
+    },
+    {
+      "check": "forge_u GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "forge_u embedded resources",
+      "passed": true
+    },
+    {
+      "check": "forge_u finite vertices/normals",
+      "passed": true
+    },
+    {
+      "check": "forge_u declared material roles",
+      "passed": true
+    },
+    {
+      "check": "forge_u no vertex-color dependency",
+      "passed": true
+    },
+    {
+      "check": "forge_u dark tires and glass",
+      "passed": true
+    },
+    {
+      "check": "forge_u four shared wheels",
+      "passed": true
+    },
+    {
+      "check": "forge_u wheel contact",
+      "passed": true
+    },
+    {
+      "check": "forge_u wheel contact",
+      "passed": true
+    },
+    {
+      "check": "forge_u wheel contact",
+      "passed": true
+    },
+    {
+      "check": "forge_u wheel contact",
+      "passed": true
+    },
+    {
+      "check": "forge_u tier-specific triangle budget",
+      "passed": true
+    },
+    {
+      "check": "luma_c GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "luma_c embedded resources",
+      "passed": true
+    },
+    {
+      "check": "luma_c finite vertices/normals",
+      "passed": true
+    },
+    {
+      "check": "luma_c declared material roles",
+      "passed": true
+    },
+    {
+      "check": "luma_c no vertex-color dependency",
+      "passed": true
+    },
+    {
+      "check": "luma_c dark tires and glass",
+      "passed": true
+    },
+    {
+      "check": "luma_c four shared wheels",
+      "passed": true
+    },
+    {
+      "check": "luma_c wheel contact",
+      "passed": true
+    },
+    {
+      "check": "luma_c wheel contact",
+      "passed": true
+    },
+    {
+      "check": "luma_c wheel contact",
+      "passed": true
+    },
+    {
+      "check": "luma_c wheel contact",
+      "passed": true
+    },
+    {
+      "check": "luma_c tier-specific triangle budget",
+      "passed": true
+    },
+    {
+      "check": "meridian_s GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "meridian_s embedded resources",
+      "passed": true
+    },
+    {
+      "check": "meridian_s finite vertices/normals",
+      "passed": true
+    },
+    {
+      "check": "meridian_s declared material roles",
+      "passed": true
+    },
+    {
+      "check": "meridian_s no vertex-color dependency",
+      "passed": true
+    },
+    {
+      "check": "meridian_s dark tires and glass",
+      "passed": true
+    },
+    {
+      "check": "meridian_s four shared wheels",
+      "passed": true
+    },
+    {
+      "check": "meridian_s wheel contact",
+      "passed": true
+    },
+    {
+      "check": "meridian_s wheel contact",
+      "passed": true
+    },
+    {
+      "check": "meridian_s wheel contact",
+      "passed": true
+    },
+    {
+      "check": "meridian_s wheel contact",
+      "passed": true
+    },
+    {
+      "check": "meridian_s tier-specific triangle budget",
+      "passed": true
+    },
+    {
+      "check": "summit_x GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "summit_x embedded resources",
+      "passed": true
+    },
+    {
+      "check": "summit_x finite vertices/normals",
+      "passed": true
+    },
+    {
+      "check": "summit_x declared material roles",
+      "passed": true
+    },
+    {
+      "check": "summit_x no vertex-color dependency",
+      "passed": true
+    },
+    {
+      "check": "summit_x dark tires and glass",
+      "passed": true
+    },
+    {
+      "check": "summit_x four shared wheels",
+      "passed": true
+    },
+    {
+      "check": "summit_x wheel contact",
+      "passed": true
+    },
+    {
+      "check": "summit_x wheel contact",
+      "passed": true
+    },
+    {
+      "check": "summit_x wheel contact",
+      "passed": true
+    },
+    {
+      "check": "summit_x wheel contact",
+      "passed": true
+    },
+    {
+      "check": "summit_x tier-specific triangle budget",
+      "passed": true
+    },
+    {
+      "check": "aero_f GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "aero_f embedded resources",
+      "passed": true
+    },
+    {
+      "check": "aero_f finite vertices/normals",
+      "passed": true
+    },
+    {
+      "check": "aero_f declared material roles",
+      "passed": true
+    },
+    {
+      "check": "aero_f no vertex-color dependency",
+      "passed": true
+    },
+    {
+      "check": "aero_f dark tires and glass",
+      "passed": true
+    },
+    {
+      "check": "aero_f four shared wheels",
+      "passed": true
+    },
+    {
+      "check": "aero_f wheel contact",
+      "passed": true
+    },
+    {
+      "check": "aero_f wheel contact",
+      "passed": true
+    },
+    {
+      "check": "aero_f wheel contact",
+      "passed": true
+    },
+    {
+      "check": "aero_f wheel contact",
+      "passed": true
+    },
+    {
+      "check": "aero_f tier-specific triangle budget",
+      "passed": true
+    },
+    {
+      "check": "forge_u GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "forge_u embedded resources",
+      "passed": true
+    },
+    {
+      "check": "forge_u finite vertices/normals",
+      "passed": true
+    },
+    {
+      "check": "forge_u declared material roles",
+      "passed": true
+    },
+    {
+      "check": "forge_u no vertex-color dependency",
+      "passed": true
+    },
+    {
+      "check": "forge_u dark tires and glass",
+      "passed": true
+    },
+    {
+      "check": "forge_u four shared wheels",
+      "passed": true
+    },
+    {
+      "check": "forge_u wheel contact",
+      "passed": true
+    },
+    {
+      "check": "forge_u wheel contact",
+      "passed": true
+    },
+    {
+      "check": "forge_u wheel contact",
+      "passed": true
+    },
+    {
+      "check": "forge_u wheel contact",
+      "passed": true
+    },
+    {
+      "check": "forge_u tier-specific triangle budget",
+      "passed": true
+    },
+    {
+      "check": "luma_c GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "luma_c embedded resources",
+      "passed": true
+    },
+    {
+      "check": "luma_c finite vertices/normals",
+      "passed": true
+    },
+    {
+      "check": "luma_c declared material roles",
+      "passed": true
+    },
+    {
+      "check": "luma_c no vertex-color dependency",
+      "passed": true
+    },
+    {
+      "check": "luma_c dark tires and glass",
+      "passed": true
+    },
+    {
+      "check": "luma_c four shared wheels",
+      "passed": true
+    },
+    {
+      "check": "luma_c wheel contact",
+      "passed": true
+    },
+    {
+      "check": "luma_c wheel contact",
+      "passed": true
+    },
+    {
+      "check": "luma_c wheel contact",
+      "passed": true
+    },
+    {
+      "check": "luma_c wheel contact",
+      "passed": true
+    },
+    {
+      "check": "luma_c tier-specific triangle budget",
+      "passed": true
+    },
+    {
+      "check": "meridian_s GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "meridian_s embedded resources",
+      "passed": true
+    },
+    {
+      "check": "meridian_s finite vertices/normals",
+      "passed": true
+    },
+    {
+      "check": "meridian_s declared material roles",
+      "passed": true
+    },
+    {
+      "check": "meridian_s no vertex-color dependency",
+      "passed": true
+    },
+    {
+      "check": "meridian_s dark tires and glass",
+      "passed": true
+    },
+    {
+      "check": "meridian_s four shared wheels",
+      "passed": true
+    },
+    {
+      "check": "meridian_s wheel contact",
+      "passed": true
+    },
+    {
+      "check": "meridian_s wheel contact",
+      "passed": true
+    },
+    {
+      "check": "meridian_s wheel contact",
+      "passed": true
+    },
+    {
+      "check": "meridian_s wheel contact",
+      "passed": true
+    },
+    {
+      "check": "meridian_s tier-specific triangle budget",
+      "passed": true
+    },
+    {
+      "check": "summit_x GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "summit_x embedded resources",
+      "passed": true
+    },
+    {
+      "check": "summit_x finite vertices/normals",
+      "passed": true
+    },
+    {
+      "check": "summit_x declared material roles",
+      "passed": true
+    },
+    {
+      "check": "summit_x no vertex-color dependency",
+      "passed": true
+    },
+    {
+      "check": "summit_x dark tires and glass",
+      "passed": true
+    },
+    {
+      "check": "summit_x four shared wheels",
+      "passed": true
+    },
+    {
+      "check": "summit_x wheel contact",
+      "passed": true
+    },
+    {
+      "check": "summit_x wheel contact",
+      "passed": true
+    },
+    {
+      "check": "summit_x wheel contact",
+      "passed": true
+    },
+    {
+      "check": "summit_x wheel contact",
+      "passed": true
+    },
+    {
+      "check": "summit_x tier-specific triangle budget",
+      "passed": true
+    },
+    {
+      "check": "aero_f GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "aero_f embedded resources",
+      "passed": true
+    },
+    {
+      "check": "aero_f finite vertices/normals",
+      "passed": true
+    },
+    {
+      "check": "aero_f declared material roles",
+      "passed": true
+    },
+    {
+      "check": "aero_f no vertex-color dependency",
+      "passed": true
+    },
+    {
+      "check": "aero_f dark tires and glass",
+      "passed": true
+    },
+    {
+      "check": "aero_f four shared wheels",
+      "passed": true
+    },
+    {
+      "check": "aero_f wheel contact",
+      "passed": true
+    },
+    {
+      "check": "aero_f wheel contact",
+      "passed": true
+    },
+    {
+      "check": "aero_f wheel contact",
+      "passed": true
+    },
+    {
+      "check": "aero_f wheel contact",
+      "passed": true
+    },
+    {
+      "check": "aero_f tier-specific triangle budget",
+      "passed": true
+    },
+    {
+      "check": "forge_u GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "forge_u embedded resources",
+      "passed": true
+    },
+    {
+      "check": "forge_u finite vertices/normals",
+      "passed": true
+    },
+    {
+      "check": "forge_u declared material roles",
+      "passed": true
+    },
+    {
+      "check": "forge_u no vertex-color dependency",
+      "passed": true
+    },
+    {
+      "check": "forge_u dark tires and glass",
+      "passed": true
+    },
+    {
+      "check": "forge_u four shared wheels",
+      "passed": true
+    },
+    {
+      "check": "forge_u wheel contact",
+      "passed": true
+    },
+    {
+      "check": "forge_u wheel contact",
+      "passed": true
+    },
+    {
+      "check": "forge_u wheel contact",
+      "passed": true
+    },
+    {
+      "check": "forge_u wheel contact",
+      "passed": true
+    },
+    {
+      "check": "forge_u tier-specific triangle budget",
+      "passed": true
+    },
+    {
+      "check": "luma_c GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "luma_c embedded resources",
+      "passed": true
+    },
+    {
+      "check": "luma_c finite vertices/normals",
+      "passed": true
+    },
+    {
+      "check": "luma_c declared material roles",
+      "passed": true
+    },
+    {
+      "check": "luma_c no vertex-color dependency",
+      "passed": true
+    },
+    {
+      "check": "luma_c dark tires and glass",
+      "passed": true
+    },
+    {
+      "check": "luma_c four shared wheels",
+      "passed": true
+    },
+    {
+      "check": "luma_c wheel contact",
+      "passed": true
+    },
+    {
+      "check": "luma_c wheel contact",
+      "passed": true
+    },
+    {
+      "check": "luma_c wheel contact",
+      "passed": true
+    },
+    {
+      "check": "luma_c wheel contact",
+      "passed": true
+    },
+    {
+      "check": "luma_c tier-specific triangle budget",
+      "passed": true
+    },
+    {
+      "check": "meridian_s GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "meridian_s embedded resources",
+      "passed": true
+    },
+    {
+      "check": "meridian_s finite vertices/normals",
+      "passed": true
+    },
+    {
+      "check": "meridian_s declared material roles",
+      "passed": true
+    },
+    {
+      "check": "meridian_s no vertex-color dependency",
+      "passed": true
+    },
+    {
+      "check": "meridian_s dark tires and glass",
+      "passed": true
+    },
+    {
+      "check": "meridian_s four shared wheels",
+      "passed": true
+    },
+    {
+      "check": "meridian_s wheel contact",
+      "passed": true
+    },
+    {
+      "check": "meridian_s wheel contact",
+      "passed": true
+    },
+    {
+      "check": "meridian_s wheel contact",
+      "passed": true
+    },
+    {
+      "check": "meridian_s wheel contact",
+      "passed": true
+    },
+    {
+      "check": "meridian_s tier-specific triangle budget",
+      "passed": true
+    },
+    {
+      "check": "summit_x GLB integrity",
+      "passed": true
+    },
+    {
+      "check": "summit_x embedded resources",
+      "passed": true
+    },
+    {
+      "check": "summit_x finite vertices/normals",
+      "passed": true
+    },
+    {
+      "check": "summit_x declared material roles",
+      "passed": true
+    },
+    {
+      "check": "summit_x no vertex-color dependency",
+      "passed": true
+    },
+    {
+      "check": "summit_x dark tires and glass",
+      "passed": true
+    },
+    {
+      "check": "summit_x four shared wheels",
+      "passed": true
+    },
+    {
+      "check": "summit_x wheel contact",
+      "passed": true
+    },
+    {
+      "check": "summit_x wheel contact",
+      "passed": true
+    },
+    {
+      "check": "summit_x wheel contact",
+      "passed": true
+    },
+    {
+      "check": "summit_x wheel contact",
+      "passed": true
+    },
+    {
+      "check": "summit_x tier-specific triangle budget",
+      "passed": true
+    },
+    {
+      "check": "Save contract: \"schema_version\": 5",
+      "passed": true
+    },
+    {
+      "check": "Save contract: in [1, 2, 3, 4, 5]",
+      "passed": true
+    },
+    {
+      "check": "Save contract: \"collection\": collection",
+      "passed": true
+    },
+    {
+      "check": "Save contract: _load_collection(envelope.get(\"collection\",{}))",
+      "passed": true
+    },
+    {
+      "check": "Upgrade gate: not owns(id)",
+      "passed": true
+    },
+    {
+      "check": "Upgrade gate: current != expected_level",
+      "passed": true
+    },
+    {
+      "check": "Upgrade gate: current>=10",
+      "passed": true
+    },
+    {
+      "check": "Upgrade gate: can_afford(cost)",
+      "passed": true
+    },
+    {
+      "check": "Upgrade gate: _commit_collection(next,cost)",
+      "passed": true
+    },
+    {
+      "check": "Purchase gate: owns(id)",
+      "passed": true
+    },
+    {
+      "check": "Purchase gate: can_afford(cost)",
+      "passed": true
+    },
+    {
+      "check": "Purchase gate: _commit_collection(next,cost)",
+      "passed": true
+    },
+    {
+      "check": "Atomic rollback: collection = before",
+      "passed": true
+    },
+    {
+      "check": "Atomic rollback: wallet[\"coins\"] = previous_coins",
+      "passed": true
+    },
+    {
+      "check": "Atomic rollback: transaction_busy = true",
+      "passed": true
+    },
+    {
+      "check": "Atomic rollback: var success := commit()",
+      "passed": true
+    },
+    {
+      "check": "Rejected pending not recoverable",
+      "passed": true
+    },
+    {
+      "check": "UI debounces rapid purchases",
+      "passed": true
+    },
+    {
+      "check": "Base resource copied",
+      "passed": true
+    },
+    {
+      "check": "Modifier is used engine_acceleration",
+      "passed": true
+    },
+    {
+      "check": "Modifier is used engine_speed",
+      "passed": true
+    },
+    {
+      "check": "Modifier is used handling_response",
+      "passed": true
+    },
+    {
+      "check": "Modifier is used handling_grip",
+      "passed": true
+    },
+    {
+      "check": "Modifier is used brakes",
+      "passed": true
+    },
+    {
+      "check": "Modifier is used tires_grip",
+      "passed": true
+    },
+    {
+      "check": "Modifier is used transmission_acceleration",
+      "passed": true
+    },
+    {
+      "check": "Modifier is used transmission_speed",
+      "passed": true
+    },
+    {
+      "check": "Selected car on start_drive",
+      "passed": true
+    },
+    {
+      "check": "Selected car on go_home",
+      "passed": true
+    },
+    {
+      "check": "Dynamic collision extents",
+      "passed": true
+    },
+    {
+      "check": "Control wiring wheel_pointer",
+      "passed": true
+    },
+    {
+      "check": "Control wiring _wheel_position(event.position)",
+      "passed": true
+    },
+    {
+      "check": "Control wiring wheel_return_degrees",
+      "passed": true
+    },
+    {
+      "check": "Control wiring tilt_dead_zone",
+      "passed": true
+    },
+    {
+      "check": "Control wiring tilt_neutral",
+      "passed": true
+    },
+    {
+      "check": "Control wiring Input.get_gravity()",
+      "passed": true
+    },
+    {
+      "check": "Control wiring effective_mode()",
+      "passed": true
+    },
+    {
+      "check": "Keyboard independent",
+      "passed": true
+    },
+    {
+      "check": "Android sensor flags",
+      "passed": true
+    },
+    {
+      "check": "Control setting validation",
+      "passed": true
+    },
+    {
+      "check": "Turbo independent touch",
+      "passed": true
+    },
+    {
+      "check": "No gravity reintroduced",
+      "passed": true
+    },
+    {
+      "check": "No recycled colliders",
+      "passed": true
+    },
+    {
+      "check": "Bounded active path Environment/Highway.gd:update_chunks",
+      "passed": true
+    },
+    {
+      "check": "Bounded active path Environment/SceneryTile.gd:configure",
+      "passed": true
+    },
+    {
+      "check": "Bounded active path Environment/SceneryTile.gd:update_lod",
+      "passed": true
+    },
+    {
+      "check": "Bounded active path Traffic/TrafficVehicle.gd:activate",
+      "passed": true
+    },
+    {
+      "check": "Bounded active path Input/DriveInput.gd:_physics_process",
+      "passed": true
+    },
+    {
+      "check": "Four scenery variants preloaded",
+      "passed": true
+    },
+    {
+      "check": "Building LOD retained",
+      "passed": true
+    },
+    {
+      "check": "Traffic palette explicit",
+      "passed": true
+    },
+    {
+      "check": "JSON export retained",
+      "passed": true
+    },
+    {
+      "check": "Contact shadows retained",
+      "passed": true
+    },
+    {
+      "check": "Preserved behavior source Save/SaveService.gd:reserve_run",
+      "passed": true
+    },
+    {
+      "check": "Preserved behavior source Save/SaveService.gd:is_settled",
+      "passed": true
+    },
+    {
+      "check": "Preserved behavior source Gameplay/RunManager.gd:calculate_rewards",
+      "passed": true
+    },
+    {
+      "check": "Preserved behavior source Gameplay/RunManager.gd:_finish",
+      "passed": true
+    },
+    {
+      "check": "Preserved behavior source Gameplay/RunManager.gd:award_near_miss",
+      "passed": true
+    },
+    {
+      "check": "Preserved behavior source Gameplay/RunManager.gd:collect_coin",
+      "passed": true
+    },
+    {
+      "check": "Preserved behavior source Environment/Highway.gd:_build_continuous_collision",
+      "passed": true
+    },
+    {
+      "check": "Preserved behavior source Environment/Highway.gd:_static_box",
+      "passed": true
+    },
+    {
+      "check": "garage safe PCM",
+      "passed": true
+    },
+    {
+      "check": "garage endpoints",
+      "passed": true
+    },
+    {
+      "check": "car_select safe PCM",
+      "passed": true
+    },
+    {
+      "check": "car_select endpoints",
+      "passed": true
+    },
+    {
+      "check": "purchase safe PCM",
+      "passed": true
+    },
+    {
+      "check": "purchase endpoints",
+      "passed": true
+    },
+    {
+      "check": "upgrade safe PCM",
+      "passed": true
+    },
+    {
+      "check": "upgrade endpoints",
+      "passed": true
+    }
+  ]
+}
