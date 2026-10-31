@@ -126,6 +126,22 @@ static func prepare(local: Dictionary, incoming: Dictionary, versions: Dictionar
 		root["email"] = AuthService.current_user_email()
 		root["provider"] = AuthService.user.get("provider","anonymous")
 		root["is_guest"] = AuthService.is_guest()
+	# Normalise remote settings for documented legacy preset compatibility.
+	# Preserves strict schema validation: unknown keys are retained so valid() rejects
+	# them with SETTINGS_INVALID:B058, and type-incompatible values are left untouched
+	# so valid() rejects genuinely malformed data. Only known, type-compatible values
+	# (such as legacy map_time sentinels -1, 3, 4, 5 written by earlier builds) are
+	# normalised through SaveService._validated() to valid presets before strict validation.
+	# Wallet, progression, inventory, cars, and all other documents are untouched.
+	if meta.get("settings") is Dictionary:
+		var normalised_settings: Dictionary = meta.settings.duplicate(true)
+		for key: String in normalised_settings:
+			if SaveService.DEFAULTS.has(key):
+				var raw: Variant = normalised_settings[key]
+				if RushCloudRestore.compatible(SaveService.DEFAULTS[key], raw):
+					normalised_settings[key] = SaveService._validated(key, raw)
+		meta["settings"] = normalised_settings
+		RushAuthDiagnostics.stage("REMOTE_SETTINGS_COMPAT_NORMALISED")
 	return docs if valid(local,docs) else {}
 static func valid(local: Dictionary, docs: Dictionary) -> bool:
 	var root: Dictionary = docs.profile
@@ -201,7 +217,15 @@ static func valid(local: Dictionary, docs: Dictionary) -> bool:
 			if task.claimed and task.progress<expected.tasks[index].target: return invalid("PROGRESSION_INVALID:B056")
 	if not meta.get("settings") is Dictionary or not meta.get("onboarding") is Dictionary: return invalid("SETTINGS_INVALID:B057")
 	for key: String in meta.settings:
-		if not SaveService.DEFAULTS.has(key) or not RushCloudRestore.compatible(SaveService.DEFAULTS[key],meta.settings[key]) or not same(meta.settings[key],SaveService._validated(key,meta.settings[key])): return invalid("SETTINGS_INVALID:B058")
+		if not SaveService.DEFAULTS.has(key):
+			RushAuthDiagnostics.stage("SETTINGS_REJECTED:" + key + ":UNKNOWN_KEY")
+			return invalid("SETTINGS_INVALID:B058:" + key + ":UNKNOWN_KEY")
+		if not RushCloudRestore.compatible(SaveService.DEFAULTS[key], meta.settings[key]):
+			RushAuthDiagnostics.stage("SETTINGS_REJECTED:" + key + ":TYPE_MISMATCH")
+			return invalid("SETTINGS_INVALID:B058:" + key + ":TYPE_MISMATCH")
+		if not same(meta.settings[key], SaveService._validated(key, meta.settings[key])):
+			RushAuthDiagnostics.stage("SETTINGS_REJECTED:" + key + ":NON_CANONICAL_VALUE")
+			return invalid("SETTINGS_INVALID:B058:" + key + ":NON_CANONICAL_VALUE")
 	for key: String in meta.onboarding:
 		if key not in ["completed","starter"]: return invalid("SETTINGS_INVALID:B059")
 	if not meta.onboarding.get("completed") is bool or meta.onboarding.get("starter") not in RushVehicleCatalog.IDS: return invalid("SETTINGS_INVALID:B060")
