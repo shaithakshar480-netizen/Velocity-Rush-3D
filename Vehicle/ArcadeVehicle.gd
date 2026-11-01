@@ -25,6 +25,14 @@ var suspension: Array[float] = [0.34,0.34,0.34,0.34]
 var impact_cooldown: float = 0.0
 var acceleration_now: float = 0.0
 var skid_amount: float = 0.0
+## Heading assist: with no steering input the car eases back to the road direction,
+## so one tap on a steer button only nudges the car sideways instead of leaving it
+## pointing off to one side. Needs the "steering assist" setting (on by default).
+const HEADING_RETURN_RATE: float = 4.0 # 1/s; higher straightens faster
+const HEADING_RETURN_MAX_RATE: float = 1.2 # rad/s cap on the correction
+const HEADING_ASSIST_MAX_ERROR: float = 1.0 # rad; larger angles (spin-outs) are left to the player
+const HEADING_ASSIST_RELEASE: float = 0.15 # steering below this fades the assist in
+const HEADING_ASSIST_SPEED: float = 8.0 # m/s; assist reaches full strength at this speed
 
 func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_PAUSABLE
@@ -132,6 +140,7 @@ func _physics_process(delta: float) -> void:
 		comfort *= lerpf(1.0,turbo_speed_ratio,boost_control)
 		yaw_rate = clampf(yaw_rate,-comfort/maxf(absf(signed_speed),1.0),comfort/maxf(absf(signed_speed),1.0))
 		rotate_y(-yaw_rate*delta)
+		rotate_y(heading_assist_yaw(command.x,signed_speed)*delta)
 		forward = -global_transform.basis.z
 		var lateral := velocity - forward*velocity.dot(forward)
 		lateral.y = 0.0
@@ -165,6 +174,27 @@ func _physics_process(delta: float) -> void:
 	skid_amount_set(command,grounded)
 	last_command = command
 	current_pose = global_transform
+
+func road_heading() -> float:
+	if course!=null:
+		return course.heading_at_z(position.z)
+	if road_center.is_valid():
+		var ahead: float = 2.0
+		return atan2(float(road_center.call(position.z))-float(road_center.call(position.z-ahead)),ahead)
+	return 0.0
+
+## Yaw rate (rad/s) that eases the car back toward the road direction while the player is not steering.
+func heading_assist_yaw(steer: float, speed: float) -> float:
+	if speed<=0.0 or not bool(SaveService.settings["steering_assist"]):
+		return 0.0
+	var idle: float = 1.0-clampf(absf(steer)/HEADING_ASSIST_RELEASE,0.0,1.0)
+	if idle<=0.0:
+		return 0.0
+	var error: float = angle_difference(rotation.y,road_heading())
+	if absf(error)>HEADING_ASSIST_MAX_ERROR:
+		return 0.0
+	var speed_gate: float = clampf(speed/HEADING_ASSIST_SPEED,0.0,1.0)
+	return clampf(error*HEADING_RETURN_RATE,-HEADING_RETURN_MAX_RATE,HEADING_RETURN_MAX_RATE)*idle*speed_gate
 
 func _process(delta: float) -> void:
 	if not is_instance_valid(visual):

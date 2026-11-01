@@ -336,15 +336,28 @@ func start_drive() -> void:
 		return
 	if run.race_mode=="five_racer":
 		course_preparing = true
-		ui.show_screen("drive")
-		ui.show_countdown("PREPARING COURSE")
+		if not ui.screens.has("course_loading"):
+			var loading_page: Control = ui._page("course_loading")
+			var art: RushRaceLoading = RushRaceLoading.new()
+			art.name = "RaceLoadingArt"
+			loading_page.add_child(art)
+		var loading_art: RushRaceLoading = ui.screens["course_loading"].get_node("RaceLoadingArt") as RushRaceLoading
+		loading_art.set_stage(0)
+		ui.show_countdown("")
+		ui.show_screen("course_loading")
 		var course_run_id: int = run.run_id
 		var course_ticket: int = course_generation
 		highway.route_origin = run.origin_offset
+		var progress_callback: Callable = loading_art.set_course_progress
+		if not highway.course_road.preparation_progress.is_connected(progress_callback):
+			highway.course_road.preparation_progress.connect(progress_callback)
 		await highway.prepare_sampled_course(run.spec.distance_m)
+		if highway.course_road.preparation_progress.is_connected(progress_callback):
+			highway.course_road.preparation_progress.disconnect(progress_callback)
 		course_preparing = false
 		if highway.course==null or course_generation!=course_ticket or run.run_id!=course_run_id or run.state!=RushRunManager.RunState.PREPARING:
 			return
+		loading_art.set_stage(1)
 		vehicle.course = highway.course
 		run.course = highway.course
 		traffic.course = highway.course
@@ -354,6 +367,7 @@ func start_drive() -> void:
 	traffic.difficulty = run.difficulty
 	director.opponents.difficulty = run.difficulty
 	director.reset_run()
+	_sanitize_map_settings()
 	map_dressing.apply()
 	powerups.apply_run()
 	traffic.reset_pool(run.run_id)
@@ -363,6 +377,8 @@ func start_drive() -> void:
 	highway.update_chunks()
 	cameras.showcase = false
 	cameras.reset_rig()
+	if ui.screen == "course_loading":
+		(ui.screens["course_loading"].get_node("RaceLoadingArt") as RushRaceLoading).set_stage(2)
 	state = State.DRIVING
 	GameAudio.set_driving(true)
 	GameAudio.set_suspended(false)
@@ -817,26 +833,402 @@ func close_turbo_store() -> void:
 	else:
 		go_home()
 
+## Frosted-glass backing for the Choose Your Race panel. Set to false to fall back
+## to the plain translucent panel (no screen-texture blur) if it costs too much on a device.
+const RACE_GLASS_BLUR: bool = true
+const RACE_GLASS_SHADER: String = """
+shader_type canvas_item;
+
+uniform sampler2D screen_tex : hint_screen_texture, repeat_disable, filter_linear_mipmap;
+uniform vec2 rect_size = vec2(600.0, 400.0);
+uniform float corner_radius = 20.0;
+uniform float blur_lod : hint_range(0.0, 6.0) = 2.6;
+uniform float blur_spread = 2.0;
+uniform vec4 glass_tint : source_color = vec4(0.03, 0.08, 0.13, 1.0);
+uniform float tint_amount : hint_range(0.0, 1.0) = 0.42;
+
+void fragment() {
+	vec2 spread = SCREEN_PIXEL_SIZE * blur_spread * exp2(blur_lod);
+	vec3 c = textureLod(screen_tex, SCREEN_UV, blur_lod).rgb * 0.4;
+	c += textureLod(screen_tex, SCREEN_UV + vec2(spread.x, 0.0), blur_lod).rgb * 0.15;
+	c += textureLod(screen_tex, SCREEN_UV - vec2(spread.x, 0.0), blur_lod).rgb * 0.15;
+	c += textureLod(screen_tex, SCREEN_UV + vec2(0.0, spread.y), blur_lod).rgb * 0.15;
+	c += textureLod(screen_tex, SCREEN_UV - vec2(0.0, spread.y), blur_lod).rgb * 0.15;
+	c = mix(c, glass_tint.rgb, tint_amount);
+	c += vec3(0.10, 0.20, 0.28) * (1.0 - UV.y) * 0.16;
+	vec2 p = (UV - vec2(0.5)) * rect_size;
+	vec2 d = abs(p) - (rect_size * 0.5 - vec2(corner_radius));
+	float dist = length(max(d, vec2(0.0))) + min(max(d.x, d.y), 0.0) - corner_radius;
+	COLOR = vec4(c, 1.0 - smoothstep(-1.0, 1.0, dist));
+}
+"""
+
 func _build_race_modes() -> void:
 	var page := ui._page("race_modes",true)
 	page.visible = false
-	var column := ui._center_column(page,560)
-	ui._label(column,"CHOOSE YOUR RACE",30,ui.ACCENT)
+	# Remove the default dark backdrop so only the glass panel is visible.
+	var backdrop: Node = page.get_child(0)
+	if backdrop is ColorRect:
+		(backdrop as ColorRect).color = Color(0.0, 0.0, 0.0, 0.0)
+	var screen: Vector2 = Vector2(1280.0, 720.0)
+	if is_inside_tree():
+		screen = get_viewport().get_visible_rect().size
+	var compact: bool = screen.y < 600.0 or screen.x < 900.0
+	# Preferred 440-740 px on wide screens, never wider than ~92% of the screen.
+	var panel_width: float = minf(clampf(screen.x * 0.6, 440.0, 740.0), screen.x * 0.92)
+	var gap: int = 10 if compact else 14
+	var pad_x: int = 18 if compact else 30
+	var pad_y: int = 14 if compact else 22
+	var inner_width: float = panel_width - float(pad_x * 2)
+	var title_size: int = 24 if compact else 32
+	var note_size: int = 13 if compact else 15
+	var button_font: int = 17 if compact else 20
+	var tab_height: float = 54.0 if compact else 66.0
+	var mode_height: float = 46.0 if compact else 56.0
+	var ice: Color = Color(0.92, 0.97, 1.0)
+	var steel: Color = Color(0.75, 0.85, 0.95)
+
+	var column := ui._center_column(page, int(panel_width))
+	var panel: PanelContainer = PanelContainer.new()
+	panel.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	# With glass on, the panel fill is light so the blurred backing shows through,
+	# and the outer glow moves to its own layer underneath the glass.
+	var panel_fill: Color = Color(0.035, 0.075, 0.12, 0.26) if RACE_GLASS_BLUR else Color(0.035, 0.075, 0.12, 0.84)
+	var panel_glow: Color = Color(0.0, 0.0, 0.0, 0.0) if RACE_GLASS_BLUR else Color(0.15, 0.65, 1.0, 0.35)
+	var panel_style: StyleBoxFlat = _race_ui_style(panel_fill, Color(0.28, 0.78, 1.0, 0.95), 2, 20, panel_glow, 18)
+	panel_style.content_margin_left = pad_x
+	panel_style.content_margin_right = pad_x
+	panel_style.content_margin_top = pad_y
+	panel_style.content_margin_bottom = pad_y
+	panel.add_theme_stylebox_override("panel", panel_style)
+	if RACE_GLASS_BLUR:
+		var holder: MarginContainer = MarginContainer.new()
+		holder.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+		column.add_child(holder)
+		var glow_layer: Panel = Panel.new()
+		glow_layer.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		glow_layer.add_theme_stylebox_override("panel", _race_ui_style(Color(0.0, 0.0, 0.0, 0.0), Color(0.0, 0.0, 0.0, 0.0), 0, 20, Color(0.15, 0.65, 1.0, 0.35), 18))
+		holder.add_child(glow_layer)
+		_race_ui_glass(holder)
+		holder.add_child(panel)
+	else:
+		column.add_child(panel)
+	var body: VBoxContainer = VBoxContainer.new()
+	body.add_theme_constant_override("separation", gap)
+	panel.add_child(body)
+
+	# Title (font size shrinks if the panel is very narrow)
+	var title: Label = _race_ui_label(body, "CHOOSE YOUR RACE", title_size, ui.ACCENT)
+	var ui_font: Font = title.get_theme_font("font")
+	title.add_theme_font_size_override("font_size", _race_ui_fit_font(ui_font, ["CHOOSE YOUR RACE"], title_size, 14, inner_width))
+	var underline: ColorRect = ColorRect.new()
+	underline.color = Color(0.28, 0.78, 1.0, 0.45)
+	underline.custom_minimum_size = Vector2(0.0, 2.0)
+	underline.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	body.add_child(underline)
+
+	# Difficulty tabs (same callbacks / ButtonGroup behaviour as before)
+	var tab_width: float = (inner_width - 16.0) / 3.0
+	var tab_font: int = _race_ui_fit_font(ui_font, ["EASY", "NORMAL", "HARD"], button_font, 12, tab_width - 20.0)
 	var difficulty_row: HBoxContainer = HBoxContainer.new()
-	column.add_child(difficulty_row)
+	difficulty_row.add_theme_constant_override("separation", 8)
+	body.add_child(difficulty_row)
 	var difficulty_group: ButtonGroup = ButtonGroup.new()
 	for index: int in 3:
 		var option: Button = ui._button(difficulty_row,["EASY","NORMAL","HARD"][index],func() -> void: run.difficulty = index)
 		option.toggle_mode = true
 		option.button_group = difficulty_group
 		option.button_pressed = index==run.difficulty
-	ui._label(column,"Difficulty applies to solo and 5-racer races only.",15,ui.MUTED)
-	ui._button(column,"5-RACER HIGHWAY RACE",_select_race.bind("five_racer"),true)
-	ui._label(column,"YOU + 4 RIVALS  /  8 KM  /  POSITION REWARDS",15,ui.MUTED)
-	ui._button(column,"HIGHWAY RUSH",_select_race.bind("highway_rush"))
-	ui._label(column,"SOLO  /  TRAFFIC  /  SCORE + COINS",15,ui.MUTED)
-	ui._button(column,"MULTIPLAYER",func() -> void: online_ui.open("multiplayer"))
-	ui._button(column,"BACK",go_home)
+		option.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+		option.custom_minimum_size = Vector2(0.0, tab_height)
+		var tab_off: StyleBoxFlat = _race_ui_style(Color(0.13, 0.16, 0.21, 0.95), Color(0.35, 0.42, 0.50, 0.9), 2, 12)
+		var tab_hover: StyleBoxFlat = _race_ui_style(Color(0.17, 0.21, 0.27, 0.95), Color(0.50, 0.62, 0.74, 1.0), 2, 12)
+		var tab_on: StyleBoxFlat = _race_ui_style(Color(0.04, 0.28, 0.42, 0.97), Color(0.35, 0.92, 1.0, 1.0), 2, 12, Color(0.2, 0.8, 1.0, 0.45), 10)
+		for tab_style: StyleBoxFlat in [tab_off, tab_hover, tab_on]:
+			tab_style.content_margin_top = 6
+			tab_style.content_margin_bottom = 20
+		_race_ui_apply_button(option, tab_off, tab_hover, tab_on, ice, tab_font, 12)
+		_race_ui_stars(option, index + 1)
+	var note: Label = _race_ui_label(body, "Difficulty applies to solo and 5-racer races only.", note_size, ui.MUTED)
+	note.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	note.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+
+	# Race card: ONE Button is the outer tap target; the visual card is its own
+	# stylebox and its content is an overlay that ignores the mouse.
+	var card_pad_x: int = 14 if compact else 18
+	var card_pad_y: int = 10 if compact else 12
+	var card_gap: int = 8 if compact else 10
+	var stat_gap: int = 6
+	var card_inner: float = inner_width - float(card_pad_x * 2)
+	var cell_width: float = (card_inner - 2.0) / 3.0
+	var card_title_size: int = _race_ui_fit_font(ui_font, ["5-RACER HIGHWAY RACE"], 20 if compact else 24, 12, card_inner)
+	var stat_size: int = _race_ui_fit_font(ui_font, ["YOU + 4 RIVALS", "8 KM", "POSITION REWARDS"], 12 if compact else 14, 9, cell_width - 8.0)
+	var icon_height: float = 30.0 if compact else 34.0
+	var stats_height: float = icon_height + float(stat_gap) + ui_font.get_height(stat_size)
+	var card_height: float = float(card_pad_y * 2) + ui_font.get_height(card_title_size) + float(card_gap) + stats_height + 4.0
+	var race_button: Button = ui._button(body,"",_select_race.bind("five_racer"),true)
+	race_button.text = ""
+	race_button.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	race_button.custom_minimum_size = Vector2(0.0, card_height)
+	var card_normal: StyleBoxFlat = _race_ui_style(Color(0.10, 0.20, 0.30, 0.78), Color(0.55, 0.85, 1.0, 0.85), 2, 14, Color(0.2, 0.7, 1.0, 0.22), 8)
+	var card_hover: StyleBoxFlat = _race_ui_style(Color(0.14, 0.28, 0.40, 0.85), Color(0.75, 0.95, 1.0, 1.0), 2, 14, Color(0.2, 0.75, 1.0, 0.35), 10)
+	var card_down: StyleBoxFlat = _race_ui_style(Color(0.08, 0.17, 0.26, 0.90), Color(0.45, 0.90, 1.0, 1.0), 2, 14)
+	_race_ui_apply_button(race_button, card_normal, card_hover, card_down, ice, card_title_size, 14)
+	var card_content: VBoxContainer = VBoxContainer.new()
+	card_content.alignment = BoxContainer.ALIGNMENT_CENTER
+	card_content.add_theme_constant_override("separation", card_gap)
+	card_content.anchor_left = 0.0
+	card_content.anchor_top = 0.0
+	card_content.anchor_right = 1.0
+	card_content.anchor_bottom = 1.0
+	card_content.offset_left = card_pad_x
+	card_content.offset_right = -card_pad_x
+	card_content.offset_top = card_pad_y
+	card_content.offset_bottom = -card_pad_y
+	race_button.add_child(card_content)
+	_race_ui_label(card_content, "5-RACER HIGHWAY RACE", card_title_size, ice, HORIZONTAL_ALIGNMENT_CENTER)
+	var stats: HBoxContainer = HBoxContainer.new()
+	stats.alignment = BoxContainer.ALIGNMENT_CENTER
+	stats.add_theme_constant_override("separation", 0)
+	stats.custom_minimum_size = Vector2(0.0, stats_height)
+	card_content.add_child(stats)
+	_race_ui_stat(stats, "rivals", "YOU + 4 RIVALS", Vector2(minf(100.0, cell_width - 10.0), icon_height), stat_size, stat_gap, steel)
+	_race_ui_divider(stats, stats_height * 0.8)
+	_race_ui_stat(stats, "road", "8 KM", Vector2(34.0, icon_height), stat_size, stat_gap, steel)
+	_race_ui_divider(stats, stats_height * 0.8)
+	_race_ui_stat(stats, "trophy", "POSITION REWARDS", Vector2(32.0, icon_height), stat_size, stat_gap, steel)
+	_race_ui_ignore_mouse(race_button)
+
+	# Mode buttons (same callbacks as before); font is fitted so labels never clip.
+	var mode_gap: float = 12.0
+	var mode_width: float = (inner_width - mode_gap) / 2.0
+	var mode_pad: int = 38 if compact else 44
+	var mode_size: int = _race_ui_fit_font(ui_font, ["HIGHWAY RUSH", "MULTIPLAYER"], button_font, 11, mode_width - float(mode_pad) - 16.0)
+	var mode_row: HBoxContainer = HBoxContainer.new()
+	mode_row.add_theme_constant_override("separation", int(mode_gap))
+	body.add_child(mode_row)
+	var rush_button: Button = ui._button(mode_row,"HIGHWAY RUSH",_select_race.bind("highway_rush"))
+	_race_ui_metal_button(rush_button, "gauge", mode_height, mode_size, ice, mode_pad)
+	var multi_button: Button = ui._button(mode_row,"MULTIPLAYER",func() -> void: online_ui.open("multiplayer"))
+	_race_ui_metal_button(multi_button, "network", mode_height, mode_size, ice, mode_pad)
+	var mode_note: Label = _race_ui_label(body, "HIGHWAY RUSH: SOLO / TRAFFIC / SCORE + COINS", note_size - 1, ui.MUTED, HORIZONTAL_ALIGNMENT_CENTER)
+	mode_note.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	mode_note.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+
+	# Back
+	var back_button: Button = ui._button(body,"BACK",go_home)
+	_race_ui_metal_button(back_button, "arrow", mode_height - 6.0, button_font, ice, mode_pad)
+	back_button.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
+	back_button.custom_minimum_size = Vector2(minf(190.0, inner_width), mode_height - 6.0)
+
+
+func _race_ui_glass(parent: Control) -> ColorRect:
+	var shader: Shader = Shader.new()
+	shader.code = RACE_GLASS_SHADER
+	var material: ShaderMaterial = ShaderMaterial.new()
+	material.shader = shader
+	var glass: ColorRect = ColorRect.new()
+	glass.color = Color.WHITE
+	glass.material = material
+	glass.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	parent.add_child(glass)
+	glass.resized.connect(func() -> void: material.set_shader_parameter("rect_size", glass.size))
+	return glass
+
+
+func _race_ui_fit_font(font: Font, texts: Array, start_size: int, min_size: int, max_width: float) -> int:
+	var fitted: int = start_size
+	while fitted > min_size:
+		var widest: float = 0.0
+		for text in texts:
+			widest = maxf(widest, font.get_string_size(String(text), HORIZONTAL_ALIGNMENT_LEFT, -1.0, fitted).x)
+		if widest <= max_width:
+			break
+		fitted -= 1
+	return fitted
+
+
+func _race_ui_ignore_mouse(node: Node) -> void:
+	for child: Node in node.get_children():
+		if child is Control:
+			(child as Control).mouse_filter = Control.MOUSE_FILTER_IGNORE
+		_race_ui_ignore_mouse(child)
+
+
+func _race_ui_style(fill: Color, border: Color, border_width: int, radius: int, glow: Color = Color(0, 0, 0, 0), glow_size: int = 0) -> StyleBoxFlat:
+	var style: StyleBoxFlat = StyleBoxFlat.new()
+	style.bg_color = fill
+	style.border_color = border
+	style.set_border_width_all(border_width)
+	style.set_corner_radius_all(radius)
+	style.anti_aliasing = true
+	style.shadow_color = glow
+	style.shadow_size = glow_size
+	return style
+
+
+func _race_ui_apply_button(button: Button, normal: StyleBoxFlat, hover: StyleBoxFlat, pressed: StyleBoxFlat, font_color: Color, font_size: int, radius: int) -> void:
+	var focus: StyleBoxFlat = _race_ui_style(Color(0, 0, 0, 0), Color(0.65, 0.95, 1.0, 0.95), 2, radius)
+	focus.draw_center = false
+	button.add_theme_stylebox_override("normal", normal)
+	button.add_theme_stylebox_override("hover", hover)
+	button.add_theme_stylebox_override("pressed", pressed)
+	button.add_theme_stylebox_override("hover_pressed", pressed)
+	button.add_theme_stylebox_override("disabled", normal)
+	button.add_theme_stylebox_override("focus", focus)
+	for color_name: String in ["font_color", "font_hover_color", "font_pressed_color", "font_hover_pressed_color", "font_focus_color", "font_disabled_color"]:
+		button.add_theme_color_override(color_name, font_color)
+	button.add_theme_font_size_override("font_size", font_size)
+
+
+func _race_ui_metal_button(button: Button, icon_kind: String, height: float, font_size: int, font_color: Color, left_pad: int) -> void:
+	button.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	button.custom_minimum_size = Vector2(0.0, height)
+	var steel_off: StyleBoxFlat = _race_ui_style(Color(0.22, 0.26, 0.31, 0.97), Color(0.66, 0.73, 0.80, 0.95), 2, 12, Color(0, 0, 0, 0.35), 4)
+	var steel_hover: StyleBoxFlat = _race_ui_style(Color(0.29, 0.34, 0.40, 0.97), Color(0.80, 0.92, 1.0, 1.0), 2, 12, Color(0.2, 0.7, 1.0, 0.30), 8)
+	var steel_down: StyleBoxFlat = _race_ui_style(Color(0.15, 0.18, 0.22, 0.97), Color(0.45, 0.85, 1.0, 1.0), 2, 12)
+	for steel_style: StyleBoxFlat in [steel_off, steel_hover, steel_down]:
+		steel_style.content_margin_left = left_pad
+		steel_style.content_margin_right = 14
+	_race_ui_apply_button(button, steel_off, steel_hover, steel_down, font_color, font_size, 12)
+	var sheen: ColorRect = ColorRect.new()
+	sheen.color = Color(1, 1, 1, 0.12)
+	sheen.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	sheen.set_anchors_and_offsets_preset(Control.PRESET_TOP_WIDE)
+	sheen.offset_left = 12
+	sheen.offset_right = -12
+	sheen.offset_top = 4
+	sheen.offset_bottom = 5
+	button.add_child(sheen)
+	var icon: Control = _race_ui_icon(button, icon_kind, Color(0.80, 0.92, 1.0), Vector2(24.0, 24.0))
+	icon.anchor_left = 0.0
+	icon.anchor_right = 0.0
+	icon.anchor_top = 0.5
+	icon.anchor_bottom = 0.5
+	icon.offset_left = 10
+	icon.offset_right = 34
+	icon.offset_top = -12
+	icon.offset_bottom = 12
+
+
+func _race_ui_label(parent: Control, text: String, font_size: int, color: Color, align: HorizontalAlignment = HORIZONTAL_ALIGNMENT_LEFT) -> Label:
+	var label: Label = Label.new()
+	label.text = text
+	label.horizontal_alignment = align
+	label.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	label.add_theme_font_size_override("font_size", font_size)
+	label.add_theme_color_override("font_color", color)
+	parent.add_child(label)
+	return label
+
+
+func _race_ui_divider(parent: HBoxContainer, height: float) -> void:
+	var line: ColorRect = ColorRect.new()
+	line.color = Color(0.5, 0.75, 1.0, 0.45)
+	line.custom_minimum_size = Vector2(1.0, height)
+	line.size_flags_vertical = Control.SIZE_SHRINK_CENTER
+	line.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	parent.add_child(line)
+
+
+func _race_ui_stat(parent: HBoxContainer, kind: String, caption: String, icon_size: Vector2, font_size: int, spacing: int, color: Color) -> void:
+	var cell: VBoxContainer = VBoxContainer.new()
+	cell.alignment = BoxContainer.ALIGNMENT_CENTER
+	cell.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	cell.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	cell.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	cell.add_theme_constant_override("separation", spacing)
+	parent.add_child(cell)
+	var icon: Control = _race_ui_icon(cell, kind, Color(0.62, 0.86, 1.0), icon_size)
+	icon.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
+	var text: Label = _race_ui_label(cell, caption, font_size, color, HORIZONTAL_ALIGNMENT_CENTER)
+	text.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+
+
+func _race_ui_stars(button: Button, count: int) -> void:
+	var star_width: float = 14.0
+	var star_gap: float = 4.0
+	var total: float = star_width * float(count) + star_gap * float(count - 1)
+	var stars: Control = Control.new()
+	stars.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	stars.anchor_left = 0.5
+	stars.anchor_right = 0.5
+	stars.anchor_top = 1.0
+	stars.anchor_bottom = 1.0
+	stars.offset_left = -total * 0.5
+	stars.offset_right = total * 0.5
+	stars.offset_top = -19
+	stars.offset_bottom = -6
+	button.add_child(stars)
+	stars.draw.connect(func() -> void: _race_ui_draw_stars(stars, count, button.button_pressed))
+	button.toggled.connect(func(_on: bool) -> void: stars.queue_redraw())
+
+
+func _race_ui_draw_stars(canvas: Control, count: int, selected: bool) -> void:
+	var tone: Color = Color(1.0, 0.80, 0.30) if selected else Color(0.60, 0.68, 0.78, 0.75)
+	var radius: float = 6.5
+	for i: int in count:
+		var center: Vector2 = Vector2(7.0 + 18.0 * float(i), canvas.size.y * 0.5)
+		var points: PackedVector2Array = PackedVector2Array()
+		for p: int in 10:
+			var r: float = radius if p % 2 == 0 else radius * 0.45
+			var angle: float = -PI * 0.5 + float(p) * PI / 5.0
+			points.append(center + Vector2(cos(angle), sin(angle)) * r)
+		canvas.draw_colored_polygon(points, tone)
+
+
+func _race_ui_icon(parent: Control, kind: String, color: Color, icon_size: Vector2) -> Control:
+	var icon: Control = Control.new()
+	icon.custom_minimum_size = icon_size
+	icon.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	parent.add_child(icon)
+	icon.draw.connect(func() -> void: _race_ui_draw_icon(icon, kind, color))
+	return icon
+
+
+func _race_ui_draw_icon(canvas: Control, kind: String, color: Color) -> void:
+	var w: float = canvas.size.x
+	var h: float = canvas.size.y
+	match kind:
+		"rivals":
+			var slot: float = w / 5.0
+			for i: int in 5:
+				var tone: Color = color if i == 0 else Color(color.r, color.g, color.b, color.a * 0.6)
+				var cx: float = slot * (float(i) + 0.5)
+				canvas.draw_circle(Vector2(cx, h * 0.26), slot * 0.2, tone)
+				canvas.draw_colored_polygon(PackedVector2Array([
+					Vector2(cx - slot * 0.38, h), Vector2(cx - slot * 0.26, h * 0.5),
+					Vector2(cx + slot * 0.26, h * 0.5), Vector2(cx + slot * 0.38, h)]), tone)
+		"road":
+			canvas.draw_line(Vector2(w * 0.32, 0.0), Vector2(w * 0.04, h), color, 2.5, true)
+			canvas.draw_line(Vector2(w * 0.68, 0.0), Vector2(w * 0.96, h), color, 2.5, true)
+			for i: int in 4:
+				var y0: float = h * (0.08 + 0.24 * float(i))
+				canvas.draw_line(Vector2(w * 0.5, y0), Vector2(w * 0.5, y0 + h * 0.13), color, 2.5)
+		"trophy":
+			canvas.draw_colored_polygon(PackedVector2Array([
+				Vector2(w * 0.25, h * 0.05), Vector2(w * 0.75, h * 0.05), Vector2(w * 0.68, h * 0.45),
+				Vector2(w * 0.58, h * 0.62), Vector2(w * 0.42, h * 0.62), Vector2(w * 0.32, h * 0.45)]), color)
+			canvas.draw_rect(Rect2(w * 0.45, h * 0.62, w * 0.10, h * 0.18), color)
+			canvas.draw_rect(Rect2(w * 0.30, h * 0.82, w * 0.40, h * 0.12), color)
+			canvas.draw_arc(Vector2(w * 0.22, h * 0.28), w * 0.12, PI * 0.5, PI * 1.5, 12, color, 2.0, true)
+			canvas.draw_arc(Vector2(w * 0.78, h * 0.28), w * 0.12, -PI * 0.5, PI * 0.5, 12, color, 2.0, true)
+		"gauge":
+			var center: Vector2 = Vector2(w * 0.5, h * 0.58)
+			var r: float = minf(w, h) * 0.44
+			canvas.draw_arc(center, r, PI * 0.8, PI * 2.2, 28, color, 2.5, true)
+			canvas.draw_line(center, center + Vector2(cos(-0.75), sin(-0.75)) * r * 0.8, color, 2.5, true)
+			canvas.draw_circle(center, 2.5, color)
+		"network":
+			var hub: Vector2 = Vector2(w * 0.5, h * 0.5)
+			var nodes: Array[Vector2] = [Vector2(w * 0.15, h * 0.2), Vector2(w * 0.85, h * 0.2), Vector2(w * 0.5, h * 0.92)]
+			for node: Vector2 in nodes:
+				canvas.draw_line(hub, node, color, 2.0, true)
+				canvas.draw_circle(node, 3.5, color)
+			canvas.draw_circle(hub, 5.0, color)
+		"arrow":
+			canvas.draw_line(Vector2(w, h * 0.5), Vector2(0.0, h * 0.5), color, 2.5, true)
+			canvas.draw_polyline(PackedVector2Array([Vector2(w * 0.42, h * 0.12), Vector2(0.0, h * 0.5), Vector2(w * 0.42, h * 0.88)]), color, 2.5, true)
 
 func _play_requested() -> void:
 	if state==State.RESULTS:
@@ -938,6 +1330,33 @@ func revive_drive(fraction: float) -> void:
 	ui.steering_ui._update()
 	ui.show_screen("drive")
 
+## Maps shown on the Choose Your Map screen, in display order. Other maps stay in
+## Maps.json and the game; they are only hidden from this picker.
+const SELECTABLE_MAP_IDS: Array[String] = ["rain","neon","metro"]
+
+## Original indices (into map_dressing.maps) of the selectable maps, in display order.
+func _selectable_map_indices() -> Array[int]:
+	var found: Array[int] = []
+	for wanted: String in SELECTABLE_MAP_IDS:
+		var index: int = -1
+		for i: int in map_dressing.maps.size():
+			if String(map_dressing.maps[i].id)==wanted:
+				index = i
+				break
+		if index>=0: found.append(index)
+		else: push_warning("Selectable map id not found in Maps.json: "+wanted)
+	if found.is_empty():
+		# Never leave the picker empty if the catalog ids ever change.
+		for i: int in map_dressing.maps.size(): found.append(i)
+	return found
+
+## Old saves may hold a hidden map index or the retired RANDOM value (== maps.size()).
+## Fall back to the first selectable map; in memory only, so nothing is rewritten here.
+func _sanitize_map_settings() -> void:
+	var allowed: Array[int] = _selectable_map_indices()
+	if int(SaveService.settings.get("map",0)) not in allowed:
+		SaveService.settings.map = allowed[0]
+
 func _build_map_selection() -> void:
 	var page: Control = ui._page("map_selection",true)
 	page.visible = false
@@ -952,11 +1371,13 @@ func _build_map_selection() -> void:
 	var row: HBoxContainer = HBoxContainer.new()
 	scroll.add_child(row)
 	row.add_theme_constant_override("separation",16)
-	var selected_map: int = clampi(int(SaveService.settings.get("map",0)),0,map_dressing.maps.size())
-	var selection: Label = ui._label(column,"SELECTED: "+(String(map_dressing.maps[selected_map].title) if selected_map<map_dressing.maps.size() else "RANDOM"),19,ui.ACCENT)
+	_sanitize_map_settings()
+	var selected_map: int = int(SaveService.settings.get("map",0))
+	var selection: Label = ui._label(column,"SELECTED: "+String(map_dressing.maps[selected_map].title),19,ui.ACCENT)
 	var map_group: ButtonGroup = ButtonGroup.new()
-	for i: int in map_dressing.maps.size()+1:
-		var label: String = String(map_dressing.maps[i].title) if i<map_dressing.maps.size() else "RANDOM"
+	# Only the allowed maps are shown; `i` stays the ORIGINAL index into map_dressing.maps.
+	for i: int in _selectable_map_indices():
+		var label: String = String(map_dressing.maps[i].title)
 		var button: Button = ui._button(row,label,func() -> void:
 			SaveService.settings.map = i
 			SaveService.commit()
@@ -965,19 +1386,24 @@ func _build_map_selection() -> void:
 		button.button_group = map_group
 		button.button_pressed = i==selected_map
 		button.custom_minimum_size = Vector2(220,140)
-		if i<map_dressing.maps.size():
-			button.icon = load("res://Assets/UI/map_"+String(map_dressing.maps[i].id)+".svg")
-			button.expand_icon = true
-			button.add_theme_constant_override("icon_max_width",90)
-			map_dressing.previews.bind_button(String(map_dressing.maps[i].id),button)
+		var map_id: String = String(map_dressing.maps[i].id)
+		# A bundled real in-game capture wins over the SVG placeholder when it exists;
+		# a newer capture saved by MapPreview still replaces it through bind_button.
+		var bundled_preview: String = "res://Assets/UI/map_"+map_id+"_preview.png"
+		button.icon = load(bundled_preview) if ResourceLoader.exists(bundled_preview) else load("res://Assets/UI/map_"+map_id+".svg")
+		button.expand_icon = true
+		button.add_theme_constant_override("icon_max_width",90)
+		map_dressing.previews.bind_button(map_id,button)
 		RushMapSelectionStyle.card(button,label)
 		if i==selected_map: scroll.ensure_control_visible.call_deferred(button)
+	# Display names for the three real presets: DAY=MORNING, DUSK=EVENING, NIGHT=NIGHT.
+	var presets: Array[int] = [RushTimeOfDay.Preset.MORNING,RushTimeOfDay.Preset.EVENING,RushTimeOfDay.Preset.NIGHT]
 	var time: OptionButton = OptionButton.new()
-	for name_value: String in ["MAP PRESET","MORNING","SUNSET","DUSK","NIGHT","DAY","RANDOM TIME"]:
+	for name_value: String in ["DAY","DUSK","NIGHT"]:
 		time.add_item(name_value)
-	time.selected = int(SaveService.settings.get("map_time",-1))+1
+	time.selected = maxi(0,presets.find(RushTimeOfDay.normalize_preset(SaveService.settings.get("map_time",0))))
 	time.item_selected.connect(func(value: int) -> void:
-		SaveService.settings.map_time = value-1
+		SaveService.settings.map_time = presets[value]
 		SaveService.commit())
 	column.add_child(time)
 	ui._button(column,"RACE",start_drive,true)

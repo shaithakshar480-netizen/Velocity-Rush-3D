@@ -129,19 +129,54 @@ static func prepare(local: Dictionary, incoming: Dictionary, versions: Dictionar
 	# Normalise remote settings for documented legacy preset compatibility.
 	# Preserves strict schema validation: unknown keys are retained so valid() rejects
 	# them with SETTINGS_INVALID:B058, and type-incompatible values are left untouched
-	# so valid() rejects genuinely malformed data. Only known, type-compatible values
-	# (such as legacy map_time sentinels -1, 3, 4, 5 written by earlier builds) are
-	# normalised through SaveService._validated() to valid presets before strict validation.
+	# so valid() rejects genuinely malformed data.
+	# Special case for map_time: legitimate Firestore representations can be decoded as
+	# integral numbers (int, exact integer float) or documented string names/numeric strings.
+	# To prevent arbitrary values from being converted, we strictly whitelist:
+	# - Current presets: 0, 1, 2
+	# - Explicitly documented legacy presets: -1, 3, 4, 5
+	# - Explicitly documented preset names: "MORNING", "EVENING", "NIGHT"
+	# Any other value (e.g. -2, 6, 7, 999, "-999", "SUNSET", fractions, booleans, null)
+	# is rejected by leaving it untouched, causing valid() to reject it.
+	# Other known settings only normalise when strictly type-compatible with DEFAULTS.
 	# Wallet, progression, inventory, cars, and all other documents are untouched.
 	if meta.get("settings") is Dictionary:
 		var normalised_settings: Dictionary = meta.settings.duplicate(true)
+		var settings_modified: bool = false
 		for key: String in normalised_settings:
 			if SaveService.DEFAULTS.has(key):
 				var raw: Variant = normalised_settings[key]
-				if RushCloudRestore.compatible(SaveService.DEFAULTS[key], raw):
-					normalised_settings[key] = SaveService._validated(key, raw)
+				if key == "map_time":
+					RushAuthDiagnostics.stage("REMOTE_MAP_TIME_RAW_TYPE:" + type_string(typeof(raw)))
+					var map_time_valid: bool = false
+					var map_time_coerced: Variant = raw
+					if (raw is int or raw is float) and is_finite(float(raw)) and float(raw) == floor(float(raw)):
+						var f: float = float(raw)
+						if f >= -1.0 and f <= 5.0:
+							var int_val: int = int(raw)
+							if int_val in [-1, 0, 1, 2, 3, 4, 5]:
+								map_time_valid = true
+								map_time_coerced = int_val
+					elif raw is String:
+						var s: String = (raw as String).strip_edges().to_upper()
+						if s in ["MORNING", "EVENING", "NIGHT"]:
+							map_time_valid = true
+						elif s in ["-1", "0", "1", "2", "3", "4", "5"]:
+							map_time_valid = true
+							map_time_coerced = int(s)
+					if map_time_valid:
+						var validated_val: Variant = SaveService._validated(key, map_time_coerced)
+						if not same(raw, validated_val):
+							normalised_settings[key] = validated_val
+							settings_modified = true
+				elif RushCloudRestore.compatible(SaveService.DEFAULTS[key], raw):
+					var validated_val: Variant = SaveService._validated(key, raw)
+					if not same(raw, validated_val):
+						normalised_settings[key] = validated_val
+						settings_modified = true
 		meta["settings"] = normalised_settings
-		RushAuthDiagnostics.stage("REMOTE_SETTINGS_COMPAT_NORMALISED")
+		if settings_modified:
+			RushAuthDiagnostics.stage("REMOTE_SETTINGS_COMPAT_NORMALISED")
 	return docs if valid(local,docs) else {}
 static func valid(local: Dictionary, docs: Dictionary) -> bool:
 	var root: Dictionary = docs.profile
@@ -221,7 +256,8 @@ static func valid(local: Dictionary, docs: Dictionary) -> bool:
 			RushAuthDiagnostics.stage("SETTINGS_REJECTED:" + key + ":UNKNOWN_KEY")
 			return invalid("SETTINGS_INVALID:B058:" + key + ":UNKNOWN_KEY")
 		if not RushCloudRestore.compatible(SaveService.DEFAULTS[key], meta.settings[key]):
-			RushAuthDiagnostics.stage("SETTINGS_REJECTED:" + key + ":TYPE_MISMATCH")
+			var type_name: String = type_string(typeof(meta.settings[key]))
+			RushAuthDiagnostics.stage("SETTINGS_REJECTED:" + key + ":TYPE_MISMATCH:" + type_name)
 			return invalid("SETTINGS_INVALID:B058:" + key + ":TYPE_MISMATCH")
 		if not same(meta.settings[key], SaveService._validated(key, meta.settings[key])):
 			RushAuthDiagnostics.stage("SETTINGS_REJECTED:" + key + ":NON_CANONICAL_VALUE")
